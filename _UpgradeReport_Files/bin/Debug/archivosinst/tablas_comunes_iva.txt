@@ -1,0 +1,48 @@
+CREATE TABLE `cm_iv_tipo_retencion_percepcion` (
+  `idtipo_retencion` int(11) NOT NULL auto_increment,
+  `codigo_afip` int(11) default NULL,
+  `nombre` varchar(45) default NULL,
+  `alicuota` varchar(45) default NULL,
+  PRIMARY KEY  (`idtipo_retencion`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `cm_iv_tipo_comprobante` (
+  `idtipo_comprobante` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idtipo_comprobante`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `cm_iv_empresa_dtos` (
+  `idempresas` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  `razon_social` varchar(45) default NULL,
+  `direccion` varchar(45) default NULL,
+  `localidad` varchar(45) default NULL,
+  `provincia` int(11) default NULL,
+  `telefono` varchar(45) default NULL,
+  `condicion_iva` int(11) default NULL,
+  `fact_electronica` int(11) default NULL,
+  `ing_brutos` varchar(45) default NULL,
+  `establecimiento_n` varchar(45) default NULL,
+  `h_libro_compra` varchar(45) default NULL,
+  `h_libro_venta` varchar(45) default NULL,
+  `cuit` varchar(45) default NULL,
+  `n_libro_iva` varchar(45) default NULL,
+  `tipo` int(11) default NULL,
+  `actividad` int(11) default NULL,
+  PRIMARY KEY  (`idempresas`),
+  KEY `fk_empresa_dtos_condicion_iva` (`condicion_iva`),
+  KEY `fk_empresa_dtos_provincias1` (`provincia`),
+  KEY `fk_empresa_dtos_tipo_empresa1` (`tipo`),
+  KEY `fk_empresa_dtos_actividad_empresa1` (`actividad`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `cm_iv_condicion_iva` (
+  `idcondicion_iva` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idcondicion_iva`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

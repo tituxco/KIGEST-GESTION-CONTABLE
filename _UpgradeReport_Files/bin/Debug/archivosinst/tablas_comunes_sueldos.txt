@@ -1,0 +1,61 @@
+
+CREATE TABLE `cm_sdo_doc_tipo` (
+  `iddoc_tipo` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`iddoc_tipo`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_estado_civil_personal` (
+  `idestado_civil` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idestado_civil`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_modo_contr_personal` (
+  `idmodo_contr_personal` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idmodo_contr_personal`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `cm_sdo_obra_social_personal` (
+  `idobra_social` int(11) NOT NULL auto_increment,
+  `codigo` int(11) default NULL,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idobra_social`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `cm_sdo_parentesco_personal` (
+  `idparentesco_personal` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idparentesco_personal`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_sindicatos` (
+  `idsindicatos` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  `cuota_porc` varchar(45) default NULL,
+  `calc_antig` varchar(45) default NULL,
+  PRIMARY KEY  (`idsindicatos`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_situacion_laboral_personal` (
+  `idsituacion_personal` int(11) NOT NULL,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idsituacion_personal`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_variables_calculos` (
+  `idvariables_calculos` int(11) NOT NULL auto_increment,
+  `nombre` varchar(45) default NULL,
+  `tabla_referencia` varchar(45) default NULL,
+  PRIMARY KEY  (`idvariables_calculos`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_periodos_pago` (
+  `idperiodos_pago` int(11) NOT NULL,
+  `nombre` varchar(45) default NULL,
+  PRIMARY KEY  (`idperiodos_pago`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+

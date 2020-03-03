@@ -1,0 +1,331 @@
+C:\Users\Roberto\AppData\Local\Temporary Projects\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\MySql.Data.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.Cache
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\RdlCompile.cache
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\RdlCompile.compiled
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojResolveAssemblyReference.cache
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\AutomaticUpdater.xml
+C:\Importante\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+H:\Desarrollos\creaciones\kigest\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+H:\Desarrollos\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+H:\Desarrollos\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+H:\Desarrollos\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+H:\Desarrollos\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+H:\Desarrollos\creaciones\kigest\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\MySql.Data.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\AutomaticUpdater.xml
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojResolveAssemblyReference.cache
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.Cache
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\RdlCompile.cache
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\RdlCompile.compiled
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+C:\Users\Roberto\Desktop\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\MySql.Data.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojResolveAssemblyReference.cache
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.Cache
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\RdlCompile.cache
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\RdlCompile.compiled
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Importante\Dropbox\desarrollos\contable\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojResolveAssemblyReference.cache
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.Cache
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\RdlCompile.cache
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\RdlCompile.compiled
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+D:\DRIVE\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\MySql.Data.dll
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\MySql.Data.dll
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojResolveAssemblyReference.cache
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.Cache
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\RdlCompile.cache
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\RdlCompile.compiled
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+C:\Users\Roberto\Datos\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojResolveAssemblyReference.cache
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.Cache
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\RdlCompile.cache
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\RdlCompile.compiled
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar2.resources
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Importante\Desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.agregaritemcompras.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\archivosinst\tablas_comunes.txt
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\archivosinst\tablas_comunes_iva.txt
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\archivosinst\tablas_comunes_sueldos.txt
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\archivosinst\tablas_iva.txt
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.config
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.application
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.exe
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.pdb
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\KIGEST - Gestión Contable.xml
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\MySql.Data.dll
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\Interop.MSScriptControl.dll
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.g.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.agregaritemcompras.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmInicializar2.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.cache
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.CoreCompileInputs.cache
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.application
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbproj.CopyComplete
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.exe
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.xml
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.pdb
+D:\OneDrive\Importante\desarrollos\KIGEST - CONTABLE\KIGEST - Gestión Contable\obj\Debug\KIGEST - Gestión Contable.vbprojAssemblyReference.cache

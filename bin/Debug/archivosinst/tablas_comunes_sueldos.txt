@@ -1,0 +1,71 @@
+CREATE TABLE `cm_sdo_categoria_personal` (
+  `idcategoria_personal` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idcategoria_personal`)
+) ENGINE=MyISAM AUTO_INCREMENT=71 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_centro_costos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `convenio` int(11) NOT NULL,
+  `conceptos` varchar(45) DEFAULT NULL,
+  `antiguedad` varchar(45) DEFAULT NULL,
+  `sueldo` varchar(45) DEFAULT NULL,
+  `categoria_personal` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_conceptos_sueldo` (
+  `idconceptos_sueldo` int(11) NOT NULL AUTO_INCREMENT,
+  `codigo` int(11) DEFAULT NULL,
+  `concepto` varchar(45) DEFAULT NULL,
+  `tipo` int(11) DEFAULT NULL,
+  `monto` double DEFAULT NULL,
+  `unidad` int(11) DEFAULT NULL,
+  `formula` text,
+  `cantidad` varchar(45) DEFAULT '',
+  `usar_sueldo` int(1) DEFAULT '0',
+  PRIMARY KEY (`idconceptos_sueldo`),
+  KEY `fk_conceptos_sueldo_tipos_conceptos_sueldo1` (`tipo`)
+) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_convenios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cm_sdo_jornada` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_modo_contratacion` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_modo_pago` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_periodos_pago` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_tipos_conceptos_sueldo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `cm_sdo_unidades_calculo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

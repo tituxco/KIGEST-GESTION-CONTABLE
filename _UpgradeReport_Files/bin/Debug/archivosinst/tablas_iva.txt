@@ -1,0 +1,75 @@
+CREATE TABLE `iv_clientes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `razon` varchar(255) DEFAULT NULL,
+  `cuit` varchar(45) DEFAULT NULL,
+  `cond_iva` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `iv_items_compras` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `periodo` int(11) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `tipocom` varchar(45) DEFAULT NULL,
+  `nufac` varchar(45) DEFAULT NULL,
+  `razon` varchar(45) DEFAULT NULL,
+  `cuit` varchar(45) DEFAULT NULL,
+  `tipocontr` varchar(45) DEFAULT NULL,
+  `neto` varchar(45) DEFAULT NULL,
+  `iva` varchar(45) DEFAULT NULL,
+  `monot` varchar(45) DEFAULT NULL,
+  `acuenta` varchar(45) DEFAULT NULL,
+  `nogr` varchar(45) DEFAULT NULL,
+  `perciva` varchar(45) DEFAULT NULL,
+  `percib` varchar(45) DEFAULT NULL,
+  `total` varchar(45) DEFAULT NULL,
+  `obs` varchar(45) DEFAULT NULL,
+  `bien_uso` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `iv_items_ventas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `periodo` int(11) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `tipocom` varchar(45) DEFAULT NULL,
+  `nufac` varchar(45) DEFAULT NULL,
+  `razon` varchar(255) DEFAULT NULL,
+  `cuit` varchar(45) DEFAULT NULL,
+  `tipocontr` varchar(45) DEFAULT NULL,
+  `neto` varchar(45) DEFAULT NULL,
+  `iva105` varchar(45) DEFAULT NULL,
+  `iva21` varchar(45) DEFAULT NULL,
+  `total` varchar(45) DEFAULT NULL,
+  `obs` varchar(45) DEFAULT NULL,
+  `ret_iva` varchar(45) DEFAULT NULL,
+  `ret_ib` varchar(45) DEFAULT NULL,
+  `ret_gan` varchar(45) DEFAULT NULL,
+  `provincia` varchar(45) DEFAULT NULL,
+  `actividad` int(11) DEFAULT NULL,
+  `bien_uso` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE= MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `iv_periodos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mes` varchar(45) DEFAULT NULL,
+  `ano` varchar(45) DEFAULT NULL,
+  `estado` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `iv_proveedores` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `razon` varchar(255) DEFAULT NULL,
+  `cuit` varchar(45) DEFAULT NULL,
+  `cond_iva` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `iv_punto_venta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
