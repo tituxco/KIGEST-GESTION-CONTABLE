@@ -2030,4 +2030,7 @@ Public Class iva
         txtvtaneto.Text = FormatNumber(CDec(txtalineto105.Text) + CDec(txtalineto21.Text), 2)
     End Sub
 
+    Private Sub cmbperiodocarg_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbperiodocarg.SelectedIndexChanged
+
+    End Sub
 End Class

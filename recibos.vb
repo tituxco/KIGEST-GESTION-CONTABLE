@@ -15,6 +15,7 @@ Public Class recibos
     Dim myScript As MSScriptControl.ScriptControl
     Dim Idpersonal As Integer
     Dim CacheItems As New ArrayList
+    Dim IDReciboIndiv As Integer
 
 
     Private Sub recibos_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
@@ -766,11 +767,6 @@ Public Class recibos
         End Try
     End Sub
 
-    Private Sub dtitemrecibos_ColumnHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dtitemrecibos.ColumnHeaderMouseClick
-        
-
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim i As Integer
         dtitemrecibos.Rows.Clear()
@@ -790,10 +786,6 @@ Public Class recibos
         Next
     End Sub
 
-    Private Sub dtitemrecibos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtitemrecibos.CellContentClick
-
-    End Sub
-
     Private Sub dtitemrecibos_UserDeletingRow(sender As Object, e As DataGridViewRowCancelEventArgs) Handles dtitemrecibos.UserDeletingRow
         CacheItems.Remove(dtitemrecibos.CurrentRow.Cells(0).Value)
     End Sub
@@ -803,7 +795,8 @@ Public Class recibos
             Reconectar()
             conexionPrinc.ChangeDatabase(database)
             conexionEmp.ChangeDatabase(EmpDB)
-
+            IDReciboIndiv = dtrecibos.CurrentRow.Cells(0).Value
+            'Dim ReciboId As Integer = 
             Dim cadenaBD As String = EmpDB & ".sdo_personal as per," & database & ".cm_empresas as emp, " & EmpDB & ".sdo_recibos as rec"
             Dim tabRecibos As New MySql.Data.MySqlClient.MySqlDataAdapter
             Dim tabItems As New MySql.Data.MySqlClient.MySqlDataAdapter
@@ -816,12 +809,14 @@ Public Class recibos
             & "concat('Empleador: ',emp.razon, '\n', 'Domicilio: ',emp.direccion,'\n','C.U.I.T.: ',emp.cuit) as empresadtos, " _
             & "rec.id as id, rec.total_remunerativo as totrem, rec.total_noremunerativo as totnorem, rec.total_descuentos as totdedu, " _
             & "rec.total_neto as totneto, enletras as letras, sueldobanco, sueldocuenta,aportebanco,aportefecha,aporteperiodo,lugarpago from " _
-            & cadenaBD & " where rec.id=" & dtrecibos.CurrentRow.Cells(0).Value & " and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
+            & cadenaBD & " where rec.id=" & IDReciboIndiv & " and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
             ' MsgBox("ok")
-            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos order by id asc", conexionEmp)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos where idrecibo= " & IDReciboIndiv & " order by id asc", conexionEmp)
 
             tabRecibos.Fill(ds.Tables("ReciboEncabeza"))
             tabItems.Fill(ds.Tables("ReciboItems"))
+            'MsgBox(tabRecibos.SelectCommand.CommandText)
+            'MsgBox(ds.Tables("ReciboEncabeza").Rows.Count)
             With imprimirrecibo
                 .rptrecibo.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
                 .rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\ReciboEncabezado.rdlc"
@@ -847,7 +842,7 @@ Public Class recibos
             conexionEmp.ChangeDatabase(EmpDB)
             Dim ds As New DatasetRecibos
             Dim tabItems As New MySql.Data.MySqlClient.MySqlDataAdapter
-            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos order by codigo asc", conexionEmp)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos where idrecibo=" & IDReciboIndiv & " order by codigo asc", conexionEmp)
             tabItems.Fill(ds.Tables("ReciboItems"))
             e.DataSources.Add(New ReportDataSource("ItemsRecibos", ds.Tables("ReciboItems")))
         Catch ex As Exception
@@ -857,38 +852,6 @@ Public Class recibos
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         rubricasuel.Show()
-    End Sub
-
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
-
-    End Sub
-
-    Private Sub TabPage2_Enter(sender As Object, e As EventArgs) Handles TabPage2.Enter
-    End Sub
-
-    Private Sub dtpersonal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtpersonal.CellContentClick
-
-    End Sub
-
-    Private Sub pntitulo_Paint(sender As Object, e As PaintEventArgs) Handles pntitulo.Paint
-
-    End Sub
-
-    Private Sub Button9_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Panel11.Paint
-
-    End Sub
-
-    Private Sub TabPage2_Paint(sender As Object, e As PaintEventArgs) Handles TabPage2.Paint
-
-
-    End Sub
-
-    Private Sub TabPage2_DoubleClick(sender As Object, e As EventArgs) Handles TabPage2.DoubleClick
-
     End Sub
 
     Private Sub Button9_Click_1(sender As Object, e As EventArgs) Handles Button9.Click

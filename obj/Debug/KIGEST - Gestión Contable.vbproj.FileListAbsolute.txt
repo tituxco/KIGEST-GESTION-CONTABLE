@@ -375,3 +375,61 @@ D:\KIGEST - GESTION CONTABLE\bin\Debug\LibroSuelDetalles.rdlc
 D:\KIGEST - GESTION CONTABLE\bin\Debug\ReciboEncabezado.rdlc
 D:\KIGEST - GESTION CONTABLE\obj\Debug\KIGEST - Gestión Contable.vbprojAssemblyReference.cache
 D:\KIGEST - GESTION CONTABLE\bin\Debug\ReciboDetalle.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\ReciboEncabezado.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroIvaVentaDetalles.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroIvaCompraDetalles.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroSuelEncabeza.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroSuelDetalles.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\ReciboDetalle.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes.txt
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes_iva.txt
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes_sueldos.txt
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_iva.txt
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestión Contable.exe.config
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestión Contable.application
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestión Contable.exe
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestión Contable.pdb
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestión Contable.xml
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\MySql.Data.dll
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.vbprojAssemblyReference.cache
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\Interop.MSScriptControl.dll
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.vbproj.ResolveComReference.cache
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.frmabmempresa.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.frmaddempresas.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.agregaritemcompras.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.frmaspirantes.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.ImprimirIvaCompra.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.ImprimirLibroSueldo.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.imprimirrecibo.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.ImprimirRecibos.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.frmInicializar.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.frmInicializar2.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.iva.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.mantenimiento.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.Resources.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.frmprincipal.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.recibos.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.rubricaivacompra.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.rubricaivaventas.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestión_Contable.rubricasuel.resources
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.vbproj.GenerateResource.cache
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\RdlCompile.cache
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\RdlCompile.compiled
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.TrustInfo.xml
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.exe.manifest
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.application
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.vbproj.CopyComplete
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.exe
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.xml
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.pdb
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\rubricaivaventas.vb
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\RubricaIvaCompra.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\RubricaIvaVentas.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\RubricaSueldos.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\rubricaivaventas.resx
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\rubricaivaventas.Designer.vb

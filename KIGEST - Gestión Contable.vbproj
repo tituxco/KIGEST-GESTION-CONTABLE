@@ -32,7 +32,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>28</ApplicationRevision>
+    <ApplicationRevision>31</ApplicationRevision>
     <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -272,10 +272,12 @@
     </Compile>
     <Compile Include="rubricaivaventas.Designer.vb">
       <DependentUpon>rubricaivaventas.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="rubricaivaventas.vb">
+    <Content Include="rubricaivaventas.vb">
       <SubType>Form</SubType>
-    </Compile>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="rubricasuel.Designer.vb">
       <DependentUpon>rubricasuel.vb</DependentUpon>
     </Compile>
@@ -347,11 +349,18 @@
     <Content Include="LibroSuelEncabeza.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="RubricaIvaCompra.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="rubricaivacompra.resx">
       <DependentUpon>rubricaivacompra.vb</DependentUpon>
     </EmbeddedResource>
+    <Content Include="RubricaIvaVentas.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="rubricaivaventas.resx">
       <DependentUpon>rubricaivaventas.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="rubricasuel.resx">
       <DependentUpon>rubricasuel.vb</DependentUpon>
@@ -360,6 +369,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ReciboDetalle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RubricaSueldos.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
