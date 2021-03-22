@@ -24,7 +24,7 @@ Partial Class ImprimirRecibos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ReciboEncabezaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DatasetRecibos = New KIGEST___Gestión_Contable.DatasetRecibos()
+        Me.DatasetRecibos = New KIGEST___Gestion_Contable.DatasetRecibos()
         Me.cmdverrecibos = New System.Windows.Forms.Button()
         Me.cmbperiodo = New System.Windows.Forms.ComboBox()
         Me.rptrecibo = New Microsoft.Reporting.WinForms.ReportViewer()
@@ -64,7 +64,7 @@ Partial Class ImprimirRecibos
         'rptrecibo
         '
         Me.rptrecibo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.rptrecibo.LocalReport.ReportEmbeddedResource = "KIGEST___Gestión_Contable.ReciboEncabezado.rdlc"
+        Me.rptrecibo.LocalReport.ReportEmbeddedResource = "KIGEST___Gestion_Contable.ReciboEncabezado.rdlc"
         Me.rptrecibo.Location = New System.Drawing.Point(0, 21)
         Me.rptrecibo.Margin = New System.Windows.Forms.Padding(0)
         Me.rptrecibo.Name = "rptrecibo"
@@ -93,7 +93,7 @@ Partial Class ImprimirRecibos
     Friend WithEvents DatasetEmpresasBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DataTable1BindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents cmdverrecibos As System.Windows.Forms.Button
-    Friend WithEvents DatasetRecibos As KIGEST___Gestión_Contable.DatasetRecibos
+    Friend WithEvents DatasetRecibos As KIGEST___Gestion_Contable.DatasetRecibos
     Friend WithEvents ReciboEncabezaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents cmbperiodo As System.Windows.Forms.ComboBox
     Friend WithEvents rptrecibo As Microsoft.Reporting.WinForms.ReportViewer

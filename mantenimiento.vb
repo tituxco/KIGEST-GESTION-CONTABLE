@@ -429,4 +429,12 @@ Public Class mantenimiento
             Next
         End If
     End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    End Sub
+
+    Private Sub dtnomenclador_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtnomenclador.CellContentClick
+
+    End Sub
 End Class

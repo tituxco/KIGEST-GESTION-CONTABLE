@@ -23,38 +23,38 @@ Partial Class iva
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(iva))
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle57 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle58 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle59 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle60 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle63 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle64 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnnavegacion = New System.Windows.Forms.Panel()
         Me.cmbperiodocarg = New System.Windows.Forms.ComboBox()
         Me.Button16 = New System.Windows.Forms.Button()
@@ -549,9 +549,9 @@ Partial Class iva
         '
         'fecha
         '
-        DataGridViewCellStyle33.Format = "d"
-        DataGridViewCellStyle33.NullValue = Nothing
-        Me.fecha.DefaultCellStyle = DataGridViewCellStyle33
+        DataGridViewCellStyle1.Format = "d"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.fecha.DefaultCellStyle = DataGridViewCellStyle1
         Me.fecha.HeaderText = "Fecha"
         Me.fecha.Name = "fecha"
         Me.fecha.Width = 62
@@ -588,9 +588,9 @@ Partial Class iva
         '
         'neto
         '
-        DataGridViewCellStyle34.Format = "N2"
-        DataGridViewCellStyle34.NullValue = Nothing
-        Me.neto.DefaultCellStyle = DataGridViewCellStyle34
+        DataGridViewCellStyle2.Format = "N2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.neto.DefaultCellStyle = DataGridViewCellStyle2
         Me.neto.HeaderText = "Neto 21"
         Me.neto.Name = "neto"
         Me.neto.ToolTipText = "21"
@@ -612,63 +612,63 @@ Partial Class iva
         '
         'ivamon
         '
-        DataGridViewCellStyle35.Format = "N2"
-        DataGridViewCellStyle35.NullValue = Nothing
-        Me.ivamon.DefaultCellStyle = DataGridViewCellStyle35
+        DataGridViewCellStyle3.Format = "N2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.ivamon.DefaultCellStyle = DataGridViewCellStyle3
         Me.ivamon.HeaderText = "IVA"
         Me.ivamon.Name = "ivamon"
         Me.ivamon.Width = 49
         '
         'mont
         '
-        DataGridViewCellStyle36.Format = "N2"
-        DataGridViewCellStyle36.NullValue = Nothing
-        Me.mont.DefaultCellStyle = DataGridViewCellStyle36
+        DataGridViewCellStyle4.Format = "N2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.mont.DefaultCellStyle = DataGridViewCellStyle4
         Me.mont.HeaderText = "Monot"
         Me.mont.Name = "mont"
         Me.mont.Width = 62
         '
         'acuenta
         '
-        DataGridViewCellStyle37.Format = "N2"
-        DataGridViewCellStyle37.NullValue = Nothing
-        Me.acuenta.DefaultCellStyle = DataGridViewCellStyle37
+        DataGridViewCellStyle5.Format = "N2"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.acuenta.DefaultCellStyle = DataGridViewCellStyle5
         Me.acuenta.HeaderText = "P. cta/Per.IVA"
         Me.acuenta.Name = "acuenta"
         Me.acuenta.Width = 93
         '
         'nogrexe
         '
-        DataGridViewCellStyle38.Format = "N2"
-        DataGridViewCellStyle38.NullValue = "0"
-        Me.nogrexe.DefaultCellStyle = DataGridViewCellStyle38
+        DataGridViewCellStyle6.Format = "N2"
+        DataGridViewCellStyle6.NullValue = "0"
+        Me.nogrexe.DefaultCellStyle = DataGridViewCellStyle6
         Me.nogrexe.HeaderText = "No gravado/Exc"
         Me.nogrexe.Name = "nogrexe"
         Me.nogrexe.Width = 102
         '
         'perciva
         '
-        DataGridViewCellStyle39.Format = "N2"
-        DataGridViewCellStyle39.NullValue = "0"
-        Me.perciva.DefaultCellStyle = DataGridViewCellStyle39
+        DataGridViewCellStyle7.Format = "N2"
+        DataGridViewCellStyle7.NullValue = "0"
+        Me.perciva.DefaultCellStyle = DataGridViewCellStyle7
         Me.perciva.HeaderText = "Percep IVA"
         Me.perciva.Name = "perciva"
         Me.perciva.Width = 79
         '
         'perib
         '
-        DataGridViewCellStyle40.Format = "N2"
-        DataGridViewCellStyle40.NullValue = Nothing
-        Me.perib.DefaultCellStyle = DataGridViewCellStyle40
+        DataGridViewCellStyle8.Format = "N2"
+        DataGridViewCellStyle8.NullValue = Nothing
+        Me.perib.DefaultCellStyle = DataGridViewCellStyle8
         Me.perib.HeaderText = "Percep. IB"
         Me.perib.Name = "perib"
         Me.perib.Width = 76
         '
         'total
         '
-        DataGridViewCellStyle41.Format = "N2"
-        DataGridViewCellStyle41.NullValue = Nothing
-        Me.total.DefaultCellStyle = DataGridViewCellStyle41
+        DataGridViewCellStyle9.Format = "N2"
+        DataGridViewCellStyle9.NullValue = Nothing
+        Me.total.DefaultCellStyle = DataGridViewCellStyle9
         Me.total.HeaderText = "TOTAL"
         Me.total.Name = "total"
         Me.total.Width = 67
@@ -1638,9 +1638,9 @@ Partial Class iva
         '
         'DataGridViewTextBoxColumn1
         '
-        DataGridViewCellStyle42.Format = "d"
-        DataGridViewCellStyle42.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle42
+        DataGridViewCellStyle10.Format = "d"
+        DataGridViewCellStyle10.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewTextBoxColumn1.HeaderText = "Fecha"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.Width = 62
@@ -1677,27 +1677,27 @@ Partial Class iva
         '
         'DataGridViewTextBoxColumn7
         '
-        DataGridViewCellStyle43.Format = "N2"
-        DataGridViewCellStyle43.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle43
+        DataGridViewCellStyle11.Format = "N2"
+        DataGridViewCellStyle11.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewTextBoxColumn7.HeaderText = "Neto"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.Width = 55
         '
         'DataGridViewTextBoxColumn8
         '
-        DataGridViewCellStyle44.Format = "N2"
-        DataGridViewCellStyle44.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle44
+        DataGridViewCellStyle12.Format = "N2"
+        DataGridViewCellStyle12.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn8.HeaderText = "IVA 21"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.Width = 64
         '
         'iva105
         '
-        DataGridViewCellStyle45.Format = "N2"
-        DataGridViewCellStyle45.NullValue = Nothing
-        Me.iva105.DefaultCellStyle = DataGridViewCellStyle45
+        DataGridViewCellStyle13.Format = "N2"
+        DataGridViewCellStyle13.NullValue = Nothing
+        Me.iva105.DefaultCellStyle = DataGridViewCellStyle13
         Me.iva105.HeaderText = "IVA 10.5"
         Me.iva105.Name = "iva105"
         Me.iva105.Width = 73
@@ -1710,36 +1710,36 @@ Partial Class iva
         '
         'Column9
         '
-        DataGridViewCellStyle46.Format = "N2"
-        DataGridViewCellStyle46.NullValue = Nothing
-        Me.Column9.DefaultCellStyle = DataGridViewCellStyle46
+        DataGridViewCellStyle14.Format = "N2"
+        DataGridViewCellStyle14.NullValue = Nothing
+        Me.Column9.DefaultCellStyle = DataGridViewCellStyle14
         Me.Column9.HeaderText = "Ret IVA"
         Me.Column9.Name = "Column9"
         Me.Column9.Width = 69
         '
         'Column10
         '
-        DataGridViewCellStyle47.Format = "N2"
-        DataGridViewCellStyle47.NullValue = Nothing
-        Me.Column10.DefaultCellStyle = DataGridViewCellStyle47
+        DataGridViewCellStyle15.Format = "N2"
+        DataGridViewCellStyle15.NullValue = Nothing
+        Me.Column10.DefaultCellStyle = DataGridViewCellStyle15
         Me.Column10.HeaderText = "Ret IB"
         Me.Column10.Name = "Column10"
         Me.Column10.Width = 62
         '
         'Column11
         '
-        DataGridViewCellStyle48.Format = "N2"
-        DataGridViewCellStyle48.NullValue = Nothing
-        Me.Column11.DefaultCellStyle = DataGridViewCellStyle48
+        DataGridViewCellStyle16.Format = "N2"
+        DataGridViewCellStyle16.NullValue = Nothing
+        Me.Column11.DefaultCellStyle = DataGridViewCellStyle16
         Me.Column11.HeaderText = "Ret GAN"
         Me.Column11.Name = "Column11"
         Me.Column11.Width = 75
         '
         'DataGridViewTextBoxColumn14
         '
-        DataGridViewCellStyle49.Format = "N2"
-        DataGridViewCellStyle49.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle49
+        DataGridViewCellStyle17.Format = "N2"
+        DataGridViewCellStyle17.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle17
         Me.DataGridViewTextBoxColumn14.HeaderText = "TOTAL"
         Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         Me.DataGridViewTextBoxColumn14.Width = 67
@@ -2820,9 +2820,9 @@ Partial Class iva
         '
         'Column16
         '
-        DataGridViewCellStyle50.Format = "d"
-        DataGridViewCellStyle50.NullValue = Nothing
-        Me.Column16.DefaultCellStyle = DataGridViewCellStyle50
+        DataGridViewCellStyle18.Format = "d"
+        DataGridViewCellStyle18.NullValue = Nothing
+        Me.Column16.DefaultCellStyle = DataGridViewCellStyle18
         Me.Column16.HeaderText = "Fecha"
         Me.Column16.Name = "Column16"
         Me.Column16.ReadOnly = True
@@ -2835,27 +2835,27 @@ Partial Class iva
         '
         'Column18
         '
-        DataGridViewCellStyle51.Format = "N2"
-        DataGridViewCellStyle51.NullValue = Nothing
-        Me.Column18.DefaultCellStyle = DataGridViewCellStyle51
+        DataGridViewCellStyle19.Format = "N2"
+        DataGridViewCellStyle19.NullValue = Nothing
+        Me.Column18.DefaultCellStyle = DataGridViewCellStyle19
         Me.Column18.HeaderText = "Neto"
         Me.Column18.Name = "Column18"
         Me.Column18.ReadOnly = True
         '
         'Column19
         '
-        DataGridViewCellStyle52.Format = "N2"
-        DataGridViewCellStyle52.NullValue = Nothing
-        Me.Column19.DefaultCellStyle = DataGridViewCellStyle52
+        DataGridViewCellStyle20.Format = "N2"
+        DataGridViewCellStyle20.NullValue = Nothing
+        Me.Column19.DefaultCellStyle = DataGridViewCellStyle20
         Me.Column19.HeaderText = "IVA"
         Me.Column19.Name = "Column19"
         Me.Column19.ReadOnly = True
         '
         'Column20
         '
-        DataGridViewCellStyle53.Format = "N2"
-        DataGridViewCellStyle53.NullValue = Nothing
-        Me.Column20.DefaultCellStyle = DataGridViewCellStyle53
+        DataGridViewCellStyle21.Format = "N2"
+        DataGridViewCellStyle21.NullValue = Nothing
+        Me.Column20.DefaultCellStyle = DataGridViewCellStyle21
         Me.Column20.HeaderText = "TOTAL"
         Me.Column20.Name = "Column20"
         Me.Column20.ReadOnly = True
@@ -2896,9 +2896,9 @@ Partial Class iva
         '
         'DataGridViewTextBoxColumn10
         '
-        DataGridViewCellStyle54.Format = "N2"
-        DataGridViewCellStyle54.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle54
+        DataGridViewCellStyle22.Format = "N2"
+        DataGridViewCellStyle22.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle22
         Me.DataGridViewTextBoxColumn10.HeaderText = "Ing Brutos"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
@@ -2906,9 +2906,9 @@ Partial Class iva
         '
         'Column14
         '
-        DataGridViewCellStyle55.Format = "N2"
-        DataGridViewCellStyle55.NullValue = Nothing
-        Me.Column14.DefaultCellStyle = DataGridViewCellStyle55
+        DataGridViewCellStyle23.Format = "N2"
+        DataGridViewCellStyle23.NullValue = Nothing
+        Me.Column14.DefaultCellStyle = DataGridViewCellStyle23
         Me.Column14.HeaderText = "IVA"
         Me.Column14.Name = "Column14"
         Me.Column14.ReadOnly = True
@@ -2916,9 +2916,9 @@ Partial Class iva
         '
         'Column15
         '
-        DataGridViewCellStyle56.Format = "N2"
-        DataGridViewCellStyle56.NullValue = Nothing
-        Me.Column15.DefaultCellStyle = DataGridViewCellStyle56
+        DataGridViewCellStyle24.Format = "N2"
+        DataGridViewCellStyle24.NullValue = Nothing
+        Me.Column15.DefaultCellStyle = DataGridViewCellStyle24
         Me.Column15.HeaderText = "Ganancias"
         Me.Column15.Name = "Column15"
         Me.Column15.ReadOnly = True
@@ -2950,9 +2950,9 @@ Partial Class iva
         '
         'Column8
         '
-        DataGridViewCellStyle57.Format = "N2"
-        DataGridViewCellStyle57.NullValue = Nothing
-        Me.Column8.DefaultCellStyle = DataGridViewCellStyle57
+        DataGridViewCellStyle25.Format = "N2"
+        DataGridViewCellStyle25.NullValue = Nothing
+        Me.Column8.DefaultCellStyle = DataGridViewCellStyle25
         Me.Column8.HeaderText = "Importe neto"
         Me.Column8.Name = "Column8"
         Me.Column8.ReadOnly = True
@@ -2960,9 +2960,9 @@ Partial Class iva
         '
         'Column12
         '
-        DataGridViewCellStyle58.Format = "N2"
-        DataGridViewCellStyle58.NullValue = Nothing
-        Me.Column12.DefaultCellStyle = DataGridViewCellStyle58
+        DataGridViewCellStyle26.Format = "N2"
+        DataGridViewCellStyle26.NullValue = Nothing
+        Me.Column12.DefaultCellStyle = DataGridViewCellStyle26
         Me.Column12.HeaderText = "IVA 21"
         Me.Column12.Name = "Column12"
         Me.Column12.ReadOnly = True
@@ -2970,9 +2970,9 @@ Partial Class iva
         '
         'Column13
         '
-        DataGridViewCellStyle59.Format = "N2"
-        DataGridViewCellStyle59.NullValue = Nothing
-        Me.Column13.DefaultCellStyle = DataGridViewCellStyle59
+        DataGridViewCellStyle27.Format = "N2"
+        DataGridViewCellStyle27.NullValue = Nothing
+        Me.Column13.DefaultCellStyle = DataGridViewCellStyle27
         Me.Column13.HeaderText = "IVA 10.5"
         Me.Column13.Name = "Column13"
         Me.Column13.ReadOnly = True
@@ -3004,9 +3004,9 @@ Partial Class iva
         '
         'Column2
         '
-        DataGridViewCellStyle60.Format = "N2"
-        DataGridViewCellStyle60.NullValue = Nothing
-        Me.Column2.DefaultCellStyle = DataGridViewCellStyle60
+        DataGridViewCellStyle28.Format = "N2"
+        DataGridViewCellStyle28.NullValue = Nothing
+        Me.Column2.DefaultCellStyle = DataGridViewCellStyle28
         Me.Column2.FillWeight = 15.2284!
         Me.Column2.HeaderText = "RI"
         Me.Column2.Name = "Column2"
@@ -3014,9 +3014,9 @@ Partial Class iva
         '
         'Column3
         '
-        DataGridViewCellStyle61.Format = "N2"
-        DataGridViewCellStyle61.NullValue = Nothing
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle61
+        DataGridViewCellStyle29.Format = "N2"
+        DataGridViewCellStyle29.NullValue = Nothing
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle29
         Me.Column3.FillWeight = 15.2284!
         Me.Column3.HeaderText = "EX"
         Me.Column3.Name = "Column3"
@@ -3024,9 +3024,9 @@ Partial Class iva
         '
         'Column4
         '
-        DataGridViewCellStyle62.Format = "N2"
-        DataGridViewCellStyle62.NullValue = Nothing
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle62
+        DataGridViewCellStyle30.Format = "N2"
+        DataGridViewCellStyle30.NullValue = Nothing
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle30
         Me.Column4.FillWeight = 15.2284!
         Me.Column4.HeaderText = "CF"
         Me.Column4.Name = "Column4"
@@ -3034,9 +3034,9 @@ Partial Class iva
         '
         'Column5
         '
-        DataGridViewCellStyle63.Format = "N2"
-        DataGridViewCellStyle63.NullValue = Nothing
-        Me.Column5.DefaultCellStyle = DataGridViewCellStyle63
+        DataGridViewCellStyle31.Format = "N2"
+        DataGridViewCellStyle31.NullValue = Nothing
+        Me.Column5.DefaultCellStyle = DataGridViewCellStyle31
         Me.Column5.FillWeight = 15.2284!
         Me.Column5.HeaderText = "MON"
         Me.Column5.Name = "Column5"
@@ -3044,9 +3044,9 @@ Partial Class iva
         '
         'Column6
         '
-        DataGridViewCellStyle64.Format = "N2"
-        DataGridViewCellStyle64.NullValue = Nothing
-        Me.Column6.DefaultCellStyle = DataGridViewCellStyle64
+        DataGridViewCellStyle32.Format = "N2"
+        DataGridViewCellStyle32.NullValue = Nothing
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle32
         Me.Column6.FillWeight = 15.2284!
         Me.Column6.HeaderText = "TOTAL"
         Me.Column6.Name = "Column6"

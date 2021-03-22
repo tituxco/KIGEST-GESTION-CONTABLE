@@ -758,4 +758,168 @@ Public Class frmaspirantes
         cmbcategoria.ValueMember = readcatTR.Tables(0).Columns(0).Caption.ToString
         cmbcategoria.SelectedIndex = -1
     End Sub
+
+    Private Sub txtcuil_TextChanged(sender As Object, e As EventArgs) Handles txtcuil.TextChanged
+
+    End Sub
+
+    Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
+
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+
+    End Sub
+
+    Private Sub lblantiguedad_Click(sender As Object, e As EventArgs) Handles lblantiguedad.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub lblnosermod_Click(sender As Object, e As EventArgs) Handles lblnosermod.Click
+
+    End Sub
+
+    Private Sub dtpfmodificacion_ValueChanged(sender As Object, e As EventArgs) Handles dtpfmodificacion.ValueChanged
+
+    End Sub
+
+    Private Sub Label34_Click(sender As Object, e As EventArgs) Handles Label34.Click
+
+    End Sub
+
+    Private Sub txtdiralt_TextChanged(sender As Object, e As EventArgs) Handles txtdiralt.TextChanged
+
+    End Sub
+
+    Private Sub Label33_Click(sender As Object, e As EventArgs) Handles Label33.Click
+
+    End Sub
+
+    Private Sub lbledad_Click(sender As Object, e As EventArgs) Handles lbledad.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label22_Click(sender As Object, e As EventArgs) Handles Label22.Click
+
+    End Sub
+
+    Private Sub Label42_Click(sender As Object, e As EventArgs) Handles Label42.Click
+
+    End Sub
+
+    Private Sub cmblocalidad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmblocalidad.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbprovincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbprovincia.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label39_Click(sender As Object, e As EventArgs) Handles Label39.Click
+
+    End Sub
+
+    Private Sub cmbestadocivil_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbestadocivil.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbgenero_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbgenero.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbnacionalidad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbnacionalidad.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbtipodoc_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbtipodoc.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub txtdomicilio_TextChanged(sender As Object, e As EventArgs) Handles txtdomicilio.TextChanged
+
+    End Sub
+
+    Private Sub txtmail_TextChanged(sender As Object, e As EventArgs) Handles txtmail.TextChanged
+
+    End Sub
+
+    Private Sub txttelefono_TextChanged(sender As Object, e As EventArgs) Handles txttelefono.TextChanged
+
+    End Sub
+
+    Private Sub txtcelular_TextChanged(sender As Object, e As EventArgs) Handles txtcelular.TextChanged
+
+    End Sub
+
+    Private Sub txtdocumento_TextChanged(sender As Object, e As EventArgs) Handles txtdocumento.TextChanged
+
+    End Sub
+
+    Private Sub txtapellido_TextChanged(sender As Object, e As EventArgs) Handles txtapellido.TextChanged
+
+    End Sub
+
+    Private Sub txtnombres_TextChanged(sender As Object, e As EventArgs) Handles txtnombres.TextChanged
+
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
+
+    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
+
+    End Sub
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
+
+    End Sub
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
 End Class

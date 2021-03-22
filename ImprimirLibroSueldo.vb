@@ -1,12 +1,14 @@
 ﻿Imports Microsoft.Reporting.WinForms
 Public Class ImprimirLibroSueldo
     Public idEmpresa As Integer
+    Public periodoSelecc As String = ""
     Private Sub cmdverlibros_Click(sender As Object, e As EventArgs) Handles cmdverlibros.Click
         Try
             If cmbperiodo.Text = "" Then
                 MsgBox("No selecciono un periodo")
                 Exit Sub
             End If
+            periodoSelecc = cmbperiodo.Text
             Reconectar()
             conexionPrinc.ChangeDatabase(database)
             conexionEmp.ChangeDatabase(EmpDB)
@@ -15,12 +17,22 @@ Public Class ImprimirLibroSueldo
             Dim tabRecibos As New MySql.Data.MySqlClient.MySqlDataAdapter
             Dim tabItems As New MySql.Data.MySqlClient.MySqlDataAdapter
             Dim ds As New DatasetRecibos
-            tabRecibos.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select rec.idpersonal, concat(per.apellidos,', ', per.nombre) as nombreapellido, " _
-            & "rec.dni as documento, rec.cuil,  rec.fecha_ingreso as fechaingreso, rec.antiguedad, rec.convenio, rec.categoria, concat(rec.periodo_pago,' ', rec.mes,' ', rec.ano) as periodoliquidado, " _
-            & "rec.fecha_pago as fechapago, rec.basico as sueldobasico, concat('Empresa: ',emp.razon, '\n', 'Domicilio: ',emp.direccion,'\n','Actividad: ',emp.activ_emp,'\n','C.U.I.T.: ',emp.cuit) as empresadtos, rec.id as id, rec.total_remunerativo as totrem, rec.total_noremunerativo as totnorem, rec.total_descuentos as totdedu, " _
-            & "rec.total_neto as totneto, enletras as letras from " & cadenaBD & " where periodoConcat like '" & cmbperiodo.Text & "' and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
+            tabRecibos.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select rec.idpersonal, 
+            concat(per.apellidos,', ', per.nombre) as nombreapellido, 
+            rec.dni as documento, rec.cuil,  rec.fecha_ingreso as fechaingreso, rec.antiguedad, rec.convenio, rec.categoria, 
+            concat(rec.periodo_pago,' ', rec.mes,' ', rec.ano) as periodoliquidado, 
+            rec.fecha_pago as fechapago, rec.basico as sueldobasico, concat('Empresa: ',emp.razon, '\n', 'Domicilio: ',emp.direccion,'\n','Actividad: ',emp.activ_emp,'\n','C.U.I.T.: ',emp.cuit) as empresadtos, 
+            rec.id as id, rec.total_remunerativo as totrem, rec.total_noremunerativo as totnorem, rec.total_descuentos as totdedu,
+            rec.total_neto as totneto, enletras as letras 
+            from " & cadenaBD & " 
+            where periodoConcat like '" & periodoSelecc & "' and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
+            ' MsgBox(tabRecibos.SelectCommand.CommandText)
 
-            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos ", conexionEmp)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select itm.codigo, itm.concepto, itm.unidades, itm.remunerativo, 
+            itm.noremunerativo, itm.deducciones, itm.idrecibo 
+            from sdo_items_recibos as itm, sdo_recibos as re 
+            where itm.idrecibo= re.id and 
+            re.periodoConcat like '" & periodoSelecc & "' order by itm.id asc", conexionEmp)
 
             tabRecibos.Fill(ds.Tables("ReciboEncabeza"))
             tabItems.Fill(ds.Tables("ReciboItems"))
@@ -43,7 +55,11 @@ Public Class ImprimirLibroSueldo
             conexionEmp.ChangeDatabase(EmpDB)
             Dim ds As New DatasetRecibos
             Dim tabItems As New MySql.Data.MySqlClient.MySqlDataAdapter
-            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos ", conexionEmp)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select itm.codigo, itm.concepto, itm.unidades, itm.remunerativo, 
+            itm.noremunerativo, itm.deducciones, itm.idrecibo 
+            from sdo_items_recibos as itm, sdo_recibos as re 
+            where itm.idrecibo= re.id and 
+            re.periodoConcat like '" & periodoSelecc & "' order by itm.id asc", conexionEmp)
             tabItems.Fill(ds.Tables("ReciboItems"))
             e.DataSources.Add(New ReportDataSource("ItemsRecibos", ds.Tables("ReciboItems")))
         Catch ex As Exception

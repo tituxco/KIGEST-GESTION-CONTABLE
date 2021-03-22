@@ -1,7 +1,6 @@
 ﻿Imports Microsoft.Reporting.WinForms
 Public Class ImprimirRecibos
     Public idEmpresa As Integer
-    Dim PeriodoConcat
     Private Sub cmdverrecibos_Click(sender As Object, e As EventArgs) Handles cmdverrecibos.Click
         Try
             If cmbperiodo.Text = "" Then
@@ -20,10 +19,11 @@ Public Class ImprimirRecibos
             & "rec.dni as documento, rec.cuil,  rec.fecha_ingreso as fechaingreso, rec.antiguedad, rec.convenio, rec.categoria, concat(rec.periodo_pago,' ', rec.mes,' ', rec.ano) as periodoliquidado, " _
             & "rec.fecha_pago as fechapago, rec.basico as sueldobasico, concat('Empleador: ',emp.razon, '\n', 'Domicilio: ',emp.direccion,'\n','C.U.I.T.: ',emp.cuit) as empresadtos, rec.id as id, rec.total_remunerativo as totrem, rec.total_noremunerativo as totnorem, rec.total_descuentos as totdedu, " _
             & "rec.total_neto as totneto, enletras as letras, sueldobanco, sueldocuenta,aportebanco,aportefecha,aporteperiodo, lugarpago from " & cadenaBD & " where periodoConcat like '%" & cmbperiodo.Text & "%' and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
-            'tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos order by id asc", conexionEmp)
-            'MsgBox(tabRecibos.SelectCommand.CommandText)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo 
+            from sdo_items_recibos order by id asc", conexionEmp)
+
             tabRecibos.Fill(ds.Tables("ReciboEncabeza"))
-            'tabItems.Fill(ds.Tables("ReciboItems"))
+            tabItems.Fill(ds.Tables("ReciboItems"))
             rptrecibo.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
             rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\ReciboEncabezado.rdlc"
             rptrecibo.LocalReport.DataSources.Clear()
@@ -55,7 +55,7 @@ Public Class ImprimirRecibos
     Private Sub ImprimirRecibos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conexionEmp.ChangeDatabase(EmpDB)
 
-        Dim tablaperiodo As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT distinct(concat(periodo_pago,' ', mes, ' ', ano)) as periodo from sdo_recibos order by id desc", conexionEmp)
+        Dim tablaperiodo As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT distinct(concat(periodo_pago,' ', mes, ' ', ano)) as periodo from sdo_recibos order by mes desc", conexionEmp)
         Dim readperiodo As New DataSet
         tablaperiodo.Fill(readperiodo)
         cmbperiodo.DataSource = readperiodo.Tables(0)

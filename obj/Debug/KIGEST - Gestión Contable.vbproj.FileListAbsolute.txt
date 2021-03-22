@@ -427,9 +427,3 @@ D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.vbproj.CopyCompl
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.exe
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.xml
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestión Contable.pdb
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\rubricaivaventas.vb
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\RubricaIvaCompra.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\RubricaIvaVentas.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\RubricaSueldos.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\rubricaivaventas.resx
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\rubricaivaventas.Designer.vb

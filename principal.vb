@@ -5,14 +5,16 @@
         End
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Text = Application.ProductName & " - V" & Application.ProductVersion
+        If System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed = True Then
+            Me.Text = Application.ProductName & " - V" & System.Deployment.Application.ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString & " - Usuario: " & DatosAcceso.Cliente
+            Me.TopMost = False
 
-        'If (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed) Then
-        'With System.Deployment.Application.ApplicationDeployment.CurrentDeployment.CurrentVersion
-        'Me.Text = "V" & .Major & "." & .Minor & "." & .Build
-        'End With
-        'End If
-        Me.TopMost = False
+        Else
+
+            Me.Text = "V- " & My.Application.Info.Version.Major & "." & My.Application.Info.Version.MajorRevision & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.MinorRevision & " - Usuario: " & DatosAcceso.Cliente
+            Me.TopMost = False
+
+        End If
         ToolStripProgressBar1.Visible = False
     End Sub
 
