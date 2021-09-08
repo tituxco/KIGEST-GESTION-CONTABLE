@@ -37,7 +37,7 @@ Public Class ImprimirLibroSueldo
             tabRecibos.Fill(ds.Tables("ReciboEncabeza"))
             tabItems.Fill(ds.Tables("ReciboItems"))
             rptlibro.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
-            rptlibro.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\LibroSuelEncabeza.rdlc"
+            rptlibro.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\LibroSuelEncabeza.rdlc"
             rptlibro.LocalReport.DataSources.Clear()
             rptlibro.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("EncabezaRecibo", ds.Tables("ReciboEncabeza")))
 

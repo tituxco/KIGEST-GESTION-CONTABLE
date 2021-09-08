@@ -74,4 +74,5 @@ Partial Class ImprimirLibroSueldo
     Friend WithEvents cmbperiodo As System.Windows.Forms.ComboBox
     Friend WithEvents cmdverlibros As System.Windows.Forms.Button
     Friend WithEvents rptlibro As Microsoft.Reporting.WinForms.ReportViewer
+
 End Class

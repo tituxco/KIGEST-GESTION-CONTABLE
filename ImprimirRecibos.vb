@@ -25,7 +25,7 @@ Public Class ImprimirRecibos
             tabRecibos.Fill(ds.Tables("ReciboEncabeza"))
             tabItems.Fill(ds.Tables("ReciboItems"))
             rptrecibo.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
-            rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\ReciboEncabezado.rdlc"
+            rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\ReciboEncabezado.rdlc"
             rptrecibo.LocalReport.DataSources.Clear()
             rptrecibo.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("EncabezaRecibo", ds.Tables("ReciboEncabeza")))
 
@@ -62,6 +62,10 @@ Public Class ImprimirRecibos
         cmbperiodo.DisplayMember = readperiodo.Tables(0).Columns(0).Caption.ToString
         'cmbperiodo.ValueMember = readperiodo.Tables(0).Columns(0).Caption.ToString
         cmbperiodo.SelectedIndex = -1
+        Me.rptrecibo.RefreshReport()
     End Sub
 
+    Private Sub ReportViewer2_Load(sender As Object, e As EventArgs) Handles rptrecibo.Load
+
+    End Sub
 End Class

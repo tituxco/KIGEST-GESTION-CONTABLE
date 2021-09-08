@@ -31,7 +31,7 @@ Public Class frmInicializar2
             If ConectarAuth() = True Then
                 lblEstado.Text = "Conectado"
                 If ComprobarAuth() = True Then
-                    lblEstado.Text = "Ingresando"
+                    lblEstado.Text = "Comprobando credenciales"
                     If conectar(serv, port, user, pass, database) = True Then
                         My.Settings.servidor = serv
                         My.Settings.puerto = port
@@ -133,5 +133,9 @@ Public Class frmInicializar2
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        System.Diagnostics.Process.Start("http://66.97.35.86/kigest_contable_update/")
     End Sub
 End Class

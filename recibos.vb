@@ -825,7 +825,8 @@ Public Class recibos
             tabItems.Fill(ds.Tables("ReciboItems"))
             With imprimirrecibo
                 .rptrecibo.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
-                .rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\ReciboEncabezado.rdlc"
+                '.rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\Report1.rdlc"
+                .rptrecibo.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\ReciboEncabezado.rdlc"
                 .rptrecibo.LocalReport.DataSources.Clear()
                 .rptrecibo.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("EncabezaRecibo", ds.Tables("ReciboEncabeza")))
 
@@ -859,38 +860,6 @@ Public Class recibos
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         rubricasuel.Show()
-    End Sub
-
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
-
-    End Sub
-
-    Private Sub TabPage2_Enter(sender As Object, e As EventArgs) Handles TabPage2.Enter
-    End Sub
-
-    Private Sub dtpersonal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtpersonal.CellContentClick
-
-    End Sub
-
-    Private Sub pntitulo_Paint(sender As Object, e As PaintEventArgs) Handles pntitulo.Paint
-
-    End Sub
-
-    Private Sub Button9_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Panel11.Paint
-
-    End Sub
-
-    Private Sub TabPage2_Paint(sender As Object, e As PaintEventArgs) Handles TabPage2.Paint
-
-
-    End Sub
-
-    Private Sub TabPage2_DoubleClick(sender As Object, e As EventArgs) Handles TabPage2.DoubleClick
-
     End Sub
 
     Private Sub Button9_Click_1(sender As Object, e As EventArgs) Handles Button9.Click

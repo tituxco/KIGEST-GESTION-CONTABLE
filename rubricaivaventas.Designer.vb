@@ -96,6 +96,7 @@ Partial Class rubricaivaventas
 
     End Sub
     Friend WithEvents rpthojas As Microsoft.Reporting.WinForms.ReportViewer
+
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txthojas As System.Windows.Forms.TextBox

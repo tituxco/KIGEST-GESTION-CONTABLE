@@ -1,8 +1,0 @@
-CREATE TABLE `cm_iv_tipo_comprobante` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(45) DEFAULT NULL,
-  `abreviatura` varchar(45) DEFAULT NULL,
-  `opciones` int(11) DEFAULT NULL,
-  `aplica` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;

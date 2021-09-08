@@ -66,8 +66,8 @@ Partial Class ImprimirRecibos
         Me.rptrecibo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rptrecibo.LocalReport.ReportEmbeddedResource = "KIGEST___Gestion_Contable.ReciboEncabezado.rdlc"
         Me.rptrecibo.Location = New System.Drawing.Point(0, 21)
-        Me.rptrecibo.Margin = New System.Windows.Forms.Padding(0)
         Me.rptrecibo.Name = "rptrecibo"
+        'Me.rptrecibo.ServerReport.BearerToken = Nothing
         Me.rptrecibo.Size = New System.Drawing.Size(705, 368)
         Me.rptrecibo.TabIndex = 3
         '
@@ -86,6 +86,7 @@ Partial Class ImprimirRecibos
 
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+
     Friend WithEvents cmdcancel As System.Windows.Forms.Button
     Friend WithEvents cmdreport As System.Windows.Forms.Button
     Friend WithEvents DataTable1BindingSource As System.Windows.Forms.BindingSource

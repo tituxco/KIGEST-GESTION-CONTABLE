@@ -100,4 +100,5 @@ Partial Class rubricasuel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents rpthojas As Microsoft.Reporting.WinForms.ReportViewer
+
 End Class

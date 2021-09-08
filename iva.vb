@@ -740,7 +740,7 @@ Public Class iva
             With ivshow
                 .MdiParent = Me.MdiParent
                 .rptivacompra.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
-                .rptivacompra.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\LibroIvaCompraDetalles.rdlc"
+                .rptivacompra.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\LibroIvaCompraDetalles.rdlc"
                 .rptivacompra.LocalReport.DataSources.Clear()
                 .rptivacompra.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", ds.Tables("IvaCompraItems")))
                 .rptivacompra.LocalReport.SetParameters(parameters)
@@ -1265,7 +1265,7 @@ Public Class iva
             With ivshow
                 .MdiParent = Me.MdiParent
                 .rptivacompra.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
-                .rptivacompra.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\LibroIvaVentaDetalles.rdlc"
+                .rptivacompra.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\LibroIvaVentaDetalles.rdlc"
                 .rptivacompra.LocalReport.DataSources.Clear()
                 .rptivacompra.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", ds.Tables("IvaVentaItems")))
             '    .rptivacompra.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("resumenvtas", ds.Tables("resumenvtas")))
@@ -1976,7 +1976,7 @@ Public Class iva
             With ivshow
                 .MdiParent = Me.MdiParent
                 .rptivacompra.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local
-                .rptivacompra.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\LibroIvaCompraDetalles.rdlc"
+                .rptivacompra.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\LibroIvaCompraDetalles.rdlc"
                 .rptivacompra.LocalReport.DataSources.Clear()
                 .rptivacompra.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", ds.Tables("IvaCompraItems")))
                 .rptivacompra.LocalReport.SetParameters(parameters)

@@ -31,7 +31,7 @@ Public Class rubricaivacompra
             parameters.Add(New Microsoft.Reporting.WinForms.ReportParameter("pie", pie))
             parameters.Add(New Microsoft.Reporting.WinForms.ReportParameter("empresa", encabezado))
 
-            rpthojas.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\RubricaIvaCompra.rdlc"
+            rpthojas.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\RubricaIvaCompra.rdlc"
             rpthojas.LocalReport.DataSources.Clear()
 
             rpthojas.LocalReport.SetParameters(parameters)

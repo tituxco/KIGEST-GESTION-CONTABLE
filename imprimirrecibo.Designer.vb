@@ -28,8 +28,10 @@ Partial Class imprimirrecibo
         'rptrecibo
         '
         Me.rptrecibo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rptrecibo.LocalReport.ReportEmbeddedResource = "KIGEST___Gestion_Contable.ReciboEncabezado.rdlc"
         Me.rptrecibo.Location = New System.Drawing.Point(0, 0)
         Me.rptrecibo.Name = "rptrecibo"
+        ' Me.rptrecibo.ServerReport.BearerToken = Nothing
         Me.rptrecibo.Size = New System.Drawing.Size(907, 440)
         Me.rptrecibo.TabIndex = 0
         '
@@ -45,5 +47,6 @@ Partial Class imprimirrecibo
         Me.ResumeLayout(False)
 
     End Sub
+
     Friend WithEvents rptrecibo As Microsoft.Reporting.WinForms.ReportViewer
 End Class

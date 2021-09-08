@@ -1,4 +1,3 @@
-D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbprojAssemblyReference.cache
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\Interop.MSScriptControl.dll
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.ResolveComReference.cache
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmabmempresa.resources
@@ -22,27 +21,29 @@ D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.rubricasuel.resou
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.GenerateResource.cache
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\RdlCompile.cache
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\RdlCompile.compiled
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\ReciboEncabezado.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroIvaVentaDetalles.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroIvaCompraDetalles.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroSuelEncabeza.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\LibroSuelDetalles.rdlc
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\ReciboDetalle.rdlc
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.CoreCompileInputs.cache
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbprojFakesResolveAssemblyReference.cache
+D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.AssemblyReference.cache
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroIvaVentaDetalles.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroIvaCompraDetalles.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroSuelEncabeza.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\RubricaIvaCompra.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\RubricaIvaVentas.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroSuelDetalles.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\ReciboDetalle.rdlc
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\RubricaSueldos.rdlc
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes.txt
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes_iva.txt
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes_sueldos.txt
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_iva.txt
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\ReciboEncabezado.rdlc
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.exe.config
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.exe.manifest
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.application
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.exe
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.pdb
 D:\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.xml
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\MySql.Data.dll
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.TrustInfo.xml
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.exe.manifest
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.application
@@ -50,3 +51,5 @@ D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.CopyComple
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.exe
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.xml
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.pdb
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL

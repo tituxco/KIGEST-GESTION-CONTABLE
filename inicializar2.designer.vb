@@ -45,6 +45,7 @@ Partial Class frmInicializar2
         Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.pbprogresocons = New System.Windows.Forms.ProgressBar()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.grserver.SuspendLayout()
         Me.grusuario.SuspendLayout()
         Me.SuspendLayout()
@@ -52,10 +53,10 @@ Partial Class frmInicializar2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sansation", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(67, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(160, 17)
+        Me.Label1.Size = New System.Drawing.Size(177, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "DATOS DE ACCESO"
         '
@@ -281,11 +282,22 @@ Partial Class frmInicializar2
         Me.pbprogresocons.TabIndex = 61
         Me.pbprogresocons.Visible = False
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(-1, 192)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(119, 13)
+        Me.LinkLabel1.TabIndex = 64
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Actualizar manualmente"
+        '
         'frmInicializar2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(288, 196)
+        Me.ClientSize = New System.Drawing.Size(288, 208)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.grusuario)
         Me.Controls.Add(Me.pbprogresocons)
         Me.Controls.Add(Me.grserver)
@@ -327,4 +339,5 @@ Partial Class frmInicializar2
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtuser As System.Windows.Forms.TextBox
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

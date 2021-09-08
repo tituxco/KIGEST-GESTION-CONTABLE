@@ -37,7 +37,7 @@ Public Class rubricasuel
             'rpthojas.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("EncabezaRecibo", ds.Tables("ReciboEncabeza")))
 
             'rptrecibo.LocalReport.DataSources.Add(New Microsoft.Reporting.WinForms.ReportDataSource("ItemsRecibos", ds.Tables("ReciboItems")))
-            rpthojas.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\RubricaSueldos.rdlc"
+            rpthojas.LocalReport.ReportPath = System.Environment.CurrentDirectory & "\Reportes\RubricaSueldos.rdlc"
             rpthojas.LocalReport.DataSources.Clear()
 
             rpthojas.LocalReport.SetParameters(parameters)
