@@ -15,6 +15,18 @@
             Me.TopMost = False
 
         End If
+        CargarDatosBaseAfip.CargarTiposEmpresa()
+        CargarDatosBaseAfip.CargarSituacionRevista()
+        CargarDatosBaseAfip.CargarCodCondicion()
+        CargarDatosBaseAfip.CargarActividadesEmpleados()
+        CargarDatosBaseAfip.CargarModosContratacion()
+        CargarDatosBaseAfip.CargarCodSiniestrados()
+        CargarDatosBaseAfip.CargarCodLocalidades()
+        CargarDatosBaseAfip.CargarCodObrasSociales()
+        CargarDatosBaseAfip.CargarFormasdePago()
+        CargarDatosBaseAfip.CargarTiposConceptoSueldo()
+        CargarDatosBaseAfip.CargarAfirmativoNegativo()
+
         ToolStripProgressBar1.Visible = False
     End Sub
 

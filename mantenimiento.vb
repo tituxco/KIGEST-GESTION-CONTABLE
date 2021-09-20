@@ -16,27 +16,7 @@ Public Class mantenimiento
 
     Private Sub cargarDtosGrales()
         Try
-            Reconectar()
-            conexionPrinc.ChangeDatabase(database)
-            'conexionEmp.ChangeDatabase(EmpDB)
 
-            'cargar tipos conceptos
-            Dim tablatipCons As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_tipos_conceptos_sueldo", conexionPrinc)
-            Dim readtipocons As New DataSet
-            tablatipCons.Fill(readtipocons)
-            cmbtipo.DataSource = readtipocons.Tables(0)
-            cmbtipo.DisplayMember = readtipocons.Tables(0).Columns(1).Caption.ToString
-            cmbtipo.ValueMember = readtipocons.Tables(0).Columns(0).Caption.ToString
-            cmbtipo.SelectedIndex = -1
-
-            'cargar unidades
-            Dim tablaUnidad As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_unidades_calculo", conexionPrinc)
-            Dim readunidad As New DataSet
-            tablaUnidad.Fill(readunidad)
-            cmbunidad.DataSource = readunidad.Tables(0)
-            cmbunidad.DisplayMember = readunidad.Tables(0).Columns(1).Caption.ToString
-            cmbunidad.ValueMember = readunidad.Tables(0).Columns(0).Caption.ToString
-            cmbunidad.SelectedIndex = -1
 
             'cargamos centros de costo
             Dim tablaCentro As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_convenios", conexionPrinc)
@@ -76,63 +56,20 @@ Public Class mantenimiento
         Try
             Reconectar()
             conexionPrinc.ChangeDatabase(database)
-            Dim consulta As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT cs.codigo as Codigo, cs.concepto as Concepto, ti.nombre as Tipo, cs.cantidad as cnt, uni.nombre as Unidades, cs.formula as Formula FROM cm_sdo_conceptos_sueldo as cs, cm_sdo_tipos_conceptos_sueldo as ti,cm_sdo_unidades_calculo as uni where cs.tipo=ti.id and cs.unidad=uni.id order by cs.codigo asc", conexionPrinc)
+            Dim consulta As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT cs.idconceptos_sueldo, cs.codigo as Codigo, cs.concepto as Concepto, ti.nombre as Tipo, cs.cantidad as cnt, uni.nombre as Unidades, cs.formula as Formula 
+            FROM cm_sdo_conceptos_sueldo as cs, cm_sdo_tipos_conceptos_sueldo as ti,cm_sdo_unidades_calculo as uni 
+            where cs.tipo=ti.id and cs.unidad=uni.id order by cs.codigo asc", conexionPrinc)
             Dim tablaConc As New DataTable
             Dim comando As New MySql.Data.MySqlClient.MySqlCommandBuilder(consulta)
             consulta.Fill(tablaConc)
             dtconceptos.DataSource = tablaConc
+            dtconceptos.Columns(1).Visible = False
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
-    Private Sub cmdaddconcepto_Click(sender As Object, e As EventArgs) Handles cmdaddconcepto.Click
-        Dim codigo As String
-        Dim concepto As String
-        Dim tipo As Integer
-        Dim monto As String
-        Dim unida As Integer
-        Dim formula As String
-        Dim sqlQuery As String
-        Dim cantidad As String
-        Try
-            Reconectar()
-            conexionPrinc.ChangeDatabase(database)
+    Private Sub cmdaddconcepto_Click(sender As Object, e As EventArgs)
 
-            codigo = txtcodigo.Text.ToUpper
-            concepto = txtconcepto.Text.ToUpper
-            tipo = cmbtipo.SelectedValue
-            monto = txtmonto.Text
-            unida = cmbunidad.SelectedValue
-            formula = txtformula.Text
-            cantidad = txtcantidad.Text
-
-            sqlQuery = "insert into cm_sdo_conceptos_sueldo (codigo, concepto, tipo, monto, unidad, formula, cantidad, usar_sueldo) values (?cod,?conc,?tip,?mont,?uni, ?form,?cant,?usar)"
-
-            Dim comandoadd As New MySql.Data.MySqlClient.MySqlCommand(sqlQuery, conexionPrinc)
-            With comandoadd.Parameters
-                .AddWithValue("?cod", codigo)
-                .AddWithValue("?conc", concepto)
-                .AddWithValue("?tip", tipo)
-                .AddWithValue("?mont", monto)
-                .AddWithValue("?uni", unida)
-                .AddWithValue("?form", formula)
-                .AddWithValue("?cant", cantidad)
-                .AddWithValue("?usar", chkbasico.CheckState)
-            End With
-
-            comandoadd.ExecuteNonQuery()
-
-            txtcodigo.Clear()
-            txtconcepto.Clear()
-            cmbtipo.SelectedIndex = -1
-            cmbunidad.SelectedIndex = -1
-            txtcantidad.Clear()
-            txtformula.Clear()
-            chkbasico.Checked = False
-            CargarConceptos()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
     End Sub
 
     Private Sub cmdguardar_Click(sender As Object, e As EventArgs) Handles cmdguardar.Click
@@ -226,7 +163,7 @@ Public Class mantenimiento
     Private Sub cmbcentro_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbconvenio.SelectedValueChanged
         cargarCostos()
     End Sub
-    Private Sub cargarCostos()
+    Public Sub cargarCostos()
         Dim lector As System.Data.IDataReader
         Dim sql As New MySql.Data.MySqlClient.MySqlCommand
         Try
@@ -436,5 +373,16 @@ Public Class mantenimiento
 
     Private Sub dtnomenclador_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtnomenclador.CellContentClick
 
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        NuevoConceptoSueldo.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        NuevoConceptoSueldo.modificarConcepto = True
+        NuevoConceptoSueldo.IDconceptoSueldoMod = dtconceptos.CurrentRow.Cells(1).Value
+        'MsgBox(dtconceptos.CurrentRow.Cells(0).Value)
+        NuevoConceptoSueldo.Show()
     End Sub
 End Class

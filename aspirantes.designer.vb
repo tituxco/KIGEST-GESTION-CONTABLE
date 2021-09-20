@@ -83,14 +83,9 @@ Partial Class frmaspirantes
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.txtbancoaportes = New System.Windows.Forms.TextBox()
-        Me.dtpfechaaportes = New System.Windows.Forms.DateTimePicker()
         Me.txtperiodoaportes = New System.Windows.Forms.TextBox()
         Me.txtlugarpago = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
-        Me.txtcuentahaberes = New System.Windows.Forms.TextBox()
-        Me.txtbancohaberes = New System.Windows.Forms.TextBox()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
@@ -108,12 +103,45 @@ Partial Class frmaspirantes
         Me.Label19 = New System.Windows.Forms.Label()
         Me.cmbcategoria = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.cmbLSDFormaPago = New System.Windows.Forms.ComboBox()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.txtcuentahaberes = New System.Windows.Forms.TextBox()
+        Me.txtbancohaberes = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.txtLSDAdherentes = New System.Windows.Forms.TextBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.cmbLSDCodigoObraSocial = New System.Windows.Forms.ComboBox()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.cmbLSDCodigoLocalidades = New System.Windows.Forms.ComboBox()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.cmbLSDCodigoSiniestrado = New System.Windows.Forms.ComboBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.cmbLSDModoContratacion = New System.Windows.Forms.ComboBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.cmbLSDActividadEmpleado = New System.Windows.Forms.ComboBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.cmbLSDCodigosCondicion = New System.Windows.Forms.ComboBox()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.cmbLSDSituacionRevista = New System.Windows.Forms.ComboBox()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.cmbLSDTipoEmpresa = New System.Windows.Forms.ComboBox()
+        Me.chkLSDReduccion = New System.Windows.Forms.CheckBox()
+        Me.chkLSDSegVidaOblig = New System.Windows.Forms.CheckBox()
+        Me.chkLSDConvColectTrab = New System.Windows.Forms.CheckBox()
+        Me.txtLSDCantHijos = New System.Windows.Forms.TextBox()
+        Me.textbox666 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.cmbLSDConyuge = New System.Windows.Forms.ComboBox()
+        Me.Label32 = New System.Windows.Forms.Label()
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pbprogresocons = New System.Windows.Forms.ProgressBar()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.txtfechaAportes = New System.Windows.Forms.TextBox()
         CType(Me.dtpersonal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnnavegacion.SuspendLayout()
         Me.pntitulo.SuspendLayout()
@@ -121,6 +149,7 @@ Partial Class frmaspirantes
         Me.TabPage1.SuspendLayout()
         CType(Me.pctfoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -299,6 +328,7 @@ Partial Class frmaspirantes
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Location = New System.Drawing.Point(302, 117)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -532,6 +562,7 @@ Partial Class frmaspirantes
         '
         Me.cmblocalidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmblocalidad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmblocalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmblocalidad.FormattingEnabled = True
         Me.cmblocalidad.Location = New System.Drawing.Point(81, 291)
         Me.cmblocalidad.Name = "cmblocalidad"
@@ -542,6 +573,7 @@ Partial Class frmaspirantes
         '
         Me.cmbprovincia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbprovincia.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbprovincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbprovincia.FormattingEnabled = True
         Me.cmbprovincia.Location = New System.Drawing.Point(81, 316)
         Me.cmbprovincia.Name = "cmbprovincia"
@@ -571,6 +603,7 @@ Partial Class frmaspirantes
         '
         Me.cmbestadocivil.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbestadocivil.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbestadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbestadocivil.FormattingEnabled = True
         Me.cmbestadocivil.Location = New System.Drawing.Point(348, 139)
         Me.cmbestadocivil.Name = "cmbestadocivil"
@@ -581,6 +614,7 @@ Partial Class frmaspirantes
         '
         Me.cmbgenero.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbgenero.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbgenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbgenero.FormattingEnabled = True
         Me.cmbgenero.Location = New System.Drawing.Point(315, 113)
         Me.cmbgenero.Name = "cmbgenero"
@@ -591,6 +625,7 @@ Partial Class frmaspirantes
         '
         Me.cmbnacionalidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbnacionalidad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbnacionalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbnacionalidad.FormattingEnabled = True
         Me.cmbnacionalidad.Location = New System.Drawing.Point(97, 139)
         Me.cmbnacionalidad.Name = "cmbnacionalidad"
@@ -601,6 +636,7 @@ Partial Class frmaspirantes
         '
         Me.cmbtipodoc.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbtipodoc.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbtipodoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbtipodoc.FormattingEnabled = True
         Me.cmbtipodoc.Location = New System.Drawing.Point(132, 67)
         Me.cmbtipodoc.Name = "cmbtipodoc"
@@ -806,15 +842,11 @@ Partial Class frmaspirantes
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.txtfechaAportes)
         Me.TabPage2.Controls.Add(Me.txtbancoaportes)
-        Me.TabPage2.Controls.Add(Me.dtpfechaaportes)
         Me.TabPage2.Controls.Add(Me.txtperiodoaportes)
         Me.TabPage2.Controls.Add(Me.txtlugarpago)
         Me.TabPage2.Controls.Add(Me.Label31)
-        Me.TabPage2.Controls.Add(Me.txtcuentahaberes)
-        Me.TabPage2.Controls.Add(Me.txtbancohaberes)
-        Me.TabPage2.Controls.Add(Me.Label30)
-        Me.TabPage2.Controls.Add(Me.Label29)
         Me.TabPage2.Controls.Add(Me.Label28)
         Me.TabPage2.Controls.Add(Me.Label27)
         Me.TabPage2.Controls.Add(Me.Label26)
@@ -842,23 +874,15 @@ Partial Class frmaspirantes
         'txtbancoaportes
         '
         Me.txtbancoaportes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtbancoaportes.Location = New System.Drawing.Point(283, 274)
+        Me.txtbancoaportes.Location = New System.Drawing.Point(283, 243)
         Me.txtbancoaportes.Name = "txtbancoaportes"
         Me.txtbancoaportes.Size = New System.Drawing.Size(168, 20)
         Me.txtbancoaportes.TabIndex = 36
         '
-        'dtpfechaaportes
-        '
-        Me.dtpfechaaportes.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpfechaaportes.Location = New System.Drawing.Point(163, 274)
-        Me.dtpfechaaportes.Name = "dtpfechaaportes"
-        Me.dtpfechaaportes.Size = New System.Drawing.Size(113, 20)
-        Me.dtpfechaaportes.TabIndex = 35
-        '
         'txtperiodoaportes
         '
         Me.txtperiodoaportes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtperiodoaportes.Location = New System.Drawing.Point(11, 274)
+        Me.txtperiodoaportes.Location = New System.Drawing.Point(11, 243)
         Me.txtperiodoaportes.Name = "txtperiodoaportes"
         Me.txtperiodoaportes.Size = New System.Drawing.Size(142, 20)
         Me.txtperiodoaportes.TabIndex = 34
@@ -868,7 +892,7 @@ Partial Class frmaspirantes
         Me.txtlugarpago.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtlugarpago.Location = New System.Drawing.Point(9, 163)
         Me.txtlugarpago.Name = "txtlugarpago"
-        Me.txtlugarpago.Size = New System.Drawing.Size(442, 20)
+        Me.txtlugarpago.Size = New System.Drawing.Size(287, 20)
         Me.txtlugarpago.TabIndex = 33
         '
         'Label31
@@ -881,44 +905,6 @@ Partial Class frmaspirantes
         Me.Label31.Size = New System.Drawing.Size(93, 13)
         Me.Label31.TabIndex = 32
         Me.Label31.Text = "Lugar de pago:"
-        '
-        'txtcuentahaberes
-        '
-        Me.txtcuentahaberes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtcuentahaberes.Location = New System.Drawing.Point(283, 205)
-        Me.txtcuentahaberes.Name = "txtcuentahaberes"
-        Me.txtcuentahaberes.Size = New System.Drawing.Size(168, 20)
-        Me.txtcuentahaberes.TabIndex = 31
-        '
-        'txtbancohaberes
-        '
-        Me.txtbancohaberes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtbancohaberes.Location = New System.Drawing.Point(11, 205)
-        Me.txtbancohaberes.Name = "txtbancohaberes"
-        Me.txtbancohaberes.Size = New System.Drawing.Size(265, 20)
-        Me.txtbancohaberes.TabIndex = 30
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(280, 189)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(78, 13)
-        Me.Label30.TabIndex = 29
-        Me.Label30.Text = "Cuenta num:"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label29.Location = New System.Drawing.Point(8, 189)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(47, 13)
-        Me.Label29.TabIndex = 28
-        Me.Label29.Text = "Banco:"
         '
         'Label28
         '
@@ -936,7 +922,7 @@ Partial Class frmaspirantes
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(280, 258)
+        Me.Label27.Location = New System.Drawing.Point(280, 227)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(43, 13)
         Me.Label27.TabIndex = 26
@@ -947,7 +933,7 @@ Partial Class frmaspirantes
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.Black
-        Me.Label26.Location = New System.Drawing.Point(160, 258)
+        Me.Label26.Location = New System.Drawing.Point(160, 227)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(96, 13)
         Me.Label26.TabIndex = 25
@@ -958,7 +944,7 @@ Partial Class frmaspirantes
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(8, 258)
+        Me.Label25.Location = New System.Drawing.Point(8, 227)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(54, 13)
         Me.Label25.TabIndex = 24
@@ -969,7 +955,7 @@ Partial Class frmaspirantes
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(8, 232)
+        Me.Label24.Location = New System.Drawing.Point(8, 201)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(288, 17)
         Me.Label24.TabIndex = 23
@@ -979,10 +965,11 @@ Partial Class frmaspirantes
         '
         Me.cmbcentro_costos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbcentro_costos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbcentro_costos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbcentro_costos.FormattingEnabled = True
         Me.cmbcentro_costos.Location = New System.Drawing.Point(76, 7)
         Me.cmbcentro_costos.Name = "cmbcentro_costos"
-        Me.cmbcentro_costos.Size = New System.Drawing.Size(375, 21)
+        Me.cmbcentro_costos.Size = New System.Drawing.Size(220, 21)
         Me.cmbcentro_costos.TabIndex = 22
         '
         'Label23
@@ -999,7 +986,7 @@ Partial Class frmaspirantes
         'txtsueldoacord
         '
         Me.txtsueldoacord.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtsueldoacord.Location = New System.Drawing.Point(283, 339)
+        Me.txtsueldoacord.Location = New System.Drawing.Point(283, 308)
         Me.txtsueldoacord.Name = "txtsueldoacord"
         Me.txtsueldoacord.Size = New System.Drawing.Size(73, 20)
         Me.txtsueldoacord.TabIndex = 20
@@ -1010,7 +997,7 @@ Partial Class frmaspirantes
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.Black
-        Me.Label21.Location = New System.Drawing.Point(185, 346)
+        Me.Label21.Location = New System.Drawing.Point(185, 315)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(98, 13)
         Me.Label21.TabIndex = 19
@@ -1024,7 +1011,7 @@ Partial Class frmaspirantes
         Me.cmbjornada.FormattingEnabled = True
         Me.cmbjornada.Location = New System.Drawing.Point(70, 87)
         Me.cmbjornada.Name = "cmbjornada"
-        Me.cmbjornada.Size = New System.Drawing.Size(381, 21)
+        Me.cmbjornada.Size = New System.Drawing.Size(226, 21)
         Me.cmbjornada.TabIndex = 18
         '
         'Label20
@@ -1045,7 +1032,7 @@ Partial Class frmaspirantes
         Me.cmbmodocontratacion.FormattingEnabled = True
         Me.cmbmodocontratacion.Location = New System.Drawing.Point(125, 60)
         Me.cmbmodocontratacion.Name = "cmbmodocontratacion"
-        Me.cmbmodocontratacion.Size = New System.Drawing.Size(326, 21)
+        Me.cmbmodocontratacion.Size = New System.Drawing.Size(171, 21)
         Me.cmbmodocontratacion.TabIndex = 16
         '
         'Label13
@@ -1062,7 +1049,7 @@ Partial Class frmaspirantes
         'txtsueldoBase
         '
         Me.txtsueldoBase.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtsueldoBase.Location = New System.Drawing.Point(106, 339)
+        Me.txtsueldoBase.Location = New System.Drawing.Point(106, 308)
         Me.txtsueldoBase.Name = "txtsueldoBase"
         Me.txtsueldoBase.Size = New System.Drawing.Size(73, 20)
         Me.txtsueldoBase.TabIndex = 14
@@ -1073,7 +1060,7 @@ Partial Class frmaspirantes
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(8, 346)
+        Me.Label19.Location = New System.Drawing.Point(8, 315)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(92, 13)
         Me.Label19.TabIndex = 13
@@ -1084,10 +1071,11 @@ Partial Class frmaspirantes
         '
         Me.cmbcategoria.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbcategoria.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbcategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbcategoria.FormattingEnabled = True
         Me.cmbcategoria.Location = New System.Drawing.Point(68, 34)
         Me.cmbcategoria.Name = "cmbcategoria"
-        Me.cmbcategoria.Size = New System.Drawing.Size(382, 21)
+        Me.cmbcategoria.Size = New System.Drawing.Size(228, 21)
         Me.cmbcategoria.TabIndex = 12
         '
         'Label17
@@ -1100,6 +1088,384 @@ Partial Class frmaspirantes
         Me.Label17.Size = New System.Drawing.Size(65, 13)
         Me.Label17.TabIndex = 11
         Me.Label17.Text = "Categoria:"
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.cmbLSDFormaPago)
+        Me.TabPage3.Controls.Add(Me.Label46)
+        Me.TabPage3.Controls.Add(Me.txtcuentahaberes)
+        Me.TabPage3.Controls.Add(Me.txtbancohaberes)
+        Me.TabPage3.Controls.Add(Me.Label30)
+        Me.TabPage3.Controls.Add(Me.Label29)
+        Me.TabPage3.Controls.Add(Me.txtLSDAdherentes)
+        Me.TabPage3.Controls.Add(Me.Label45)
+        Me.TabPage3.Controls.Add(Me.cmbLSDCodigoObraSocial)
+        Me.TabPage3.Controls.Add(Me.Label44)
+        Me.TabPage3.Controls.Add(Me.cmbLSDCodigoLocalidades)
+        Me.TabPage3.Controls.Add(Me.Label43)
+        Me.TabPage3.Controls.Add(Me.cmbLSDCodigoSiniestrado)
+        Me.TabPage3.Controls.Add(Me.Label41)
+        Me.TabPage3.Controls.Add(Me.cmbLSDModoContratacion)
+        Me.TabPage3.Controls.Add(Me.Label40)
+        Me.TabPage3.Controls.Add(Me.cmbLSDActividadEmpleado)
+        Me.TabPage3.Controls.Add(Me.Label38)
+        Me.TabPage3.Controls.Add(Me.cmbLSDCodigosCondicion)
+        Me.TabPage3.Controls.Add(Me.Label37)
+        Me.TabPage3.Controls.Add(Me.cmbLSDSituacionRevista)
+        Me.TabPage3.Controls.Add(Me.Label36)
+        Me.TabPage3.Controls.Add(Me.cmbLSDTipoEmpresa)
+        Me.TabPage3.Controls.Add(Me.chkLSDReduccion)
+        Me.TabPage3.Controls.Add(Me.chkLSDSegVidaOblig)
+        Me.TabPage3.Controls.Add(Me.chkLSDConvColectTrab)
+        Me.TabPage3.Controls.Add(Me.txtLSDCantHijos)
+        Me.TabPage3.Controls.Add(Me.textbox666)
+        Me.TabPage3.Controls.Add(Me.Label35)
+        Me.TabPage3.Controls.Add(Me.cmbLSDConyuge)
+        Me.TabPage3.Controls.Add(Me.Label32)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(726, 394)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "PARA LSD"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'cmbLSDFormaPago
+        '
+        Me.cmbLSDFormaPago.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDFormaPago.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDFormaPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbLSDFormaPago.FormattingEnabled = True
+        Me.cmbLSDFormaPago.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDFormaPago.Location = New System.Drawing.Point(358, 24)
+        Me.cmbLSDFormaPago.Name = "cmbLSDFormaPago"
+        Me.cmbLSDFormaPago.Size = New System.Drawing.Size(130, 21)
+        Me.cmbLSDFormaPago.TabIndex = 49
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label46.Location = New System.Drawing.Point(355, 8)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(91, 13)
+        Me.Label46.TabIndex = 48
+        Me.Label46.Text = "Forma de pago"
+        '
+        'txtcuentahaberes
+        '
+        Me.txtcuentahaberes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtcuentahaberes.Location = New System.Drawing.Point(358, 108)
+        Me.txtcuentahaberes.Name = "txtcuentahaberes"
+        Me.txtcuentahaberes.Size = New System.Drawing.Size(130, 20)
+        Me.txtcuentahaberes.TabIndex = 47
+        '
+        'txtbancohaberes
+        '
+        Me.txtbancohaberes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtbancohaberes.Location = New System.Drawing.Point(358, 67)
+        Me.txtbancohaberes.Name = "txtbancohaberes"
+        Me.txtbancohaberes.Size = New System.Drawing.Size(130, 20)
+        Me.txtbancohaberes.TabIndex = 46
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label30.Location = New System.Drawing.Point(355, 92)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(32, 13)
+        Me.Label30.TabIndex = 45
+        Me.Label30.Text = "CBU"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label29.Location = New System.Drawing.Point(355, 51)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(47, 13)
+        Me.Label29.TabIndex = 44
+        Me.Label29.Text = "Banco:"
+        '
+        'txtLSDAdherentes
+        '
+        Me.txtLSDAdherentes.Location = New System.Drawing.Point(262, 36)
+        Me.txtLSDAdherentes.Name = "txtLSDAdherentes"
+        Me.txtLSDAdherentes.Size = New System.Drawing.Size(67, 20)
+        Me.txtLSDAdherentes.TabIndex = 43
+        Me.txtLSDAdherentes.Text = "0"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label45.Location = New System.Drawing.Point(151, 39)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(105, 13)
+        Me.Label45.TabIndex = 42
+        Me.Label45.Text = "Cant. Adherentes"
+        '
+        'cmbLSDCodigoObraSocial
+        '
+        Me.cmbLSDCodigoObraSocial.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDCodigoObraSocial.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDCodigoObraSocial.FormattingEnabled = True
+        Me.cmbLSDCodigoObraSocial.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDCodigoObraSocial.Location = New System.Drawing.Point(158, 340)
+        Me.cmbLSDCodigoObraSocial.Name = "cmbLSDCodigoObraSocial"
+        Me.cmbLSDCodigoObraSocial.Size = New System.Drawing.Size(331, 21)
+        Me.cmbLSDCodigoObraSocial.TabIndex = 41
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label44.Location = New System.Drawing.Point(10, 343)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(116, 13)
+        Me.Label44.TabIndex = 40
+        Me.Label44.Text = "Codigo Obra Social"
+        '
+        'cmbLSDCodigoLocalidades
+        '
+        Me.cmbLSDCodigoLocalidades.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDCodigoLocalidades.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDCodigoLocalidades.FormattingEnabled = True
+        Me.cmbLSDCodigoLocalidades.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDCodigoLocalidades.Location = New System.Drawing.Point(158, 313)
+        Me.cmbLSDCodigoLocalidades.Name = "cmbLSDCodigoLocalidades"
+        Me.cmbLSDCodigoLocalidades.Size = New System.Drawing.Size(331, 21)
+        Me.cmbLSDCodigoLocalidades.TabIndex = 39
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label43.Location = New System.Drawing.Point(10, 316)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(105, 13)
+        Me.Label43.TabIndex = 38
+        Me.Label43.Text = "Codigo Localidad"
+        '
+        'cmbLSDCodigoSiniestrado
+        '
+        Me.cmbLSDCodigoSiniestrado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDCodigoSiniestrado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDCodigoSiniestrado.FormattingEnabled = True
+        Me.cmbLSDCodigoSiniestrado.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDCodigoSiniestrado.Location = New System.Drawing.Point(157, 286)
+        Me.cmbLSDCodigoSiniestrado.Name = "cmbLSDCodigoSiniestrado"
+        Me.cmbLSDCodigoSiniestrado.Size = New System.Drawing.Size(331, 21)
+        Me.cmbLSDCodigoSiniestrado.TabIndex = 37
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label41.Location = New System.Drawing.Point(10, 289)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(119, 13)
+        Me.Label41.TabIndex = 36
+        Me.Label41.Text = "Codigo Sinisestrado"
+        '
+        'cmbLSDModoContratacion
+        '
+        Me.cmbLSDModoContratacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDModoContratacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDModoContratacion.FormattingEnabled = True
+        Me.cmbLSDModoContratacion.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDModoContratacion.Location = New System.Drawing.Point(157, 256)
+        Me.cmbLSDModoContratacion.Name = "cmbLSDModoContratacion"
+        Me.cmbLSDModoContratacion.Size = New System.Drawing.Size(331, 21)
+        Me.cmbLSDModoContratacion.TabIndex = 35
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label40.Location = New System.Drawing.Point(10, 259)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(141, 13)
+        Me.Label40.TabIndex = 34
+        Me.Label40.Text = "Modalidad Contratacion"
+        '
+        'cmbLSDActividadEmpleado
+        '
+        Me.cmbLSDActividadEmpleado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDActividadEmpleado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDActividadEmpleado.FormattingEnabled = True
+        Me.cmbLSDActividadEmpleado.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDActividadEmpleado.Location = New System.Drawing.Point(135, 229)
+        Me.cmbLSDActividadEmpleado.Name = "cmbLSDActividadEmpleado"
+        Me.cmbLSDActividadEmpleado.Size = New System.Drawing.Size(353, 21)
+        Me.cmbLSDActividadEmpleado.TabIndex = 33
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label38.Location = New System.Drawing.Point(10, 232)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(119, 13)
+        Me.Label38.TabIndex = 32
+        Me.Label38.Text = "Actividad Empleado"
+        '
+        'cmbLSDCodigosCondicion
+        '
+        Me.cmbLSDCodigosCondicion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDCodigosCondicion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDCodigosCondicion.FormattingEnabled = True
+        Me.cmbLSDCodigosCondicion.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDCodigosCondicion.Location = New System.Drawing.Point(145, 200)
+        Me.cmbLSDCodigosCondicion.Name = "cmbLSDCodigosCondicion"
+        Me.cmbLSDCodigosCondicion.Size = New System.Drawing.Size(343, 21)
+        Me.cmbLSDCodigosCondicion.TabIndex = 31
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label37.Location = New System.Drawing.Point(10, 203)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(129, 13)
+        Me.Label37.TabIndex = 30
+        Me.Label37.Text = "Codigos de condicion"
+        '
+        'cmbLSDSituacionRevista
+        '
+        Me.cmbLSDSituacionRevista.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDSituacionRevista.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDSituacionRevista.FormattingEnabled = True
+        Me.cmbLSDSituacionRevista.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDSituacionRevista.Location = New System.Drawing.Point(136, 170)
+        Me.cmbLSDSituacionRevista.Name = "cmbLSDSituacionRevista"
+        Me.cmbLSDSituacionRevista.Size = New System.Drawing.Size(352, 21)
+        Me.cmbLSDSituacionRevista.TabIndex = 29
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label36.Location = New System.Drawing.Point(10, 173)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(120, 13)
+        Me.Label36.TabIndex = 28
+        Me.Label36.Text = "Situación de revista"
+        '
+        'cmbLSDTipoEmpresa
+        '
+        Me.cmbLSDTipoEmpresa.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDTipoEmpresa.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDTipoEmpresa.FormattingEnabled = True
+        Me.cmbLSDTipoEmpresa.Items.AddRange(New Object() {"NO", "SI"})
+        Me.cmbLSDTipoEmpresa.Location = New System.Drawing.Point(117, 141)
+        Me.cmbLSDTipoEmpresa.Name = "cmbLSDTipoEmpresa"
+        Me.cmbLSDTipoEmpresa.Size = New System.Drawing.Size(371, 21)
+        Me.cmbLSDTipoEmpresa.TabIndex = 27
+        '
+        'chkLSDReduccion
+        '
+        Me.chkLSDReduccion.AutoSize = True
+        Me.chkLSDReduccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkLSDReduccion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.chkLSDReduccion.Location = New System.Drawing.Point(13, 114)
+        Me.chkLSDReduccion.Name = "chkLSDReduccion"
+        Me.chkLSDReduccion.Size = New System.Drawing.Size(157, 17)
+        Me.chkLSDReduccion.TabIndex = 26
+        Me.chkLSDReduccion.Text = "Corresponde reducción"
+        Me.chkLSDReduccion.UseVisualStyleBackColor = True
+        '
+        'chkLSDSegVidaOblig
+        '
+        Me.chkLSDSegVidaOblig.AutoSize = True
+        Me.chkLSDSegVidaOblig.Checked = True
+        Me.chkLSDSegVidaOblig.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkLSDSegVidaOblig.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkLSDSegVidaOblig.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.chkLSDSegVidaOblig.Location = New System.Drawing.Point(13, 91)
+        Me.chkLSDSegVidaOblig.Name = "chkLSDSegVidaOblig"
+        Me.chkLSDSegVidaOblig.Size = New System.Drawing.Size(217, 17)
+        Me.chkLSDSegVidaOblig.TabIndex = 25
+        Me.chkLSDSegVidaOblig.Text = "Cobertura SCVO (seg. vida oblig.)"
+        Me.chkLSDSegVidaOblig.UseVisualStyleBackColor = True
+        '
+        'chkLSDConvColectTrab
+        '
+        Me.chkLSDConvColectTrab.AutoSize = True
+        Me.chkLSDConvColectTrab.Checked = True
+        Me.chkLSDConvColectTrab.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkLSDConvColectTrab.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkLSDConvColectTrab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.chkLSDConvColectTrab.Location = New System.Drawing.Point(13, 68)
+        Me.chkLSDConvColectTrab.Name = "chkLSDConvColectTrab"
+        Me.chkLSDConvColectTrab.Size = New System.Drawing.Size(235, 17)
+        Me.chkLSDConvColectTrab.TabIndex = 24
+        Me.chkLSDConvColectTrab.Text = "Adherido al CCT ( conv. colec. trab.)"
+        Me.chkLSDConvColectTrab.UseVisualStyleBackColor = True
+        '
+        'txtLSDCantHijos
+        '
+        Me.txtLSDCantHijos.Location = New System.Drawing.Point(79, 36)
+        Me.txtLSDCantHijos.Name = "txtLSDCantHijos"
+        Me.txtLSDCantHijos.Size = New System.Drawing.Size(67, 20)
+        Me.txtLSDCantHijos.TabIndex = 23
+        Me.txtLSDCantHijos.Text = "0"
+        '
+        'textbox666
+        '
+        Me.textbox666.AutoSize = True
+        Me.textbox666.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textbox666.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.textbox666.Location = New System.Drawing.Point(10, 39)
+        Me.textbox666.Name = "textbox666"
+        Me.textbox666.Size = New System.Drawing.Size(69, 13)
+        Me.textbox666.TabIndex = 22
+        Me.textbox666.Text = "Cant. Hijos"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label35.Location = New System.Drawing.Point(10, 8)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(60, 13)
+        Me.Label35.TabIndex = 21
+        Me.Label35.Text = "Conyuge "
+        '
+        'cmbLSDConyuge
+        '
+        Me.cmbLSDConyuge.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLSDConyuge.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLSDConyuge.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbLSDConyuge.FormattingEnabled = True
+        Me.cmbLSDConyuge.Location = New System.Drawing.Point(79, 5)
+        Me.cmbLSDConyuge.Name = "cmbLSDConyuge"
+        Me.cmbLSDConyuge.Size = New System.Drawing.Size(67, 21)
+        Me.cmbLSDConyuge.TabIndex = 20
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label32.Location = New System.Drawing.Point(10, 144)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(101, 13)
+        Me.Label32.TabIndex = 19
+        Me.Label32.Text = "Tipo de empresa"
         '
         'txtbuscar
         '
@@ -1141,6 +1507,14 @@ Partial Class frmaspirantes
         '
         Me.PrintDialog1.UseEXDialog = True
         '
+        'txtfechaAportes
+        '
+        Me.txtfechaAportes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtfechaAportes.Location = New System.Drawing.Point(155, 243)
+        Me.txtfechaAportes.Name = "txtfechaAportes"
+        Me.txtfechaAportes.Size = New System.Drawing.Size(122, 20)
+        Me.txtfechaAportes.TabIndex = 37
+        '
         'frmaspirantes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1168,6 +1542,8 @@ Partial Class frmaspirantes
         CType(Me.pctfoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1252,16 +1628,44 @@ Partial Class frmaspirantes
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents txtlugarpago As System.Windows.Forms.TextBox
     Friend WithEvents Label31 As System.Windows.Forms.Label
-    Friend WithEvents txtcuentahaberes As System.Windows.Forms.TextBox
-    Friend WithEvents txtbancohaberes As System.Windows.Forms.TextBox
-    Friend WithEvents Label30 As System.Windows.Forms.Label
-    Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents Label27 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
     Friend WithEvents txtbancoaportes As System.Windows.Forms.TextBox
-    Friend WithEvents dtpfechaaportes As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtperiodoaportes As System.Windows.Forms.TextBox
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents cmbLSDConyuge As ComboBox
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents cmbLSDTipoEmpresa As ComboBox
+    Friend WithEvents chkLSDReduccion As CheckBox
+    Friend WithEvents chkLSDSegVidaOblig As CheckBox
+    Friend WithEvents chkLSDConvColectTrab As CheckBox
+    Friend WithEvents txtLSDCantHijos As TextBox
+    Friend WithEvents textbox666 As Label
+    Friend WithEvents cmbLSDSituacionRevista As ComboBox
+    Friend WithEvents Label36 As Label
+    Friend WithEvents cmbLSDCodigosCondicion As ComboBox
+    Friend WithEvents Label37 As Label
+    Friend WithEvents cmbLSDActividadEmpleado As ComboBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents cmbLSDModoContratacion As ComboBox
+    Friend WithEvents Label40 As Label
+    Friend WithEvents cmbLSDCodigoSiniestrado As ComboBox
+    Friend WithEvents Label41 As Label
+    Friend WithEvents cmbLSDCodigoLocalidades As ComboBox
+    Friend WithEvents Label43 As Label
+    Friend WithEvents cmbLSDCodigoObraSocial As ComboBox
+    Friend WithEvents Label44 As Label
+    Friend WithEvents txtLSDAdherentes As TextBox
+    Friend WithEvents Label45 As Label
+    Friend WithEvents cmbLSDFormaPago As ComboBox
+    Friend WithEvents Label46 As Label
+    Friend WithEvents txtcuentahaberes As TextBox
+    Friend WithEvents txtbancohaberes As TextBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents txtfechaAportes As TextBox
 End Class

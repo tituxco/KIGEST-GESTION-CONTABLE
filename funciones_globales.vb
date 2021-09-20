@@ -3,6 +3,20 @@ Imports System.IO
 Imports System.IO.Compression
 Module funciones_Globales
     'Public EmpresaSeleccionada As Integer
+    Public Function parametrizarCampo(dato As String, longitud As Integer, caracter As String, izquierda As Boolean) As String
+        Try
+            Dim texto As String = dato
+            If izquierda = True Then
+                texto = texto.PadLeft(longitud, caracter)
+            Else
+                texto = texto.PadRight(longitud, caracter)
+            End If
+            Return texto
+        Catch ex As Exception
+
+        End Try
+
+    End Function
     Public Structure DatosEmp
         Public Property Razon As String
         Public Property Fantasia As String

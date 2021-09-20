@@ -23,9 +23,10 @@ Partial Class recibos
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(recibos))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnnavegacion = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.lblestado = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -148,6 +149,7 @@ Partial Class recibos
         'pnnavegacion
         '
         Me.pnnavegacion.BackColor = System.Drawing.Color.Gray
+        Me.pnnavegacion.Controls.Add(Me.Button10)
         Me.pnnavegacion.Controls.Add(Me.Button9)
         Me.pnnavegacion.Controls.Add(Me.lblestado)
         Me.pnnavegacion.Controls.Add(Me.Button8)
@@ -163,6 +165,15 @@ Partial Class recibos
         Me.pnnavegacion.Name = "pnnavegacion"
         Me.pnnavegacion.Size = New System.Drawing.Size(1032, 73)
         Me.pnnavegacion.TabIndex = 8
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(343, 25)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(125, 23)
+        Me.Button10.TabIndex = 66
+        Me.Button10.Text = "Exportar LSD"
+        Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
         '
@@ -413,16 +424,16 @@ Partial Class recibos
         Me.dtrecibohis.BackgroundColor = System.Drawing.Color.White
         Me.dtrecibohis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtrecibohis.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.Format = "C2"
-        DataGridViewCellStyle1.NullValue = Nothing
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtrecibohis.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtrecibohis.DefaultCellStyle = DataGridViewCellStyle3
         Me.dtrecibohis.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dtrecibohis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2
         Me.dtrecibohis.Location = New System.Drawing.Point(0, 42)
@@ -694,16 +705,16 @@ Partial Class recibos
         Me.dtitemrecibos.BackgroundColor = System.Drawing.Color.White
         Me.dtitemrecibos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtitemrecibos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtitemrecibos.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.Format = "C2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtitemrecibos.DefaultCellStyle = DataGridViewCellStyle4
         Me.dtitemrecibos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dtitemrecibos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2
         Me.dtitemrecibos.Location = New System.Drawing.Point(3, 122)
@@ -1425,4 +1436,5 @@ Partial Class recibos
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
 End Class

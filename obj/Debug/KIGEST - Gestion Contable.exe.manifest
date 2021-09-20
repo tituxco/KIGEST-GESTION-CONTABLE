@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="KIGEST - Gestion Contable.exe" version="2.0.0.40" publicKeyToken="0000000000000000" language="es-AR" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="KIGEST - Gestion Contable.exe" version="2.0.0.42" publicKeyToken="0000000000000000" language="es-AR" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="ico_kigest_cont_ico.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,14 +43,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KIGEST - Gestion Contable.exe" size="1362432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutomaticUpdater.dll" size="84904">
+      <assemblyIdentity name="AutomaticUpdater" version="2.6.18.4" publicKeyToken="D2050BE9B2E72E40" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r0XD+G9LCA5GS8z7FZ2Gk/Hom6b6rNwHHCtGBkV9Kck=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="254840">
+      <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KeS9Y1IRANzMaW4GAaIfZey4MJhqSGBwgi4e3Zq9t5s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KIGEST - Gestion Contable.exe" size="1492992">
       <assemblyIdentity name="KIGEST - Gestion Contable" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>M9OX+s8Slp3Qv4FiRLU4+UN2MaY=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y4vGzLsQXGR6V4fWfcQaCOtPkCyJZ9KF07aIsKApIhM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.MSXML.dll" size="69632">
+      <assemblyIdentity name="Microsoft.MSXML" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>c0WLR6MzKxF4UQzynPn4aQsIizhL2oZ0MILRErCP0ec=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,49 +97,126 @@
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/tABzEorTn2Z7NUYDzBt+geJUTE=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f9IR35URWhzWVF5xaGd5Y80uDlu8497w131l6md0K6o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Common.dll" size="8670136">
-      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.QualityTools.Testing.Fakes.resources.dll" size="17296">
+      <assemblyIdentity name="Microsoft.QualityTools.Testing.Fakes.resources" version="12.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="es" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Bo7/wl/Ias0kxhiSBiD9AQ4UXPc=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xjZSzsUmEkt7OMbGahq5bu8eA9llTW6yYN+wT2jr+Zs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.ProcessingObjectModel.DLL" size="125880">
-      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="564728">
-      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Common.dll" size="9033112">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iMwzwWS39KKKKUKT0Z1ub71+k7g=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Gp2Zpofm+IPBJxxA+nCxqngAbs2UU8ssBXjcqP2X8RQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Types.dll" size="384000">
-      <assemblyIdentity name="Microsoft.SqlServer.Types" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.ReportViewer.Common.resources.dll" size="1452952">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common.resources" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="es" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pQb1S5pk73PYc8RBfvkK+RsiFpM=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Euigh8rUMsBJ8gfoh5Buew2SC1pMW0IBFPTAc6kjRlQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.DataVisualization.dll" size="5093800">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.ReportViewer.DataVisualization.resources.dll" size="1413544">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization.resources" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zkBe/P903VJoaq5A+xSMqSwGZ9RgLwNLrG7GjDninc4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Design.dll" size="83344">
+      <assemblyIdentity name="Microsoft.ReportViewer.Design" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Fj4ImEP57mWNWFlS76yUnFwcVNjzeW2yI6EFTShttOo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.ReportViewer.Design.resources.dll" size="22440">
+      <assemblyIdentity name="Microsoft.ReportViewer.Design.resources" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HUzXy12C5TRO27tOseuy/zW3gK2OA+2PoI+m1XRgo3g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.ProcessingObjectModel.dll" size="97168">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="597416">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tA6F5jNv00nhseXibbLMg0nLkbeLCOipi0F3AfdwI2c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.ReportViewer.WinForms.resources.dll" size="70568">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms.resources" version="15.0.0.0" publicKeyToken="89845DCD8080CC91" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Q3OWVUaV30gH0JJRi0g3iFUzVLsIlr/KQb9kJ01ZMDg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Types.dll" size="391880">
+      <assemblyIdentity name="Microsoft.SqlServer.Types" version="14.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aDughU/4oIdP0U5PVA/hienfFEP3z8qTXas2lk6ov0s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,8 +227,68 @@
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>fGPnwWRQge7eDX6YlUg8yRubzSI=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jdtxd2sS/GAR6K8OHfT7S3JBSwXU0RywsX+ucaNWQF4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.OLE.Interop.dll" size="136792">
+      <assemblyIdentity name="Microsoft.VisualStudio.OLE.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/Orw0STi2kTMYICEFIYxQtG7OP+gi7Z9vDPi9FO8rTE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Interop.dll" size="266008">
+      <assemblyIdentity name="Microsoft.VisualStudio.Shell.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ut00z2gVBasDpIpc5ZGr8ZU9QmHgHyvKzRuABF/iboM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Interop.8.0.dll" size="172032">
+      <assemblyIdentity name="Microsoft.VisualStudio.Shell.Interop.8.0" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hqt1Un97gSXVwcYwud9268unZEX5BaxUKI5onCOZDLc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TextManager.Interop.dll" size="114688">
+      <assemblyIdentity name="Microsoft.VisualStudio.TextManager.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uewFQ/mz96a0kCB2OYR1PHLb5n1njIJjiVeKUJem12U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" size="66432">
+      <assemblyIdentity name="Microsoft.VisualStudio.TextManager.Interop.8.0" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yhN2r3LOUm06EiUgpq6QtFIel3+WWysVd6cpAtT3vUo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -126,8 +299,20 @@
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/t99DiymXcXoReV5TUlA6d9gii4=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MaByfT3Okvvv8MAQpi46xrEA+lqwnMFkYSD5JXg0XiQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="25464">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2nbLf/RLhWBUej5XjBjxWPu6uxm4KuQbKC9HgBJ370k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -136,8 +321,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>K9XN9Jfs2eOz/eHyfFd0qJtHJ0k=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GMojZ5ojJ/w2Ssg6lugv6FiE0NT8uGsps5MBzq7qYLc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="archivosinst\tablas_comunes_iva.txt" size="296">
@@ -145,8 +330,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>wt4xV6SJDsth25MuNl8VfL5dzqE=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WriWbZdup5WLLqjqV20wfcklB6muPOdLsyOuTqMbW5I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="archivosinst\tablas_comunes_sueldos.txt" size="2425">
@@ -154,8 +339,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Qdn9HSnRauuKZmBE2U59hAEfQH4=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4OFg3VrFdlsWheWG5brfGc+GGMfBWsWAKytDFpArVSY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="archivosinst\tablas_iva.txt" size="2687">
@@ -163,8 +348,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>zWlVDR8G0PC3v4kVnP5GBtLF5oo=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5mkRhLqfQpVrxpx1eDoImpZjr5aluB5W+cJ5nYBGAqU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="archivosinst\tablas_sueldos.txt" size="4093">
@@ -172,8 +357,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>M53294TfA4aqy6ZViwduY1lsbAI=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UwlAlaq74m+yTmA2OS0tuiRPWgn54JIwzqDeRS3RgDI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ico_kigest_cont.ico" size="516334">
@@ -181,8 +366,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>r4ihAG+1to2ne+ymrO3R1v95ONY=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XvS6VbJHfZSmrpkQsbKoxnaBc1TbhNQdW/DDYraTCF8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ico_kigest_cont_ico.ico" size="90638">
@@ -190,17 +375,17 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>mYb0gY7+3dJ8aFzSNtJV04Kr4Ow=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mnDLtL8s2753zct3mAF0OZLJ2BCIHkUxF4M+/6Zd/pQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="KIGEST - Gestion Contable.exe.config" size="1695">
+  <file name="KIGEST - Gestion Contable.exe.config" size="2051">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>TDNEP7Tv6W6VJNcMDBTvjS4iE94=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LQCNSW8UEoHPw4zzpKaDFNNHCFKXcGAwlaPesAxuMHg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="KIGEST (converted).ico" size="516334">
@@ -208,8 +393,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>kKWP+OyeYurYrjrdl7Ij8ULuBdo=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a/rJKVMRPqQJLTYtfgY1exiIv2jfzRYoukE2blHeZGo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\LibroIvaCompraDetalles.rdlc" size="88427">
@@ -217,8 +402,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>8BJMWMtHO2Q1cjI1HAhbasm2C6M=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RPCvSWoIffBNyiMykRejU+FMPkJW494brzizzNkmZMs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\LibroIvaVentaDetalles.rdlc" size="73490">
@@ -226,8 +411,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>M2P6TwiqcbemoyZZuvP+PLoZkqU=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EV1pUez+6fbeorREqbM3ZtLoPKvchNrwjXiXRyWr9KU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\LibroSuelDetalles.rdlc" size="27031">
@@ -235,8 +420,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>C3l1BzVT4v+rvcadMFP50W725Kw=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FYo7IOlcnWhCTxGT2I2nPAzcvggRkG0J9vSoBihgnj4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\LibroSuelEncabeza.rdlc" size="35943">
@@ -244,8 +429,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ciRat70wH4H0M8Ya3VbPGo+aXM8=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dUfTqV79dTqFEbI0vCsHCbTQj0P0phBk1poN/wcnLT8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\ReciboDetalle.rdlc" size="55294">
@@ -253,17 +438,17 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>DAOvGKX0VIqZTsBqHAp/dSIaBqM=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9+j6idF2exP6O37WKJpJyMW5UrhZSyXJiwx9w9pZ8EI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reportes\ReciboEncabezado.rdlc" size="49568">
+  <file name="Reportes\ReciboEncabezado.rdlc" size="91812">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VhkE1XhS5lHON2vsGtdzjctP2b8=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WskGaN9YJyevrSTsUdnBfp8E16UGPeex+VHPrDC1kbs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\RubricaIvaCompra.rdlc" size="9206">
@@ -271,8 +456,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>SfadBPyKUewsUrA9zk4Kq5Wweqs=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uZsmQXGIYQQWasAsTHdsvzLmOXfu12ipTtnsEFh6Ojo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\RubricaIvaVentas.rdlc" size="7576">
@@ -280,8 +465,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>492J3o51TcRLy0aA4nt3O+q+aos=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n0dfklxKzkIyUJ0BPCVWJfjp6GTV0vm3Kl05rFKIPX8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\RubricaSueldos.rdlc" size="9678">
@@ -289,8 +474,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>qftrOPq9a+BBJabikcVbDyd+PDs=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z5f7YXa+EbbItZhAV+xeb4+0jazB6Zi3MSZbgss0CtQ=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

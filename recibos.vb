@@ -1,5 +1,7 @@
 ﻿Imports System.Text
 Imports Microsoft.Reporting.WinForms
+
+
 Public Class recibos
     Public ANTIGUEDAD As Double = 0
     Public BASICO As Double = 0
@@ -864,5 +866,13 @@ Public Class recibos
 
     Private Sub Button9_Click_1(sender As Object, e As EventArgs) Handles Button9.Click
         CargarPersonal()
+    End Sub
+
+    Private Sub Panel13_Paint(sender As Object, e As PaintEventArgs) Handles Panel13.Paint
+
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        exportacionLSD.Show()
     End Sub
 End Class

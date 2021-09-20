@@ -22,6 +22,7 @@ Public Class frmaspirantes
         deshabilitarControles(Me)
     End Sub
     Private Sub dtpersonal_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dtpersonal.CellEnter
+        vaciarControles()
         Idpersonal = dtpersonal.CurrentRow.Cells.Item(0).Value
         CargarInfoPers()
     End Sub
@@ -62,59 +63,89 @@ Public Class frmaspirantes
         Dim imag As Byte()
         Dim idcat As String
         pbprogresocons.Visible = True
+        lblestado.Text = ""
         Try
             Reconectar()
-            Dim lector As System.Data.IDataReader
-            Dim lector2 As System.Data.IDataReader
-            Dim sql As New MySql.Data.MySqlClient.MySqlCommand
-            Dim sql2 As New MySql.Data.MySqlClient.MySqlCommand
-
             conexionPrinc.ChangeDatabase(database)
             conexionEmp.ChangeDatabase(EmpDB)
-            sql.Connection = conexionEmp
-
-            sql.CommandText = "select legajo, nombre, apellidos,doc_tipo, doc_num, fecha_nac, genero,nacionalidad, num_telefono, " _
+            Dim consultainfoPers As New MySql.Data.MySqlClient.MySqlDataAdapter("select legajo, nombre, apellidos,doc_tipo, doc_num, fecha_nac, genero,nacionalidad, num_telefono, " _
             & "num_emergencia, num_celular, email, domicilio, localidad, provincia, estado_civil, categoria, calif_categoria, " _
             & "cuil,fecha_ingreso, fecha_baja, direccion_alt, cuil, modo_contr, jornada, convenio, aportebanco, aportefecha, aporteperiodo, " _
-            & "sueldobanco, sueldocuenta, lugarpago from sdo_personal where idpersonal=" & Idpersonal
+            & "sueldobanco, sueldocuenta, lugarpago from sdo_personal where idpersonal=" & Idpersonal, conexionEmp)
+            Dim tablaInfoPers As New DataTable
+            consultainfoPers.Fill(tablaInfoPers)
 
-            sql.CommandType = CommandType.Text
-            lector = sql.ExecuteReader
-            lector.Read()
 
             '***********************************DATOS PERSONALES*********************************************
 
-            txtnombres.Text = lector("nombre").ToString
-            txtapellido.Text = lector("apellidos").ToString
-            cmbtipodoc.SelectedValue = lector("doc_tipo").ToString
-            txtdocumento.Text = lector("doc_num").ToString
-            dtpfechanac.Value = lector("fecha_nac").ToString
-            cmbnacionalidad.SelectedValue = lector("nacionalidad").ToString
-            txttelefono.Text = lector("num_telefono").ToString
-            txtcelular.Text = lector("num_celular").ToString
-            txtmail.Text = lector("email").ToString
-            txtdomicilio.Text = lector("domicilio").ToString
-            cmbestadocivil.SelectedValue = lector("estado_civil").ToString
-            cmbgenero.SelectedValue = lector("genero").ToString
-            cmblocalidad.SelectedValue = lector("localidad").ToString
-            cmbprovincia.SelectedValue = lector("provincia").ToString
-            dtpaltacurr.Value = lector("fecha_ingreso").ToString
+            txtnombres.Text = tablaInfoPers.Rows(0).Item("nombre").ToString
+            txtapellido.Text = tablaInfoPers.Rows(0).Item("apellidos").ToString
+            cmbtipodoc.SelectedValue = tablaInfoPers.Rows(0).Item("doc_tipo").ToString
+            txtdocumento.Text = tablaInfoPers.Rows(0).Item("doc_num").ToString
+            dtpfechanac.Value = tablaInfoPers.Rows(0).Item("fecha_nac").ToString
+            cmbnacionalidad.SelectedValue = tablaInfoPers.Rows(0).Item("nacionalidad").ToString
+            txttelefono.Text = tablaInfoPers.Rows(0).Item("num_telefono").ToString
+            txtcelular.Text = tablaInfoPers.Rows(0).Item("num_celular").ToString
+            txtmail.Text = tablaInfoPers.Rows(0).Item("email").ToString
+            txtdomicilio.Text = tablaInfoPers.Rows(0).Item("domicilio").ToString
+            cmbestadocivil.SelectedValue = tablaInfoPers.Rows(0).Item("estado_civil").ToString
+            cmbgenero.SelectedValue = tablaInfoPers.Rows(0).Item("genero").ToString
+            cmblocalidad.SelectedValue = tablaInfoPers.Rows(0).Item("localidad").ToString
+            cmbprovincia.SelectedValue = tablaInfoPers.Rows(0).Item("provincia").ToString
+            dtpaltacurr.Value = tablaInfoPers.Rows(0).Item("fecha_ingreso").ToString
             lbledad.Text = DateDiff(DateInterval.Year, dtpfechanac.Value, Date.Today) & " años"
             'txtobservaciones.Text = lector("observaciones").ToString
-            txtdiralt.Text = lector("direccion_alt").ToString
-            txtcuil.Text = lector("cuil").ToString
+            txtdiralt.Text = tablaInfoPers.Rows(0).Item("direccion_alt").ToString
+            txtcuil.Text = tablaInfoPers.Rows(0).Item("cuil").ToString
             'txtsueldoacord.Text = lector("sueldo_acord").ToString
-            cmbcentro_costos.SelectedValue = lector("convenio").ToString
-            cmbjornada.SelectedValue = lector("jornada").ToString
-            cmbmodocontratacion.SelectedValue = lector("modo_contr").ToString
-            cmbcategoria.SelectedValue = lector("categoria").ToString
-            txtbancoaportes.Text = lector("aportebanco").ToString
-            txtbancohaberes.Text = lector("sueldobanco").ToString
-            txtcuentahaberes.Text = lector("sueldocuenta").ToString
-            txtperiodoaportes.Text = lector("aporteperiodo").ToString
-            dtpfechaaportes.Value = lector("aportefecha").ToString
-            txtlugarpago.Text = lector("lugarpago").ToString
+            cmbcentro_costos.SelectedValue = tablaInfoPers.Rows(0).Item("convenio").ToString
+            cmbjornada.SelectedValue = tablaInfoPers.Rows(0).Item("jornada").ToString
+            cmbmodocontratacion.SelectedValue = tablaInfoPers.Rows(0).Item("modo_contr").ToString
+            cmbcategoria.SelectedValue = tablaInfoPers.Rows(0).Item("categoria").ToString
+            txtbancoaportes.Text = tablaInfoPers.Rows(0).Item("aportebanco").ToString
+            txtbancohaberes.Text = tablaInfoPers.Rows(0).Item("sueldobanco").ToString
+            txtcuentahaberes.Text = tablaInfoPers.Rows(0).Item("sueldocuenta").ToString
+            txtperiodoaportes.Text = tablaInfoPers.Rows(0).Item("aporteperiodo").ToString
+            txtfechaAportes.Text = tablaInfoPers.Rows(0).Item("aportefecha").ToString
+            txtlugarpago.Text = tablaInfoPers.Rows(0).Item ("lugarpago").ToString
             pbprogresocons.Visible = False
+
+            '**************************INFO EXTRA PARA SUELDO DIGITAL********************************
+
+            Reconectar 
+            conexionPrinc.ChangeDatabase(database)
+            conexionEmp.ChangeDatabase(EmpDB)
+            'sql.Connection = conexionEmp
+
+            'sql.CommandText = "SELECT * FROM sdo_personal_infoLSD where idpersonal=" & Idpersonal
+
+            'sql.CommandType = CommandType.Text
+            'lector = sql.ExecuteReader
+            'lector.Read()
+
+            Dim consultainfoExtra As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT * FROM sdo_personal_infoLSD where idpersonal=" & Idpersonal, conexionEmp)
+            Dim tablaInfoExtra As New DataTable
+            consultainfoExtra.Fill(tablaInfoExtra)
+
+            If tablaInfoExtra.Rows.Count = 0 Then
+                Exit Sub
+            End If
+            'MsgBox(tablaInfoExtra.Rows(0).Item("cod_localidad"))
+            chkLSDConvColectTrab.CheckState = tablaInfoExtra.Rows(0).Item("adherido_cct").ToString
+            chkLSDReduccion.CheckState = tablaInfoExtra.Rows(0).Item("corresponde_reduccion").ToString
+            chkLSDSegVidaOblig.CheckState = tablaInfoExtra.Rows(0).Item("cobertura_scvo").ToString
+            cmbLSDActividadEmpleado.SelectedValue = tablaInfoExtra.Rows(0).Item("activ_empleado").ToString
+            cmbLSDCodigoLocalidades.SelectedValue = tablaInfoExtra.Rows(0).Item("cod_localidad").ToString
+            cmbLSDCodigoObraSocial.SelectedValue = tablaInfoExtra.Rows(0).Item("cod_obraSocial").ToString
+            cmbLSDCodigosCondicion.SelectedValue = tablaInfoExtra.Rows(0).Item("cod_condicion").ToString
+            cmbLSDConyuge.SelectedValue = tablaInfoExtra.Rows(0).Item("conyuge").ToString
+            cmbLSDFormaPago.SelectedValue = tablaInfoExtra.Rows(0).Item("forma_pago").ToString
+            cmbLSDModoContratacion.SelectedValue = tablaInfoExtra.Rows(0).Item("modalidad_contratacion").ToString
+            cmbLSDSituacionRevista.SelectedValue = tablaInfoExtra.Rows(0).Item("situacion_revista").ToString
+            cmbLSDTipoEmpresa.SelectedValue = tablaInfoExtra.Rows(0).Item("tipo_empresa").ToString
+            txtLSDAdherentes.Text = tablaInfoExtra.Rows(0).Item("cant_adherentes").ToString
+            txtLSDCantHijos.Text = tablaInfoExtra.Rows(0).Item("cant_hijos").ToString
+
         Catch ex As Exception
             pbprogresocons.Visible = False
             lblestado.ForeColor = Color.Red
@@ -220,6 +251,55 @@ Public Class frmaspirantes
             cmbcentro_costos.ValueMember = readcostos.Tables(0).Columns(0).Caption.ToString
             cmbcentro_costos.SelectedIndex = -1
 
+
+            cmbLSDTipoEmpresa.DataSource = tiposEmpresa
+            cmbLSDTipoEmpresa.DisplayMember = "Descripcion"
+            cmbLSDTipoEmpresa.ValueMember = "Codigo"
+
+
+            cmbLSDSituacionRevista.DataSource = situacionRevista
+            cmbLSDSituacionRevista.DisplayMember = "Descripcion"
+            cmbLSDSituacionRevista.ValueMember = "Codigo"
+
+
+            cmbLSDCodigosCondicion.DataSource = codCondicion
+            cmbLSDCodigosCondicion.DisplayMember = "Descripcion"
+            cmbLSDCodigosCondicion.ValueMember = "Codigo"
+
+
+            cmbLSDActividadEmpleado.DataSource = actividadesEmpleados
+            cmbLSDActividadEmpleado.DisplayMember = "Descripcion"
+            cmbLSDActividadEmpleado.ValueMember = "Codigo"
+
+
+            cmbLSDModoContratacion.DataSource = modoContratacion
+            cmbLSDModoContratacion.DisplayMember = "Descripcion"
+            cmbLSDModoContratacion.ValueMember = "Codigo"
+
+
+            cmbLSDCodigoSiniestrado.DataSource = codSiniestrados
+            cmbLSDCodigoSiniestrado.DisplayMember = "Descripcion"
+            cmbLSDCodigoSiniestrado.ValueMember = "Codigo"
+
+
+            cmbLSDCodigoLocalidades.DataSource = codLocalidades
+            cmbLSDCodigoLocalidades.DisplayMember = "Descripcion"
+            cmbLSDCodigoLocalidades.ValueMember = "Codigo"
+
+
+            cmbLSDCodigoObraSocial.DataSource = codObrasSociales
+            cmbLSDCodigoObraSocial.DisplayMember = "Descripcion"
+            cmbLSDCodigoObraSocial.ValueMember = "Codigo"
+
+
+            cmbLSDFormaPago.DataSource = formasDePago
+            cmbLSDFormaPago.DisplayMember = "Descripcion"
+            cmbLSDFormaPago.ValueMember = "Codigo"
+
+            cmbLSDConyuge.DataSource = afirmativoNegativo
+            cmbLSDConyuge.DisplayMember = "Descripcion"
+            cmbLSDConyuge.ValueMember = "Codigo"
+
             pbprogresocons.Visible = False
         Catch ex As Exception
             pbprogresocons.Visible = False
@@ -269,11 +349,31 @@ Public Class frmaspirantes
                 End If
             End If
         Next
+        For Each Cont As Control In TabPage3.Controls
+            If TypeOf Cont Is TextBox Then
+                Dim tex As TextBox
+                tex = Cont
+                If tex.ReadOnly = True Then
+                    tex.ReadOnly = False
+                Else
+                    tex.ReadOnly = True
+                End If
+
+            ElseIf TypeOf Cont Is ComboBox Then
+                Dim cbo As ComboBox
+                cbo = Cont
+                If cbo.Enabled = False Then
+                    cbo.Enabled = True
+                Else
+                    cbo.Enabled = False
+                End If
+            End If
+        Next
     End Sub
 
-    Private Function Buscar( _
-            ByVal Columna As String, _
-            ByVal texto As String, _
+    Private Function Buscar(
+            ByVal Columna As String,
+            ByVal texto As String,
             ByVal BindingSource As BindingSource) As Integer
 
         Try
@@ -409,7 +509,7 @@ Public Class frmaspirantes
             jornada = cmbjornada.SelectedValue
             convenio = cmbcentro_costos.SelectedValue
             aportebanco = txtbancoaportes.Text.ToUpper
-            aportefecha = dtpfechaaportes.Text
+            aportefecha = txtfechaAportes.Text
             aporteperiodo = txtperiodoaportes.Text.ToUpper
             sueldobanco = txtbancohaberes.Text.ToUpper
             sueldocuenta = txtcuentahaberes.Text.ToUpper
@@ -541,7 +641,41 @@ Public Class frmaspirantes
                 End If
             End With
             comandoadd.ExecuteNonQuery()
+            Dim IdPersInfoExtra As Integer
+            If modificarPers = True Then
+                IdPersInfoExtra = Idpersonal
+            Else
+                IdPersInfoExtra = comandoadd.LastInsertedId
+            End If
+            Reconectar()
+            'Dim IDPersonal = comandoadd.LastInsertedId
+            Dim SqlQueryInfoLSD As String = "INSERT INTO sdo_personal_infoLSD
+            (idpersonal,conyuge,cant_hijos,cant_adherentes,forma_pago,adherido_cct,cobertura_scvo,corresponde_reduccion,tipo_empresa,
+            situacion_revista,cod_condicion,activ_empleado,modalidad_contratacion,cod_siniestrado,cod_localidad,cod_obraSocial)
+            VALUES('" & IdPersInfoExtra & "','" & cmbLSDConyuge.SelectedValue & "','" & txtLSDCantHijos.Text & "','" & txtLSDAdherentes.Text & "',
+            '" & cmbLSDFormaPago.SelectedValue & "','" & chkLSDConvColectTrab.CheckState & "','" & chkLSDSegVidaOblig.CheckState & "',
+            '" & chkLSDReduccion.CheckState & "','" & cmbLSDTipoEmpresa.SelectedValue & "','" & cmbLSDSituacionRevista.SelectedValue & "',
+            '" & cmbLSDCodigosCondicion.SelectedValue & "','" & cmbLSDActividadEmpleado.SelectedValue & "', '" & cmbLSDModoContratacion.SelectedValue & "',
+            '" & cmbLSDCodigoSiniestrado.SelectedValue & "','" & cmbLSDCodigoLocalidades.SelectedValue & "','" & cmbLSDCodigoObraSocial.SelectedValue & "')
+            ON DUPLICATE KEY UPDATE
+            conyuge ='" & cmbLSDConyuge.SelectedValue & "',
+            cant_hijos = '" & txtLSDCantHijos.Text & "',
+            cant_adherentes = '" & txtLSDAdherentes.Text & "',
+            forma_pago = '" & cmbLSDFormaPago.SelectedValue & "',
+            adherido_cct = '" & chkLSDConvColectTrab.CheckState & "',
+            cobertura_scvo = '" & chkLSDSegVidaOblig.CheckState & "',
+            corresponde_reduccion = '" & chkLSDReduccion.CheckState & "',
+            tipo_empresa = '" & cmbLSDTipoEmpresa.SelectedValue & "',
+            situacion_revista = '" & cmbLSDSituacionRevista.SelectedValue & "',
+            cod_condicion = '" & cmbLSDCodigosCondicion.SelectedValue & "',
+            activ_empleado = '" & cmbLSDActividadEmpleado.SelectedValue & "',
+            modalidad_contratacion = '" & cmbLSDModoContratacion.SelectedValue & "',
+            cod_siniestrado = '" & cmbLSDCodigoSiniestrado.SelectedValue & "',
+            cod_localidad = '" & cmbLSDCodigoLocalidades.SelectedValue & "',
+            cod_obraSocial = '" & cmbLSDCodigoObraSocial.SelectedValue & "'"
 
+            Dim comandoaddInfoLSD As New MySql.Data.MySqlClient.MySqlCommand(SqlQueryInfoLSD, conexionEmp)
+            comandoaddInfoLSD.ExecuteNonQuery()
             If modificarPers = True Then
                 lblestado.ForeColor = Color.GreenYellow
                 lblestado.Text = "Personal Modificado correctamente"
@@ -578,21 +712,73 @@ Public Class frmaspirantes
     End Sub
 
     Private Sub vaciarControles()
-        txtdiralt.Text = ""
-        txtnombres.Text = ""
-        txtapellido.Text = ""
-        txtdocumento.Text = ""
-        txtdomicilio.Text = ""
-        txtmail.Text = ""
-        txttelefono.Text = ""
 
-        txtcelular.Text = ""
-        cmbestadocivil.SelectedIndex = -1
-        cmbgenero.SelectedIndex = -1
-        cmblocalidad.SelectedIndex = -1
-        cmbnacionalidad.SelectedIndex = -1
-        cmbprovincia.SelectedIndex = -1
-        cmbtipodoc.SelectedIndex = -1
+        For Each Cont As Control In TabPage1.Controls
+            If TypeOf Cont Is TextBox Then
+                Dim tex As TextBox
+                tex = Cont
+                tex.Text = ""
+
+            ElseIf TypeOf Cont Is ComboBox Then
+                Dim cbo As ComboBox
+                cbo = Cont
+                cbo.SelectedIndex = -1
+
+            ElseIf TypeOf Cont Is CheckBox Then
+            Dim chk As CheckBox
+            chk = Cont
+            chk.Checked = False
+            End If
+        Next
+        For Each Cont As Control In TabPage2.Controls
+            If TypeOf Cont Is TextBox Then
+                Dim tex As TextBox
+                tex = Cont
+                tex.Text = ""
+
+            ElseIf TypeOf Cont Is ComboBox Then
+                Dim cbo As ComboBox
+                cbo = Cont
+                cbo.SelectedIndex = -1
+            ElseIf TypeOf Cont Is CheckBox Then
+                Dim chk As CheckBox
+                chk = Cont
+                chk.Checked = False
+            End If
+        Next
+        For Each Cont As Control In TabPage3.Controls
+            If TypeOf Cont Is TextBox Then
+                Dim tex As TextBox
+                tex = Cont
+                tex.Text = ""
+
+            ElseIf TypeOf Cont Is ComboBox Then
+                Dim cbo As ComboBox
+                cbo = Cont
+                cbo.SelectedIndex = -1
+            ElseIf TypeOf Cont Is CheckBox Then
+                Dim chk As CheckBox
+                chk = Cont
+                chk.Checked = False
+            End If
+        Next
+
+
+        'txtdiralt.Text = ""
+        'txtnombres.Text = ""
+        'txtapellido.Text = ""
+        'txtdocumento.Text = ""
+        'txtdomicilio.Text = ""
+        'txtmail.Text = ""
+        'txttelefono.Text = ""
+
+        'txtcelular.Text = ""
+        'cmbestadocivil.SelectedIndex = -1
+        'cmbgenero.SelectedIndex = -1
+        'cmblocalidad.SelectedIndex = -1
+        'cmbnacionalidad.SelectedIndex = -1
+        'cmbprovincia.SelectedIndex = -1
+        'cmbtipodoc.SelectedIndex = -1
         dtpfechanac.Value = Now
         dtpaltacurr.Value = Now
     End Sub
@@ -736,11 +922,27 @@ Public Class frmaspirantes
         lblantiguedad.Text = DateDiff(DateInterval.Year, dtpaltacurr.Value, Date.Today) & " años"
     End Sub
 
-    Private Sub dtpersonal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtpersonal.CellContentClick
+
+    Private Sub cmbcentro_costos_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbcentro_costos.SelectionChangeCommitted
 
     End Sub
 
-    Private Sub Label23_Click(sender As Object, e As EventArgs) Handles Label23.Click
+    Private Sub TabPage3_Enter(sender As Object, e As EventArgs) Handles TabPage3.Enter
+
+
+
+
+    End Sub
+
+    Private Sub TabPage3_Click(sender As Object, e As EventArgs) Handles TabPage3.Click
+
+    End Sub
+
+    Private Sub cmbLSDSituacionRevista_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbLSDSituacionRevista.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub dtpersonal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtpersonal.CellContentClick
 
     End Sub
 
@@ -748,178 +950,21 @@ Public Class frmaspirantes
 
     End Sub
 
-    Private Sub cmbcentro_costos_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cmbcentro_costos.SelectionChangeCommitted
-        Dim tablaCatTra As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_categoria_personal where idconvenio = " & cmbcentro_costos.SelectedValue, conexionPrinc)
-        Dim readcatTR As New DataSet
-        'cargamos categorias de trabajo
-        tablaCatTra.Fill(readcatTR)
-        cmbcategoria.DataSource = readcatTR.Tables(0)
-        cmbcategoria.DisplayMember = readcatTR.Tables(0).Columns(1).Caption.ToString
-        cmbcategoria.ValueMember = readcatTR.Tables(0).Columns(0).Caption.ToString
-        cmbcategoria.SelectedIndex = -1
-    End Sub
-
-    Private Sub txtcuil_TextChanged(sender As Object, e As EventArgs) Handles txtcuil.TextChanged
-
-    End Sub
-
-    Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
-
-    End Sub
-
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
-
-    End Sub
-
-    Private Sub lblantiguedad_Click(sender As Object, e As EventArgs) Handles lblantiguedad.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub lblnosermod_Click(sender As Object, e As EventArgs) Handles lblnosermod.Click
-
-    End Sub
-
-    Private Sub dtpfmodificacion_ValueChanged(sender As Object, e As EventArgs) Handles dtpfmodificacion.ValueChanged
-
-    End Sub
-
-    Private Sub Label34_Click(sender As Object, e As EventArgs) Handles Label34.Click
-
-    End Sub
-
-    Private Sub txtdiralt_TextChanged(sender As Object, e As EventArgs) Handles txtdiralt.TextChanged
-
-    End Sub
-
-    Private Sub Label33_Click(sender As Object, e As EventArgs) Handles Label33.Click
-
-    End Sub
-
-    Private Sub lbledad_Click(sender As Object, e As EventArgs) Handles lbledad.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label22_Click(sender As Object, e As EventArgs) Handles Label22.Click
-
-    End Sub
-
-    Private Sub Label42_Click(sender As Object, e As EventArgs) Handles Label42.Click
-
-    End Sub
-
-    Private Sub cmblocalidad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmblocalidad.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub cmbprovincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbprovincia.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label39_Click(sender As Object, e As EventArgs) Handles Label39.Click
-
-    End Sub
-
-    Private Sub cmbestadocivil_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbestadocivil.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub cmbgenero_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbgenero.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub cmbnacionalidad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbnacionalidad.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub cmbtipodoc_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbtipodoc.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub txtdomicilio_TextChanged(sender As Object, e As EventArgs) Handles txtdomicilio.TextChanged
-
-    End Sub
-
-    Private Sub txtmail_TextChanged(sender As Object, e As EventArgs) Handles txtmail.TextChanged
-
-    End Sub
-
-    Private Sub txttelefono_TextChanged(sender As Object, e As EventArgs) Handles txttelefono.TextChanged
-
-    End Sub
-
-    Private Sub txtcelular_TextChanged(sender As Object, e As EventArgs) Handles txtcelular.TextChanged
-
-    End Sub
-
-    Private Sub txtdocumento_TextChanged(sender As Object, e As EventArgs) Handles txtdocumento.TextChanged
-
-    End Sub
-
-    Private Sub txtapellido_TextChanged(sender As Object, e As EventArgs) Handles txtapellido.TextChanged
-
-    End Sub
-
-    Private Sub txtnombres_TextChanged(sender As Object, e As EventArgs) Handles txtnombres.TextChanged
-
-    End Sub
-
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
-
-    End Sub
-
-    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
-
-    End Sub
-
-    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
-
-    End Sub
-
-    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-
-    End Sub
-
-    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
-
-    End Sub
-
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
+    Private Sub cmbcentro_costos_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbcentro_costos.SelectedValueChanged
+        Try
+            Dim idcentro As Integer = Val(cmbcentro_costos.SelectedValue)
+            'MsgBox()
+            If IsNumeric(idcentro) Then
+                Dim tablaCatTra As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_categoria_personal where idconvenio = " & cmbcentro_costos.SelectedValue, conexionPrinc)
+                Dim readcatTR As New DataSet
+                'cargamos categorias de trabajo
+                tablaCatTra.Fill(readcatTR)
+                cmbcategoria.DataSource = readcatTR.Tables(0)
+                cmbcategoria.DisplayMember = readcatTR.Tables(0).Columns(1).Caption.ToString
+                cmbcategoria.ValueMember = readcatTR.Tables(0).Columns(0).Caption.ToString
+                cmbcategoria.SelectedIndex = -1
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 End Class

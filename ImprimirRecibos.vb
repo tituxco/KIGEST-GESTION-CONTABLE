@@ -1,6 +1,7 @@
 ﻿Imports Microsoft.Reporting.WinForms
 Public Class ImprimirRecibos
     Public idEmpresa As Integer
+    Dim PeridodoConcat As String
     Private Sub cmdverrecibos_Click(sender As Object, e As EventArgs) Handles cmdverrecibos.Click
         Try
             If cmbperiodo.Text = "" Then
@@ -10,7 +11,7 @@ Public Class ImprimirRecibos
             Reconectar()
             conexionPrinc.ChangeDatabase(database)
             conexionEmp.ChangeDatabase(EmpDB)
-
+            PeridodoConcat = cmbperiodo.Text
             Dim cadenaBD As String = EmpDB & ".sdo_personal as per," & database & ".cm_empresas as emp, " & EmpDB & ".sdo_recibos as rec"
             Dim tabRecibos As New MySql.Data.MySqlClient.MySqlDataAdapter
             Dim tabItems As New MySql.Data.MySqlClient.MySqlDataAdapter
@@ -18,7 +19,8 @@ Public Class ImprimirRecibos
             tabRecibos.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select rec.idpersonal, concat(per.apellidos,', ', per.nombre) as nombreapellido, " _
             & "rec.dni as documento, rec.cuil,  rec.fecha_ingreso as fechaingreso, rec.antiguedad, rec.convenio, rec.categoria, concat(rec.periodo_pago,' ', rec.mes,' ', rec.ano) as periodoliquidado, " _
             & "rec.fecha_pago as fechapago, rec.basico as sueldobasico, concat('Empleador: ',emp.razon, '\n', 'Domicilio: ',emp.direccion,'\n','C.U.I.T.: ',emp.cuit) as empresadtos, rec.id as id, rec.total_remunerativo as totrem, rec.total_noremunerativo as totnorem, rec.total_descuentos as totdedu, " _
-            & "rec.total_neto as totneto, enletras as letras, sueldobanco, sueldocuenta,aportebanco,aportefecha,aporteperiodo, lugarpago from " & cadenaBD & " where periodoConcat like '%" & cmbperiodo.Text & "%' and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
+            & "rec.total_neto as totneto, enletras as letras, sueldobanco, sueldocuenta,aportebanco,aportefecha,aporteperiodo, lugarpago from " & cadenaBD & " 
+            where periodoConcat like '%" & PeridodoConcat & "%' and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
             tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo 
             from sdo_items_recibos order by id asc", conexionEmp)
 
@@ -44,8 +46,12 @@ Public Class ImprimirRecibos
             conexionEmp.ChangeDatabase(EmpDB)
             Dim ds As New DatasetRecibos
             Dim tabItems As New MySql.Data.MySqlClient.MySqlDataAdapter
-            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo from sdo_items_recibos order by codigo asc", conexionEmp)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select itmrec.codigo as codigo, itmrec.concepto as concepto, itmrec.unidades as unidades, 
+            itmrec.remunerativo as remunerativo, itmrec.noremunerativo as noremunerativo, itmrec.deducciones as deducciones, itmrec.idrecibo as idrecibo 
+            from sdo_items_recibos as itmrec, sdo_recibos as rec  where 
+            rec.id=itmrec.idrecibo and rec.periodoConcat like '%" & PeridodoConcat & "%' order by itmrec.codigo asc", conexionEmp)
             tabItems.Fill(ds.Tables("ReciboItems"))
+            'MsgBox(tabItems.SelectCommand.CommandText)
             e.DataSources.Add(New ReportDataSource("ItemsRecibos", ds.Tables("ReciboItems")))
         Catch ex As Exception
 
@@ -55,7 +61,8 @@ Public Class ImprimirRecibos
     Private Sub ImprimirRecibos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conexionEmp.ChangeDatabase(EmpDB)
 
-        Dim tablaperiodo As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT distinct(concat(periodo_pago,' ', mes, ' ', ano)) as periodo from sdo_recibos order by mes desc", conexionEmp)
+        Dim tablaperiodo As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT distinct(concat(periodo_pago,' ', mes, ' ', ano)) as periodo 
+        from sdo_recibos order by id desc", conexionEmp)
         Dim readperiodo As New DataSet
         tablaperiodo.Fill(readperiodo)
         cmbperiodo.DataSource = readperiodo.Tables(0)

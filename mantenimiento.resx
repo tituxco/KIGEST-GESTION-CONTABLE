@@ -117,6 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>ANOS: cantidad de años de antiguedad
+ANTIGUEDAD: coeficiente entre los años y el porcentaje de antiguedad
+PORANT: porcentaje por cada año de antiguedad
+BASICO: sueldo basico, puede ser por horas, dias o fijo
+CANTIDAD: se usa para personal por hora o dias; el sistema lo pedira al agregar el item al recibo
+REMUNERATIVO: total de items remunerativos
+NOREMUNERATIVO: total de items no remunerativos
+DEDUCCIONES: total de items de deducciones
+MONTO: monto fijo; el sistema lo pedira al agregar el item al recibo</value>
+  </data>
+  <metadata name="cmdSel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="fldbrwrutaresguardo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -207,24 +224,4 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="Label9.Text" xml:space="preserve">
-    <value>ANOS: cantidad de años de antiguedad
-ANTIGUEDAD: coeficiente entre los años y el porcentaje de antiguedad
-PORANT: porcentaje por cada año de antiguedad
-BASICO: sueldo basico, puede ser por horas, dias o fijo
-CANTIDAD: se usa para personal por hora o dias; el sistema lo pedira al agregar el item al recibo
-REMUNERATIVO: total de items remunerativos
-NOREMUNERATIVO: total de items no remunerativos
-DEDUCCIONES: total de items de deducciones
-MONTO: monto fijo; el sistema lo pedira al agregar el item al recibo</value>
-  </data>
-  <metadata name="cmdSel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cmdSel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="fldbrwrutaresguardo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

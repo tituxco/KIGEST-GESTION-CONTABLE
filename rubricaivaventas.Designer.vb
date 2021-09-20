@@ -37,6 +37,7 @@ Partial Class rubricaivaventas
         Me.rpthojas.LocalReport.ReportEmbeddedResource = "KIGEST___Gestión_Contable.LibroSuelEncabeza.rdlc"
         Me.rpthojas.Location = New System.Drawing.Point(0, 0)
         Me.rpthojas.Name = "rpthojas"
+        Me.rpthojas.ServerReport.BearerToken = Nothing
         Me.rpthojas.Size = New System.Drawing.Size(772, 375)
         Me.rpthojas.TabIndex = 10
         '

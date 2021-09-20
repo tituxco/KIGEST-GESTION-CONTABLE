@@ -24,7 +24,6 @@ Partial Class mantenimiento
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mantenimiento))
         Me.pnnavegacion = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.pntitulo = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -33,7 +32,6 @@ Partial Class mantenimiento
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.dtconceptos = New System.Windows.Forms.DataGridView()
-        Me.cmdSel = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cmbcategoria = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -45,24 +43,6 @@ Partial Class mantenimiento
         Me.txtporcant = New System.Windows.Forms.TextBox()
         Me.cmbconvenio = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.chkbasico = New System.Windows.Forms.CheckBox()
-        Me.txtformula = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.cmbtipo = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtcantidad = New System.Windows.Forms.TextBox()
-        Me.cmdaddconcepto = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.cmbunidad = New System.Windows.Forms.ComboBox()
-        Me.txtcodigo = New System.Windows.Forms.TextBox()
-        Me.txtconcepto = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtmonto = New System.Windows.Forms.TextBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -83,6 +63,11 @@ Partial Class mantenimiento
         Me.Button2 = New System.Windows.Forms.Button()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.fldbrwrutaresguardo = New System.Windows.Forms.FolderBrowserDialog()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.cmdSel = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.pnnavegacion.SuspendLayout()
         Me.pntitulo.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -91,7 +76,6 @@ Partial Class mantenimiento
         Me.TabPage2.SuspendLayout()
         CType(Me.dtconceptos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.dtnomenclador, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,6 +85,7 @@ Partial Class mantenimiento
         CType(Me.dtdbresguardo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnnavegacion
@@ -113,23 +98,6 @@ Partial Class mantenimiento
         Me.pnnavegacion.Name = "pnnavegacion"
         Me.pnnavegacion.Size = New System.Drawing.Size(953, 73)
         Me.pnnavegacion.TabIndex = 6
-        '
-        'Button1
-        '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(883, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 73)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Salir"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'pntitulo
         '
@@ -219,16 +187,11 @@ Partial Class mantenimiento
         Me.dtconceptos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtconceptos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.cmdSel})
         Me.dtconceptos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dtconceptos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dtconceptos.Location = New System.Drawing.Point(307, 3)
         Me.dtconceptos.Name = "dtconceptos"
-        Me.dtconceptos.Size = New System.Drawing.Size(621, 261)
+        Me.dtconceptos.Size = New System.Drawing.Size(621, 327)
         Me.dtconceptos.TabIndex = 46
-        '
-        'cmdSel
-        '
-        Me.cmdSel.HeaderText = "Selecc"
-        Me.cmdSel.Name = "cmdSel"
-        Me.cmdSel.Width = 46
         '
         'Panel2
         '
@@ -245,7 +208,7 @@ Partial Class mantenimiento
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(3, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(304, 261)
+        Me.Panel2.Size = New System.Drawing.Size(304, 327)
         Me.Panel2.TabIndex = 45
         '
         'cmbcategoria
@@ -347,196 +310,6 @@ Partial Class mantenimiento
         Me.Label17.Size = New System.Drawing.Size(64, 13)
         Me.Label17.TabIndex = 58
         Me.Label17.Text = "Convenio:"
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.chkbasico)
-        Me.Panel1.Controls.Add(Me.txtformula)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.cmbtipo)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.txtcantidad)
-        Me.Panel1.Controls.Add(Me.cmdaddconcepto)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.cmbunidad)
-        Me.Panel1.Controls.Add(Me.txtcodigo)
-        Me.Panel1.Controls.Add(Me.txtconcepto)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.txtmonto)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(3, 264)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(925, 102)
-        Me.Panel1.TabIndex = 43
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Red
-        Me.Label13.Location = New System.Drawing.Point(301, 3)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(113, 13)
-        Me.Label13.TabIndex = 61
-        Me.Label13.Text = "Agregar Concepto:"
-        '
-        'chkbasico
-        '
-        Me.chkbasico.Location = New System.Drawing.Point(819, 43)
-        Me.chkbasico.Name = "chkbasico"
-        Me.chkbasico.Size = New System.Drawing.Size(75, 33)
-        Me.chkbasico.TabIndex = 60
-        Me.chkbasico.Text = "Sumar al basico"
-        Me.chkbasico.UseVisualStyleBackColor = True
-        '
-        'txtformula
-        '
-        Me.txtformula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtformula.Location = New System.Drawing.Point(656, 41)
-        Me.txtformula.Multiline = True
-        Me.txtformula.Name = "txtformula"
-        Me.txtformula.Size = New System.Drawing.Size(157, 59)
-        Me.txtformula.TabIndex = 5
-        Me.txtformula.Tag = ""
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(653, 25)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 13)
-        Me.Label7.TabIndex = 54
-        Me.Label7.Text = "Formula"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(393, 25)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(32, 13)
-        Me.Label6.TabIndex = 53
-        Me.Label6.Text = "Tipo"
-        '
-        'cmbtipo
-        '
-        Me.cmbtipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cmbtipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cmbtipo.FormattingEnabled = True
-        Me.cmbtipo.Location = New System.Drawing.Point(396, 41)
-        Me.cmbtipo.Name = "cmbtipo"
-        Me.cmbtipo.Size = New System.Drawing.Size(200, 21)
-        Me.cmbtipo.TabIndex = 1
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(599, 25)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 13)
-        Me.Label3.TabIndex = 51
-        Me.Label3.Text = "Cantidad"
-        '
-        'txtcantidad
-        '
-        Me.txtcantidad.Location = New System.Drawing.Point(602, 41)
-        Me.txtcantidad.Name = "txtcantidad"
-        Me.txtcantidad.Size = New System.Drawing.Size(49, 20)
-        Me.txtcantidad.TabIndex = 2
-        Me.txtcantidad.Tag = ""
-        '
-        'cmdaddconcepto
-        '
-        Me.cmdaddconcepto.Location = New System.Drawing.Point(819, 76)
-        Me.cmdaddconcepto.Name = "cmdaddconcepto"
-        Me.cmdaddconcepto.Size = New System.Drawing.Size(75, 23)
-        Me.cmdaddconcepto.TabIndex = 6
-        Me.cmdaddconcepto.Text = "Agregar"
-        Me.cmdaddconcepto.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(538, 65)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 13)
-        Me.Label5.TabIndex = 48
-        Me.Label5.Text = "Unidad"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(301, 65)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 13)
-        Me.Label4.TabIndex = 47
-        Me.Label4.Text = "Concepto:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(301, 25)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 13)
-        Me.Label2.TabIndex = 46
-        Me.Label2.Text = "Codigo:"
-        '
-        'cmbunidad
-        '
-        Me.cmbunidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cmbunidad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cmbunidad.FormattingEnabled = True
-        Me.cmbunidad.Location = New System.Drawing.Point(541, 81)
-        Me.cmbunidad.Name = "cmbunidad"
-        Me.cmbunidad.Size = New System.Drawing.Size(109, 21)
-        Me.cmbunidad.TabIndex = 3
-        '
-        'txtcodigo
-        '
-        Me.txtcodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtcodigo.Location = New System.Drawing.Point(300, 41)
-        Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.Size = New System.Drawing.Size(86, 20)
-        Me.txtcodigo.TabIndex = 0
-        Me.txtcodigo.Tag = ""
-        '
-        'txtconcepto
-        '
-        Me.txtconcepto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtconcepto.Location = New System.Drawing.Point(300, 82)
-        Me.txtconcepto.Name = "txtconcepto"
-        Me.txtconcepto.Size = New System.Drawing.Size(235, 20)
-        Me.txtconcepto.TabIndex = 4
-        Me.txtconcepto.Tag = ""
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(657, 52)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(42, 13)
-        Me.Label10.TabIndex = 59
-        Me.Label10.Text = "Monto"
-        Me.Label10.Visible = False
-        '
-        'txtmonto
-        '
-        Me.txtmonto.Location = New System.Drawing.Point(660, 68)
-        Me.txtmonto.Name = "txtmonto"
-        Me.txtmonto.Size = New System.Drawing.Size(49, 20)
-        Me.txtmonto.TabIndex = 58
-        Me.txtmonto.Tag = ""
-        Me.txtmonto.Visible = False
         '
         'TabPage3
         '
@@ -748,6 +521,57 @@ Partial Class mantenimiento
         Me.RadioButton1.Text = "Unidad extraible"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(3, 330)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(925, 36)
+        Me.Panel1.TabIndex = 43
+        '
+        'Button1
+        '
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(883, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(70, 73)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Salir"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(847, 6)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 0
+        Me.Button4.Text = "Agregar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(766, 6)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 1
+        Me.Button5.Text = "Modificar"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'cmdSel
+        '
+        Me.cmdSel.HeaderText = "Selecc"
+        Me.cmdSel.Name = "cmdSel"
+        Me.cmdSel.Width = 46
+        '
         'mantenimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -771,8 +595,6 @@ Partial Class mantenimiento
         CType(Me.dtconceptos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
@@ -786,6 +608,7 @@ Partial Class mantenimiento
         Me.Panel4.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -797,24 +620,7 @@ Partial Class mantenimiento
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabControl2 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents cmbunidad As System.Windows.Forms.ComboBox
-    Friend WithEvents txtcodigo As System.Windows.Forms.TextBox
-    Friend WithEvents txtconcepto As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents cmbtipo As System.Windows.Forms.ComboBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtcantidad As System.Windows.Forms.TextBox
-    Friend WithEvents cmdaddconcepto As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents txtformula As System.Windows.Forms.TextBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents txtmonto As System.Windows.Forms.TextBox
-    Friend WithEvents chkbasico As System.Windows.Forms.CheckBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents cmdguardar As System.Windows.Forms.Button
     Friend WithEvents txtsueldo As System.Windows.Forms.TextBox
@@ -824,8 +630,6 @@ Partial Class mantenimiento
     Friend WithEvents cmbconvenio As System.Windows.Forms.ComboBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents dtconceptos As System.Windows.Forms.DataGridView
-    Friend WithEvents cmdSel As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents cmbcategoria As System.Windows.Forms.ComboBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
@@ -849,4 +653,8 @@ Partial Class mantenimiento
     Friend WithEvents fldbrwrutaresguardo As FolderBrowserDialog
     Friend WithEvents Button3 As Button
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents cmdSel As DataGridViewCheckBoxColumn
 End Class
