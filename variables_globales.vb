@@ -20,6 +20,7 @@
 
         Public Property CLOUDserv As String
         Public Property RESPserv As String
+        Public Property CUITEmpresa As String
     End Structure
 
     Public DatosAcceso As DatosUsuario

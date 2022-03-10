@@ -142,8 +142,8 @@ Public Class recibos
     Private Sub AgregarItem(ByRef cod As String, ByVal reg As Boolean)
         Try
             Reconectar()
-            Dim lector As System.Data.IDataReader
-            Dim sql As New MySql.Data.MySqlClient.MySqlCommand
+            'Dim lector As System.Data.IDataReader
+            'Dim sql As New MySql.Data.MySqlClient.MySqlCommand
             Dim tipo As String = ""
             Dim formula As String = ""
             Dim codigo As String = ""
@@ -156,24 +156,35 @@ Public Class recibos
 
             conexionPrinc.ChangeDatabase(database)
             conexionEmp.ChangeDatabase(EmpDB)
-            sql.Connection = conexionPrinc
-            sql.CommandText = "SELECT cs.usar_sueldo, cs.cantidad as Cantidad,cs.codigo as Codigo, cs.concepto as Concepto, ti.nombre as Tipo, cs.monto as Monto, " _
+            'sql.Connection = conexionPrinc
+            'sql.CommandText = 
+
+            'sql.CommandType = CommandType.Text
+            'lector = sql.ExecuteReader
+            'lector.Read()
+
+            Dim consulta As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT cs.usar_sueldo, cs.cantidad as Cantidad,cs.codigo as Codigo, cs.concepto as Concepto, ti.nombre as Tipo, cs.monto as Monto, " _
                 & "uni.nombre as Unidad, cs.formula as Formula FROM cm_sdo_conceptos_sueldo as cs, cm_sdo_tipos_conceptos_sueldo as ti,cm_sdo_unidades_calculo as uni " _
-                & "where cs.tipo=ti.id and cs.unidad=uni.id and cs.codigo like '" & cod & "'"
+                & "where cs.tipo=ti.id and cs.unidad=uni.id and cs.codigo like '" & cod & "'", conexionPrinc)
+            Dim tablacons As New DataTable
+            'Dim comando As New MySql.Data.MySqlClient.MySqlCommandBuilder(consulta)
+            consulta.Fill(tablacons)
+            If tablacons.Rows.Count = 0 Then
+                MsgBox("el concepto sueldo codigo <<" & cod & ">> no se encuentra en la lista de conceptos, revise el armado de convenio para este empleado")
+                Exit Sub
+            End If
 
-            sql.CommandType = CommandType.Text
-            lector = sql.ExecuteReader
-            lector.Read()
 
-            tipo = lector("Tipo").ToString
-            codigo = lector("Codigo").ToString
-            formula = lector("Formula").ToString
-            concepto = lector("Concepto").ToString
-            monto = lector("Monto").ToString
-            unidad = lector("Unidad").ToString
-            cantidad = lector("Cantidad").ToString
+
+            tipo = tablacons.Rows(0).Item("Tipo").ToString
+            codigo = tablacons.Rows(0).Item("Codigo").ToString
+            formula = tablacons.Rows(0).Item("Formula").ToString
+            concepto = tablacons.Rows(0).Item("Concepto").ToString
+            monto = tablacons.Rows(0).Item("Monto").ToString
+            unidad = tablacons.Rows(0).Item("Unidad").ToString
+            cantidad = tablacons.Rows(0).Item("Cantidad").ToString
             Dim usar As Integer
-            usar = lector("usar_sueldo").ToString
+            usar = tablacons.Rows(0).Item("usar_sueldo").ToString
             'ejecutamos la funcion
             'variablesIncluir = "Dim BASICO As String = " & BASICO
             'Dim oRetVal As Object = CompileAndRunCode(variablesIncluir & vbCrLf & formula
@@ -866,10 +877,6 @@ Public Class recibos
 
     Private Sub Button9_Click_1(sender As Object, e As EventArgs) Handles Button9.Click
         CargarPersonal()
-    End Sub
-
-    Private Sub Panel13_Paint(sender As Object, e As PaintEventArgs) Handles Panel13.Paint
-
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click

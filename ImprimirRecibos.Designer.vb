@@ -67,7 +67,7 @@ Partial Class ImprimirRecibos
         Me.rptrecibo.LocalReport.ReportEmbeddedResource = "KIGEST___Gestion_Contable.ReciboEncabezado.rdlc"
         Me.rptrecibo.Location = New System.Drawing.Point(0, 21)
         Me.rptrecibo.Name = "rptrecibo"
-        'Me.rptrecibo.ServerReport.BearerToken = Nothing
+        Me.rptrecibo.ServerReport.BearerToken = Nothing
         Me.rptrecibo.Size = New System.Drawing.Size(705, 368)
         Me.rptrecibo.TabIndex = 3
         '

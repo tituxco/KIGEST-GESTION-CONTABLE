@@ -149,6 +149,8 @@
                 cantidad = '" & cantidad & "',
                 usar_sueldo = '" & chkbasico.CheckState & "'
                 WHERE idconceptos_sueldo = " & IDconceptoSueldoMod
+                Dim comandoupd As New MySql.Data.MySqlClient.MySqlCommand(sqlQuery, conexionPrinc)
+                comandoupd.ExecuteNonQuery()
                 idCodigo = IDconceptoSueldoMod
             End If
 

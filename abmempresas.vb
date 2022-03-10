@@ -64,6 +64,10 @@
         ConectarEmpresa(dtempresas.CurrentRow.Cells.Item(4).Value.ToString)
         'dtempresas.CurrentRow.DefaultCellStyle.BackColor = Color.Gold
         DatosEmpresa.IdEmpresa = dtempresas.CurrentRow.Cells.Item(0).Value
+        DatosEmpresa.Cuit = dtempresas.CurrentRow.Cells("CUIT").Value
+        DatosEmpresa.Razon = dtempresas.CurrentRow.Cells("RazonSocial").Value
+        DatosEmpresa.Fantasia = dtempresas.CurrentRow.Cells("NombreFantasia").Value
+
         marcar()
 
     End Sub
@@ -95,6 +99,7 @@
         ConectarEmpresa(dtempresas.CurrentRow.Cells.Item(4).Value.ToString)
         'dtempresas.CurrentRow.DefaultCellStyle.BackColor = Color.Gold
         DatosEmpresa.IdEmpresa = dtempresas.CurrentRow.Cells.Item(0).Value
+        DatosEmpresa.Cuit = dtempresas.CurrentRow.Cells("CUIT").Value
         marcar()
     End Sub
 
@@ -122,6 +127,10 @@
     End Sub
 
     Private Sub Label17_Click(sender As Object, e As EventArgs) Handles Label17.Click
+
+    End Sub
+
+    Private Sub txtsentencias_TextChanged(sender As Object, e As EventArgs) Handles txtsentencias.TextChanged
 
     End Sub
 End Class

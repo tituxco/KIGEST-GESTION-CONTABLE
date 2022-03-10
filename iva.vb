@@ -188,7 +188,6 @@ Public Class iva
             cmbvtacond.ValueMember = readtipoivacomp.Tables(0).Columns(0).Caption.ToString
             cmbvtacond.SelectedIndex = -1
 
-
             cargarDtosComp()
             cargarDtosVtas()
         Catch ex As Exception
@@ -2030,4 +2029,35 @@ Public Class iva
         txtvtaneto.Text = FormatNumber(CDec(txtalineto105.Text) + CDec(txtalineto21.Text), 2)
     End Sub
 
+    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
+
+    End Sub
+
+    Private Sub cmbcondivaComp_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbcondivaComp.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbrazonComp_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbrazonComp.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub txtfaciz_TextChanged(sender As Object, e As EventArgs) Handles txtfaciz.TextChanged
+
+    End Sub
+
+    Private Sub txtnetoComp_TextChanged(sender As Object, e As EventArgs) Handles txtnetoComp.TextChanged
+
+    End Sub
+
+    Private Sub txtivamontoComp_TextChanged(sender As Object, e As EventArgs) Handles txtivamontoComp.TextChanged
+
+    End Sub
+
+    Private Sub txtnogrComp_TextChanged(sender As Object, e As EventArgs) Handles txtnogrComp.TextChanged
+
+    End Sub
+
+    Private Sub cmbperiodocarg_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbperiodocarg.SelectedIndexChanged
+
+    End Sub
 End Class

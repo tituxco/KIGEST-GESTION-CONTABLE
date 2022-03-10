@@ -250,7 +250,7 @@ LEY Nº 20.744</Value>
                                   </Paragraphs>
                                   <rd:DefaultName>empresadtos</rd:DefaultName>
                                   <Left>9.54679cm</Left>
-                                  <Height>0.89958cm</Height>
+                                  <Height>1.18593cm</Height>
                                   <Width>3.95321cm</Width>
                                   <Style>
                                     <Border>
@@ -1057,7 +1057,7 @@ LEY Nº 20.744</Value>
                                   </Paragraphs>
                                   <rd:DefaultName>empresadtos</rd:DefaultName>
                                   <Left>9.54679cm</Left>
-                                  <Height>0.89958cm</Height>
+                                  <Height>1.16416cm</Height>
                                   <Width>3.95321cm</Width>
                                   <Style>
                                     <Border>
@@ -1779,7 +1779,7 @@ LEY Nº 20.744</Value>
             </TablixRowHierarchy>
             <DataSetName>EncabezaRecibo</DataSetName>
             <Top>0.02177cm</Top>
-            <Left>13.99847cm</Left>
+            <Left>14.89558cm</Left>
             <Height>6.73707cm</Height>
             <Width>13.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -1789,15 +1789,27 @@ LEY Nº 20.744</Value>
               </Border>
             </Style>
           </Tablix>
+          <Line Name="Line1">
+            <Left>14.41662cm</Left>
+            <Height>19.365cm</Height>
+            <Width>0cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>Dashed</Style>
+                <Width>2pt</Width>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
-        <Height>6.75884cm</Height>
+        <Height>19.365cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>27.49847cm</Width>
+      <Width>28.39558cm</Width>
       <Page>
         <PageHeight>21cm</PageHeight>
         <PageWidth>29.7cm</PageWidth>

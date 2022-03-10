@@ -24,6 +24,7 @@ Partial Class mantenimiento
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mantenimiento))
         Me.pnnavegacion = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.pntitulo = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -32,6 +33,7 @@ Partial Class mantenimiento
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.dtconceptos = New System.Windows.Forms.DataGridView()
+        Me.cmdSel = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cmbcategoria = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -43,6 +45,10 @@ Partial Class mantenimiento
         Me.txtporcant = New System.Windows.Forms.TextBox()
         Me.cmbconvenio = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -63,11 +69,10 @@ Partial Class mantenimiento
         Me.Button2 = New System.Windows.Forms.Button()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.fldbrwrutaresguardo = New System.Windows.Forms.FolderBrowserDialog()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.cmdSel = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.pnnavegacion.SuspendLayout()
         Me.pntitulo.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -76,6 +81,7 @@ Partial Class mantenimiento
         Me.TabPage2.SuspendLayout()
         CType(Me.dtconceptos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.dtnomenclador, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,7 +91,6 @@ Partial Class mantenimiento
         CType(Me.dtdbresguardo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnnavegacion
@@ -98,6 +103,23 @@ Partial Class mantenimiento
         Me.pnnavegacion.Name = "pnnavegacion"
         Me.pnnavegacion.Size = New System.Drawing.Size(953, 73)
         Me.pnnavegacion.TabIndex = 6
+        '
+        'Button1
+        '
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(883, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(70, 73)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Salir"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'pntitulo
         '
@@ -187,14 +209,23 @@ Partial Class mantenimiento
         Me.dtconceptos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtconceptos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.cmdSel})
         Me.dtconceptos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dtconceptos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dtconceptos.Location = New System.Drawing.Point(307, 3)
         Me.dtconceptos.Name = "dtconceptos"
         Me.dtconceptos.Size = New System.Drawing.Size(621, 327)
         Me.dtconceptos.TabIndex = 46
         '
+        'cmdSel
+        '
+        Me.cmdSel.HeaderText = "Selecc"
+        Me.cmdSel.Name = "cmdSel"
+        Me.cmdSel.Width = 46
+        '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Button8)
+        Me.Panel2.Controls.Add(Me.Button10)
+        Me.Panel2.Controls.Add(Me.Button9)
+        Me.Panel2.Controls.Add(Me.Button7)
         Me.Panel2.Controls.Add(Me.cmbcategoria)
         Me.Panel2.Controls.Add(Me.Label14)
         Me.Panel2.Controls.Add(Me.cmdguardar)
@@ -215,10 +246,11 @@ Partial Class mantenimiento
         '
         Me.cmbcategoria.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbcategoria.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbcategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbcategoria.FormattingEnabled = True
         Me.cmbcategoria.Location = New System.Drawing.Point(3, 83)
         Me.cmbcategoria.Name = "cmbcategoria"
-        Me.cmbcategoria.Size = New System.Drawing.Size(295, 21)
+        Me.cmbcategoria.Size = New System.Drawing.Size(246, 21)
         Me.cmbcategoria.TabIndex = 66
         '
         'Label14
@@ -294,10 +326,11 @@ Partial Class mantenimiento
         '
         Me.cmbconvenio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbconvenio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbconvenio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbconvenio.FormattingEnabled = True
         Me.cmbconvenio.Location = New System.Drawing.Point(3, 27)
         Me.cmbconvenio.Name = "cmbconvenio"
-        Me.cmbconvenio.Size = New System.Drawing.Size(295, 21)
+        Me.cmbconvenio.Size = New System.Drawing.Size(246, 21)
         Me.cmbconvenio.TabIndex = 59
         '
         'Label17
@@ -310,6 +343,44 @@ Partial Class mantenimiento
         Me.Label17.Size = New System.Drawing.Size(64, 13)
         Me.Label17.TabIndex = 58
         Me.Label17.Text = "Convenio:"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button6)
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(3, 330)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(925, 36)
+        Me.Panel1.TabIndex = 43
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(685, 6)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 2
+        Me.Button6.Text = "Eliminar"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(766, 6)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 1
+        Me.Button5.Text = "Modificar"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(847, 6)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 0
+        Me.Button4.Text = "Agregar"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'TabPage3
         '
@@ -521,56 +592,41 @@ Partial Class mantenimiento
         Me.RadioButton1.Text = "Unidad extraible"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'Button7
         '
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(3, 330)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(925, 36)
-        Me.Panel1.TabIndex = 43
+        Me.Button7.Location = New System.Drawing.Point(248, 26)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(28, 23)
+        Me.Button7.TabIndex = 67
+        Me.Button7.Text = "+"
+        Me.Button7.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Button9
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(883, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 73)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Salir"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button9.Location = New System.Drawing.Point(276, 26)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(28, 23)
+        Me.Button9.TabIndex = 69
+        Me.Button9.Text = "-"
+        Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Button8
         '
-        Me.Button4.Location = New System.Drawing.Point(847, 6)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 0
-        Me.Button4.Text = "Agregar"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button8.Location = New System.Drawing.Point(276, 82)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(28, 23)
+        Me.Button8.TabIndex = 71
+        Me.Button8.Text = "-"
+        Me.Button8.UseVisualStyleBackColor = True
         '
-        'Button5
+        'Button10
         '
-        Me.Button5.Location = New System.Drawing.Point(766, 6)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 1
-        Me.Button5.Text = "Modificar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'cmdSel
-        '
-        Me.cmdSel.HeaderText = "Selecc"
-        Me.cmdSel.Name = "cmdSel"
-        Me.cmdSel.Width = 46
+        Me.Button10.Location = New System.Drawing.Point(248, 82)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(28, 23)
+        Me.Button10.TabIndex = 70
+        Me.Button10.Text = "+"
+        Me.Button10.UseVisualStyleBackColor = True
         '
         'mantenimiento
         '
@@ -595,6 +651,7 @@ Partial Class mantenimiento
         CType(Me.dtconceptos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
@@ -608,7 +665,6 @@ Partial Class mantenimiento
         Me.Panel4.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -657,4 +713,9 @@ Partial Class mantenimiento
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents cmdSel As DataGridViewCheckBoxColumn
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
 End Class

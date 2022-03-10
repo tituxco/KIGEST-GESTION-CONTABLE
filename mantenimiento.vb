@@ -64,6 +64,15 @@ Public Class mantenimiento
             consulta.Fill(tablaConc)
             dtconceptos.DataSource = tablaConc
             dtconceptos.Columns(1).Visible = False
+            dtconceptos.Columns(2).ReadOnly = True
+            dtconceptos.Columns(3).ReadOnly = True
+            dtconceptos.Columns(4).ReadOnly = True
+            dtconceptos.Columns(5).ReadOnly = True
+            dtconceptos.Columns(6).ReadOnly = True
+            dtconceptos.Columns(7).ReadOnly = True
+
+
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -90,7 +99,7 @@ Public Class mantenimiento
             'MsgBox(centrosel)
             For i = 0 To dtconceptos.RowCount - 1
                 If dtconceptos.Rows.Item(i).Cells(0).Value = True Then
-                    cadenaCONC &= "," & dtconceptos.Item(1, i).Value.ToString
+                    cadenaCONC &= "," & dtconceptos.Item(2, i).Value.ToString
                 End If
             Next
 
@@ -194,7 +203,7 @@ Public Class mantenimiento
     Private Sub resaltarActivos(ByRef sel As String)
         Dim i As Integer
         For i = 0 To dtconceptos.Rows.Count - 1
-            If InStr(sel, dtconceptos.Item(1, i).Value.ToString) <> 0 Then
+            If InStr(sel, dtconceptos.Item(2, i).Value.ToString) <> 0 Then
                 dtconceptos.Rows(i).Cells(0).Value = True
             Else
                 dtconceptos.Rows(i).Cells(0).Value = False
@@ -206,14 +215,6 @@ Public Class mantenimiento
         For i = 0 To dtconceptos.Rows.Count - 1
             dtconceptos.Rows(i).Cells(0).Value = False
         Next
-    End Sub
-
-    Private Sub cmbcentro_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbconvenio.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub dtconceptos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtconceptos.CellContentClick
-
     End Sub
 
     Private Sub dtconceptos_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dtconceptos.CellEndEdit
@@ -385,4 +386,124 @@ Public Class mantenimiento
         'MsgBox(dtconceptos.CurrentRow.Cells(0).Value)
         NuevoConceptoSueldo.Show()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Try
+            If MsgBox("Esta seguro que desea eliminar los conceptos seleccionados? las formulas automaticas que poseian este concepto dejaran de funcionar", vbYesNo + vbQuestion) = vbNo Then
+                Exit Sub
+            End If
+
+            For Each concepto As DataGridViewRow In dtconceptos.Rows
+                If concepto.Cells(0).Value=True Then
+                    Reconectar()
+
+                    Dim comandoDel As New MySql.Data.MySqlClient.MySqlCommand("delete from cm_sdo_conceptos_sueldo 
+                    where idconceptos_sueldo=" & concepto.Cells("idconceptos_sueldo").Value, conexionPrinc)
+
+                    comandoDel.ExecuteNonQuery()
+                End If
+
+            Next
+            CargarConceptos()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Try
+            If MsgBox("Esta seguro que desea eliminar este convenio? con el se eliminaran todas las categorias asociadas", vbYesNo + vbQuestion) = vbNo Then
+                Exit Sub
+            End If
+            Dim comandoDelConv As New MySql.Data.MySqlClient.MySqlCommand("delete from cm_sdo_convenios where id=" & cmbconvenio.SelectedValue, conexionPrinc)
+            comandoDelConv.ExecuteNonQuery()
+            Dim comandoDelCat As New MySql.Data.MySqlClient.MySqlCommand("delete from cm_sdo_categoria_personal where idconvenio=" & cmbconvenio.SelectedValue, conexionPrinc)
+            comandoDelCat.ExecuteNonQuery()
+            Dim comandoDelCtro As New MySql.Data.MySqlClient.MySqlCommand("delete from cm_sdo_centro_costos where convenio=" & cmbconvenio.SelectedValue, conexionPrinc)
+            comandoDelCtro.ExecuteNonQuery()
+
+            cargarDtosGrales()
+            MsgBox("Convenio eliminado!")
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+        Try
+                If MsgBox("Esta seguro que desea eliminar esta categoria?", vbYesNo + vbQuestion) = vbNo Then
+                    Exit Sub
+                End If
+            Dim comandoDelCat As New MySql.Data.MySqlClient.MySqlCommand("delete from cm_sdo_categoria_personal where idcategoria_personal=" & cmbcategoria.SelectedValue, conexionPrinc)
+            comandoDelCat.ExecuteNonQuery()
+            Dim comandoDelCtro As New MySql.Data.MySqlClient.MySqlCommand("delete from cm_sdo_centro_costos where categoria_personal=" & cmbcategoria.SelectedValue, conexionPrinc)
+            comandoDelCtro.ExecuteNonQuery()
+
+            Dim tablaCatTra As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_categoria_personal where idconvenio=" & cmbconvenio.SelectedValue & " order by nombre asc", conexionPrinc)
+            Dim readcatTR As New DataSet
+            tablaCatTra.Fill(readcatTR)
+            cmbcategoria.DataSource = readcatTR.Tables(0)
+            cmbcategoria.DisplayMember = readcatTR.Tables(0).Columns(1).Caption.ToString
+            cmbcategoria.ValueMember = readcatTR.Tables(0).Columns(0).Caption.ToString
+            cmbcategoria.SelectedIndex = -1
+            MsgBox("Categoria Eliminada!")
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Try
+            Dim NvoConvenio As String = ""
+            NvoConvenio = InputBox("ingrese el nombre del nuevo convenio", "Nuevo convenio")
+            If NvoConvenio = "" Then
+                Exit Sub
+            End If
+
+            Dim comandoaddConv As New MySql.Data.MySqlClient.MySqlCommand("insert into cm_sdo_convenios (nombre) values ('" & NvoConvenio & "')", conexionPrinc)
+            comandoaddConv.ExecuteNonQuery()
+            cargarDtosGrales()
+            cmbconvenio.SelectedValue = comandoaddConv.LastInsertedId
+
+            MsgBox("Convenio agregado!")
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Try
+            If cmbconvenio.SelectedValue = 0 Or cmbconvenio.SelectedIndex = -1 Then
+                MsgBox("seleccione primero un convenio!")
+                Exit Sub
+            End If
+            Dim idConvenio As Integer = cmbconvenio.SelectedValue
+            Dim nvaCategoria As String = ""
+            nvaCategoria = InputBox("Ingrese el nuevo nombre de la categoria", "nueva categoria")
+            If nvaCategoria = "" Then
+                Exit Sub
+            End If
+            Dim comandoaddcat As New MySql.Data.MySqlClient.MySqlCommand("insert into cm_sdo_categoria_personal (nombre,idconvenio) 
+            values ('" & nvaCategoria & "','" & idConvenio & "')", conexionPrinc)
+            comandoaddcat.ExecuteNonQuery()
+
+            'Dim idconvenio = cmbconvenio.SelectedValue
+            Dim tablaCatTra As New MySql.Data.MySqlClient.MySqlDataAdapter("select * from cm_sdo_categoria_personal where idconvenio=" & idConvenio & " order by nombre asc", conexionPrinc)
+            Dim readcatTR As New DataSet
+            tablaCatTra.Fill(readcatTR)
+            cmbcategoria.DataSource = readcatTR.Tables(0)
+            cmbcategoria.DisplayMember = readcatTR.Tables(0).Columns(1).Caption.ToString
+            cmbcategoria.ValueMember = readcatTR.Tables(0).Columns(0).Caption.ToString
+            'cmbcategoria.SelectedIndex = -1
+
+            cmbcategoria.SelectedValue = comandoaddcat.LastInsertedId
+
+            MsgBox("Convenio agregado!")
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
 End Class

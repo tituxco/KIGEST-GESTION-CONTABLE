@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="KIGEST - Gestion Contable.exe" version="2.0.0.42" publicKeyToken="0000000000000000" language="es-AR" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="KIGEST - Gestion Contable.exe" version="2.0.0.53" publicKeyToken="0000000000000000" language="es-AR" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="ico_kigest_cont_ico.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KIGEST - Gestion Contable.exe" size="1492992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KIGEST - Gestion Contable.exe" size="1509376">
       <assemblyIdentity name="KIGEST - Gestion Contable" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y4vGzLsQXGR6V4fWfcQaCOtPkCyJZ9KF07aIsKApIhM=</dsig:DigestValue>
+        <dsig:DigestValue>7aCmqY9fgwtR9I4PrtEU0zvF7imBJKtycDtlCfEPQWU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -316,13 +316,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="archivosinst\tablas_comunes.txt" size="2254">
+  <file name="archivosinst\tablas_comunes.txt" size="3937">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GMojZ5ojJ/w2Ssg6lugv6FiE0NT8uGsps5MBzq7qYLc=</dsig:DigestValue>
+      <dsig:DigestValue>iOGeKqCau8NGM1ClLlo1Mg2HgLcc0jXkF8YGbeSs/YU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="archivosinst\tablas_comunes_iva.txt" size="296">
@@ -352,13 +352,13 @@
       <dsig:DigestValue>5mkRhLqfQpVrxpx1eDoImpZjr5aluB5W+cJ5nYBGAqU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="archivosinst\tablas_sueldos.txt" size="4093">
+  <file name="archivosinst\tablas_sueldos.txt" size="4846">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>UwlAlaq74m+yTmA2OS0tuiRPWgn54JIwzqDeRS3RgDI=</dsig:DigestValue>
+      <dsig:DigestValue>L9biJf2ouD27Uuc3Hh2p8mtDMd3OrHEXJF3rFtO5OdU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ico_kigest_cont.ico" size="516334">
@@ -442,13 +442,13 @@
       <dsig:DigestValue>9+j6idF2exP6O37WKJpJyMW5UrhZSyXJiwx9w9pZ8EI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Reportes\ReciboEncabezado.rdlc" size="91812">
+  <file name="Reportes\ReciboEncabezado.rdlc" size="92168">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WskGaN9YJyevrSTsUdnBfp8E16UGPeex+VHPrDC1kbs=</dsig:DigestValue>
+      <dsig:DigestValue>6PkHHXwp4I4bL4MZwykrN9zLfFeX2HSSmHYVud+3YCo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Reportes\RubricaIvaCompra.rdlc" size="9206">

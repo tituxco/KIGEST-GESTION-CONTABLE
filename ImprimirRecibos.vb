@@ -21,8 +21,10 @@ Public Class ImprimirRecibos
             & "rec.fecha_pago as fechapago, rec.basico as sueldobasico, concat('Empleador: ',emp.razon, '\n', 'Domicilio: ',emp.direccion,'\n','C.U.I.T.: ',emp.cuit) as empresadtos, rec.id as id, rec.total_remunerativo as totrem, rec.total_noremunerativo as totnorem, rec.total_descuentos as totdedu, " _
             & "rec.total_neto as totneto, enletras as letras, sueldobanco, sueldocuenta,aportebanco,aportefecha,aporteperiodo, lugarpago from " & cadenaBD & " 
             where periodoConcat like '%" & PeridodoConcat & "%' and rec.idpersonal=per.idpersonal and per.empresa=emp.idempresas", conexionEmp)
-            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select codigo, concepto, unidades, remunerativo, noremunerativo, deducciones, idrecibo 
-            from sdo_items_recibos order by id asc", conexionEmp)
+            tabItems.SelectCommand = New MySql.Data.MySqlClient.MySqlCommand("select itmrec.codigo as codigo, itmrec.concepto as concepto, itmrec.unidades as unidades, 
+            itmrec.remunerativo as remunerativo, itmrec.noremunerativo as noremunerativo, itmrec.deducciones as deducciones, itmrec.idrecibo as idrecibo 
+            from sdo_items_recibos as itmrec, sdo_recibos as rec  where 
+            rec.id=itmrec.idrecibo and rec.periodoConcat like '%" & PeridodoConcat & "%' order by itmrec.codigo asc", conexionEmp)
 
             tabRecibos.Fill(ds.Tables("ReciboEncabeza"))
             tabItems.Fill(ds.Tables("ReciboItems"))
@@ -73,6 +75,14 @@ Public Class ImprimirRecibos
     End Sub
 
     Private Sub ReportViewer2_Load(sender As Object, e As EventArgs) Handles rptrecibo.Load
+
+    End Sub
+
+    Private Sub cmbperiodo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbperiodo.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbperiodo_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbperiodo.SelectedValueChanged
 
     End Sub
 End Class

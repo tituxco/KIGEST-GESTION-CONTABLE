@@ -52,8 +52,6 @@ Partial Class NuevoConceptoSueldo
         Me.chkContribucionesSIPA = New System.Windows.Forms.CheckBox()
         Me.chkAporteRegEspeciales = New System.Windows.Forms.CheckBox()
         Me.chkAporteDiferenciales = New System.Windows.Forms.CheckBox()
-        Me.chkAporteFNE = New System.Windows.Forms.CheckBox()
-        Me.chkAporteAAFF = New System.Windows.Forms.CheckBox()
         Me.chkAporteRENATEA = New System.Windows.Forms.CheckBox()
         Me.chkAporteFSR = New System.Windows.Forms.CheckBox()
         Me.chkAporteOSocial = New System.Windows.Forms.CheckBox()
@@ -70,6 +68,8 @@ Partial Class NuevoConceptoSueldo
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.chkAporteFNE = New System.Windows.Forms.CheckBox()
+        Me.chkAporteAAFF = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.chkMaternidadAnses = New System.Windows.Forms.CheckBox()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -406,26 +406,6 @@ Partial Class NuevoConceptoSueldo
         Me.chkAporteDiferenciales.TabIndex = 92
         Me.chkAporteDiferenciales.UseVisualStyleBackColor = True
         '
-        'chkAporteFNE
-        '
-        Me.chkAporteFNE.AutoSize = True
-        Me.chkAporteFNE.Location = New System.Drawing.Point(267, 454)
-        Me.chkAporteFNE.Name = "chkAporteFNE"
-        Me.chkAporteFNE.Size = New System.Drawing.Size(15, 14)
-        Me.chkAporteFNE.TabIndex = 91
-        Me.chkAporteFNE.UseVisualStyleBackColor = True
-        Me.chkAporteFNE.Visible = False
-        '
-        'chkAporteAAFF
-        '
-        Me.chkAporteAAFF.AutoSize = True
-        Me.chkAporteAAFF.Location = New System.Drawing.Point(226, 454)
-        Me.chkAporteAAFF.Name = "chkAporteAAFF"
-        Me.chkAporteAAFF.Size = New System.Drawing.Size(15, 14)
-        Me.chkAporteAAFF.TabIndex = 90
-        Me.chkAporteAAFF.UseVisualStyleBackColor = True
-        Me.chkAporteAAFF.Visible = False
-        '
         'chkAporteRENATEA
         '
         Me.chkAporteRENATEA.AutoSize = True
@@ -581,6 +561,26 @@ Partial Class NuevoConceptoSueldo
         Me.Label1.TabIndex = 74
         Me.Label1.Text = "SIPA"
         '
+        'chkAporteFNE
+        '
+        Me.chkAporteFNE.AutoSize = True
+        Me.chkAporteFNE.Location = New System.Drawing.Point(267, 454)
+        Me.chkAporteFNE.Name = "chkAporteFNE"
+        Me.chkAporteFNE.Size = New System.Drawing.Size(15, 14)
+        Me.chkAporteFNE.TabIndex = 91
+        Me.chkAporteFNE.UseVisualStyleBackColor = True
+        Me.chkAporteFNE.Visible = False
+        '
+        'chkAporteAAFF
+        '
+        Me.chkAporteAAFF.AutoSize = True
+        Me.chkAporteAAFF.Location = New System.Drawing.Point(226, 454)
+        Me.chkAporteAAFF.Name = "chkAporteAAFF"
+        Me.chkAporteAAFF.Size = New System.Drawing.Size(15, 14)
+        Me.chkAporteAAFF.TabIndex = 90
+        Me.chkAporteAAFF.UseVisualStyleBackColor = True
+        Me.chkAporteAAFF.Visible = False
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.chkMaternidadAnses)
@@ -700,6 +700,7 @@ Partial Class NuevoConceptoSueldo
         '
         Me.chkBaseImponible07.AutoSize = True
         Me.chkBaseImponible07.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBaseImponible07.ForeColor = System.Drawing.Color.Red
         Me.chkBaseImponible07.Location = New System.Drawing.Point(351, 16)
         Me.chkBaseImponible07.Name = "chkBaseImponible07"
         Me.chkBaseImponible07.Size = New System.Drawing.Size(33, 17)
@@ -711,6 +712,7 @@ Partial Class NuevoConceptoSueldo
         '
         Me.chkBaseImponible06.AutoSize = True
         Me.chkBaseImponible06.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBaseImponible06.ForeColor = System.Drawing.Color.Red
         Me.chkBaseImponible06.Location = New System.Drawing.Point(312, 16)
         Me.chkBaseImponible06.Name = "chkBaseImponible06"
         Me.chkBaseImponible06.Size = New System.Drawing.Size(33, 17)

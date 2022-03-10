@@ -293,6 +293,7 @@
         codObrasSociales.Add(New CodigosObrasSociales(400800, "OSDE - DE EJECUTIVOS Y DEL PERSONAL DE DIRECCION DE EMPRESAS"))
         codObrasSociales.Add(New CodigosObrasSociales(107206, "OSPES - DEL PERSONAL DE ESTACIONES DE SERVICIO, GARAGES, PLAYAS DE ESTACIONAMIENTO Y LAVADEROS AUTOMATICOS "))
         codObrasSociales.Add(New CodigosObrasSociales(112103, "UOM - DE LA UNION OBRERA METALURGICO DE LA REPUBLICA ARGENTINA "))
+        codObrasSociales.Add(New CodigosObrasSociales(3801, "OBRA SOCIAL WITCEL"))
     End Sub
 
     Sub CargarFormasdePago()

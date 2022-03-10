@@ -61,11 +61,11 @@ Partial Class frmabmempresa
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sansation", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(205, 39)
+        Me.Label1.Size = New System.Drawing.Size(217, 39)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "EMPRESAS"
         '
@@ -223,7 +223,7 @@ Partial Class frmabmempresa
         Me.txtsentencias.Location = New System.Drawing.Point(6, 19)
         Me.txtsentencias.Multiline = True
         Me.txtsentencias.Name = "txtsentencias"
-        Me.txtsentencias.Size = New System.Drawing.Size(394, 292)
+        Me.txtsentencias.Size = New System.Drawing.Size(394, 111)
         Me.txtsentencias.TabIndex = 8
         '
         'GroupBox1
@@ -232,7 +232,7 @@ Partial Class frmabmempresa
         Me.GroupBox1.Controls.Add(Me.txtsentencias)
         Me.GroupBox1.Location = New System.Drawing.Point(59, 192)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(556, 323)
+        Me.GroupBox1.Size = New System.Drawing.Size(715, 323)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
