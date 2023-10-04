@@ -56,7 +56,7 @@ Public Class exportacionLSD
             'Dim nombrealicutas = carpetadestino.SelectedPath & "\" & Replace(cmbperiodocarg.Text, "/", "") & "_COMPRASalicuotas_" & EmpDB.ToString & ".txt"
             Dim strStreamW As Stream = Nothing
             Dim strStreamWriter As StreamWriter = Nothing
-            Windows.Forms.Cursor.Current = Cursors.WaitCursor
+            Cursor.Current = Cursors.WaitCursor
 
             If File.Exists(nombreconceptosExportar) Then
                 strStreamW = File.Open(nombreconceptosExportar, FileMode.Open)
@@ -157,149 +157,149 @@ Public Class exportacionLSD
 
             Reconectar()
             Dim consultaRegistro04 As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT '04' AS CodRegistro, per.cuil, lsd.conyuge,lsd.cant_hijos, 
-lsd.adherido_cct as marcaCCT,lsd.cobertura_scvo as marcaSCVO,
-lsd.corresponde_reduccion as marcaReduccion,lsd.tipo_empresa, '0' as codOperacion,lsd.situacion_revista, lsd.cod_condicion,
-lsd.activ_empleado, lsd.modalidad_contratacion, lsd.cod_siniestrado, lsd.cod_localidad,lsd.situacion_revista as revista1, '1' as diaRevista1,
-'0' as revista2, '0' as diaRevista2,'0' as revista3, '0' as diaRevista3, '30' as diasTrab, '0' as horasTrab, 
-'0' as PorcApAdic,'0' as contrTareaDif,
-lsd.cod_obraSocial, lsd.cant_adherentes,
-'0' as aporteAdicOS,
-'0' as contribAdicOS,
-'0' as baseCalcDiferencialAporteOSyFSR,
-'0' as baseCalcDiferencialContribOSyFSR,
-'0' as baseCalcDiferencialContribLRT,
-'0' as RemMaternidadANSES,
-format(sum((select sum(replace(replace(remunerativo,'.',''),',','.'))+sum(replace(replace(noremunerativo,'.',''),',','.')) 
-from sdo_items_recibos as itm where itm.idrecibo=rec.id)),2,'es_AR') as remBruta,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp1=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp1,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp2=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp2,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp3=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp3,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp4=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp4,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp5=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp5,
-ifnull(0,format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp6=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR')) as BImp6,
-ifnull(0,format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp7=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR')) as BImp7,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp8=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp8,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp9=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp9,
-ifnull(0,format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BaseAporteSegSoc=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR')) as BaseCalcDifAporteSegSoc,
-ifnull(0,format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BaseContribSegSoc=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR')) as BaseCalcDifContribSegSoc,
-format(sum((SELECT sum(case
-when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
-when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
-when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
-end )
-FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
-" & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp10=1 and
-rec.id=itm.idrecibo
-)),2,'es_AR') as BImp10,
-'0' as ImporteADetraer,
-(select count(*) 
-FROM sdo_recibos as rec where rec.cuil=per.cuil and 
-(" & busquPeriodo & ")) as cant 
-from
-sdo_recibos as rec, sdo_personal as per, sdo_personal_infoLSD as lsd where
-rec.idpersonal=per.idpersonal and per.idpersonal=lsd.idpersonal
-and (" & busquPeriodo & ")  
-group by per.cuil having cant =  " & numLiq, conexionEmp)
+                lsd.adherido_cct as marcaCCT,lsd.cobertura_scvo as marcaSCVO,
+                lsd.corresponde_reduccion as marcaReduccion,lsd.tipo_empresa, '0' as codOperacion,lsd.situacion_revista, lsd.cod_condicion,
+                lsd.activ_empleado, lsd.modalidad_contratacion, lsd.cod_siniestrado, lsd.cod_localidad,lsd.situacion_revista as revista1, '1' as diaRevista1,
+                '0' as revista2, '0' as diaRevista2,'0' as revista3, '0' as diaRevista3, '30' as diasTrab, '0' as horasTrab, 
+                '0' as PorcApAdic,'0' as contrTareaDif,
+                lsd.cod_obraSocial, lsd.cant_adherentes,
+                '0' as aporteAdicOS,
+                '0' as contribAdicOS,
+                '0' as baseCalcDiferencialAporteOSyFSR,
+                '0' as baseCalcDiferencialContribOSyFSR,
+                '0' as baseCalcDiferencialContribLRT,
+                '0' as RemMaternidadANSES,
+                format(sum((select sum(replace(replace(remunerativo,'.',''),',','.'))+sum(replace(replace(noremunerativo,'.',''),',','.')) 
+                from sdo_items_recibos as itm where itm.idrecibo=rec.id)),2,'es_AR') as remBruta,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp1=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp1,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp2=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp2,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp3=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp3,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp4=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp4,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp5=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp5,
+                ifnull(0,format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp6=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR')) as BImp6,
+                ifnull(0,format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp7=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR')) as BImp7,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp8=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp8,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp9=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp9,
+                ifnull(0,format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BaseAporteSegSoc=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR')) as BaseCalcDifAporteSegSoc,
+                ifnull(0,format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BaseContribSegSoc=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR')) as BaseCalcDifContribSegSoc,
+                format(sum((SELECT sum(case
+                when length(itm.remunerativo)<>0 then replace(replace(remunerativo,'.',''),',','.')
+                when length(itm.noremunerativo)<>0 then replace(replace(noremunerativo,'.',''),',','.')
+                when length(itm.deducciones)<>0 then replace(replace(deducciones,'.',''),',','.')
+                end )
+                FROM sdo_items_recibos as itm, " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD where 
+                " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.codInt=itm.codigo and " & conexionPrinc.Database & ".cm_sdo_infoExtraLSD.BImp10=1 and
+                rec.id=itm.idrecibo
+                )),2,'es_AR') as BImp10,
+                '0' as ImporteADetraer,
+                (select count(*) 
+                FROM sdo_recibos as rec where rec.cuil=per.cuil and 
+                (" & busquPeriodo & ")) as cant 
+                from
+                sdo_recibos as rec, sdo_personal as per, sdo_personal_infoLSD as lsd where
+                rec.idpersonal=per.idpersonal and per.idpersonal=lsd.idpersonal
+                and (" & busquPeriodo & ")  
+                group by per.cuil having cant <=  " & numLiq, conexionEmp)
             'MsgBox(busquPeriodo)
             Dim tablaRegistro04 As New DataTable
             consultaRegistro04.Fill(tablaRegistro04)
             dgvRegistro04.DataSource = tablaRegistro04
-            MsgBox(consultaRegistro04.SelectCommand.CommandText)
+            ''MsgBox(consultaRegistro04.SelectCommand.CommandText)
 
             Reconectar()
             Dim consultaRegistro02 As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT '02' as CodRegistro,rec.cuil,rec.idpersonal as legajo,'' as dependencia,  if(lsd.forma_pago=3,per.sueldocuenta,'') as CBU,
             '0' as DiasTope,rec.fecha_pago,'' as fechaRubrica,lsd.forma_pago
             FROM 
             sdo_recibos as rec, sdo_personal as per, sdo_personal_infoLSD as lsd where
-            rec.idpersonal=per.idpersonal and rec.idpersonal=lsd.idpersonal and rec.periodoconcat like '" & cmbperiodo.Text & "'", conexionEmp)
+            rec.idpersonal=per.idpersonal and rec.idpersonal=lsd.idpersonal and rec.periodoconcat like '" & cmbperiodo.Text & "' GROUP BY rec.cuil", conexionEmp)
             Dim tablaRegistro02 As New DataTable
             consultaRegistro02.Fill(tablaRegistro02)
             dgvregistro02.DataSource = tablaRegistro02
@@ -326,13 +326,20 @@ group by per.cuil having cant =  " & numLiq, conexionEmp)
             consultaRegistro03.Fill(tablaRegistro03)
             dgvRegistro03.DataSource = tablaRegistro03
 
+
+
+
+
             Reconectar()
             Dim consultaRegistro01 As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT '01' as CodRegistro, '" & DatosEmpresa.Cuit & "' as cuit, 'SJ' as idEnvio, 
-            concat(mes,'-',ano) as periodo, 'M' as tipoLiq, '1' AS numLiqu, '30' as DiasBase, '" & dgvRegistro04.Rows.Count & "' as CantReg04 
+            concat(mes,'-',ano) as periodo, 'M' as tipoLiq, '" & numLiq & "' AS numLiqu, '30' as DiasBase, '" & dgvRegistro04.Rows.Count & "' as CantReg04 
             from sdo_recibos as rec where rec.periodoconcat like '" & cmbperiodo.Text & "' limit 1", conexionEmp)
             Dim tablaRegistro01 As New DataTable
             consultaRegistro01.Fill(tablaRegistro01)
             dgvRegistro01.DataSource = tablaRegistro01
+
+            MsgBox("Se cargaron los registros, por favor verifique el numero de liquidacion y el tipo de liquidacion, 
+            tambien los importes a detraer y los porcentajes por tareas diferenciales")
         Catch ex As Exception
 
         End Try
@@ -470,7 +477,7 @@ group by per.cuil having cant =  " & numLiq, conexionEmp)
             'Dim nombrealicutas = carpetadestino.SelectedPath & "\" & Replace(cmbperiodocarg.Text, "/", "") & "_COMPRASalicuotas_" & EmpDB.ToString & ".txt"
             Dim strStreamW As Stream = Nothing
             Dim strStreamWriter As StreamWriter = Nothing
-            Windows.Forms.Cursor.Current = Cursors.WaitCursor
+            Cursor.Current = Cursors.WaitCursor
 
             If File.Exists(textoExportar) Then
                 strStreamW = File.Open(textoExportar, FileMode.Open)
@@ -518,6 +525,8 @@ group by per.cuil having cant =  " & numLiq, conexionEmp)
                 Else
                     dgvRegistro04.CurrentRow.Cells("BImp10").Value = FormatNumber(Bimp10TEMPORAL(e.RowIndex) - FormatNumber(dgvRegistro04.CurrentRow.Cells("ImporteADetraer").Value), 2)
                 End If
+            ElseIf e.ColumnIndex = 27 Then
+                dgvRegistro04.CurrentRow.Cells("aporteAdicOS").Value = FormatNumber(dgvRegistro04.CurrentRow.Cells(27).Value, 2)
 
             End If
         Catch ex As Exception
@@ -537,29 +546,7 @@ group by per.cuil having cant =  " & numLiq, conexionEmp)
     End Sub
 
     Private Sub txtImporteDetraer_KeyUp(sender As Object, e As KeyEventArgs) Handles txtImporteDetraer.KeyUp
-        Try
 
-            If e.KeyCode = Keys.Enter Then
-                If IsNothing(Bimp10TEMPORAL) Then
-                    ReDim Bimp10TEMPORAL(dgvRegistro04.Rows.Count)
-                End If
-                If txtImporteDetraer.Text = "" Then
-                        txtImporteDetraer.Text = 0
-                    End If
-                    For Each reg4 As DataGridViewRow In dgvRegistro04.Rows
-                        If Bimp10TEMPORAL(reg4.Index) = "0" Or Bimp10TEMPORAL(reg4.Index) = "" Then
-                            Bimp10TEMPORAL(reg4.Index) = reg4.Cells("BImp10").Value
-                            reg4.Cells("ImporteADetraer").Value = FormatNumber(txtImporteDetraer.Text)
-                            reg4.Cells("BImp10").Value = FormatNumber(Bimp10TEMPORAL(reg4.Index) - reg4.Cells("ImporteADetraer").Value, 2)
-                        Else
-                            reg4.Cells("ImporteADetraer").Value = FormatNumber(txtImporteDetraer.Text)
-                            reg4.Cells("BImp10").Value = FormatNumber(Bimp10TEMPORAL(reg4.Index) - reg4.Cells("ImporteADetraer").Value, 2)
-                        End If
-                    Next
-                End If
-        Catch ex As Exception
-
-        End Try
     End Sub
 
     Private Sub txtPorcTareaDif_TextChanged(sender As Object, e As EventArgs) Handles txtPorcTareaDif.TextChanged
@@ -567,21 +554,7 @@ group by per.cuil having cant =  " & numLiq, conexionEmp)
     End Sub
 
     Private Sub txtPorcTareaDif_KeyUp(sender As Object, e As KeyEventArgs) Handles txtPorcTareaDif.KeyUp
-        Try
-            If e.KeyCode = Keys.Enter Then
-                If txtPorcTareaDif.Text = "" Then
-                    txtPorcTareaDif.Text = 0
-                End If
-                For Each reg4 As DataGridViewRow In dgvRegistro04.Rows
-                    If reg4.Cells("cod_condicion").Value = 5 Then
-                        reg4.Cells("contrTareaDif").Value = FormatNumber(txtPorcTareaDif.Text, 2)
-                        'reg4.Cells("BImp10").Value = FormatNumber(reg4.Cells("BImp10").Value - reg4.Cells("ImporteADetraer").Value, 2)
-                    End If
-                Next
-            End If
-        Catch ex As Exception
 
-        End Try
     End Sub
 
     Private Sub cmbperiodo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbperiodo.SelectedIndexChanged
@@ -601,5 +574,96 @@ group by per.cuil having cant =  " & numLiq, conexionEmp)
         consultaliquidaciones.Fill(tablaliquidaciones)
         CheckedListBox1.DataSource = tablaliquidaciones
         CheckedListBox1.DisplayMember = "periodoconcat"
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        For Each concepto As DataGridViewRow In dgvRegistro03.Rows
+            If concepto.Cells("deb_cred").Value = "D" Then
+                concepto.Cells("deb_cred").Value = "C"
+            ElseIf concepto.Cells("deb_cred").Value = "C" Then
+            concepto.Cells("deb_cred").Value = "D"
+            End If
+        Next
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        For Each registro As DataGridViewRow In dgvRegistro04.Rows
+            registro.Cells("remBruta").Value = "-" & registro.Cells("remBruta").Value
+            registro.Cells("BImp1").Value = "-" & registro.Cells("BImp1").Value
+            registro.Cells("BImp2").Value = "-" & registro.Cells("BImp2").Value
+            registro.Cells("BImp3").Value = "-" & registro.Cells("BImp3").Value
+            registro.Cells("BImp4").Value = "-" & registro.Cells("BImp4").Value
+            registro.Cells("BImp5").Value = "-" & registro.Cells("BImp5").Value
+
+            registro.Cells("BImp8").Value = "-" & registro.Cells("BImp8").Value
+            registro.Cells("BImp9").Value = "-" & registro.Cells("BImp9").Value
+
+            registro.Cells("BImp10").Value = "-" & registro.Cells("BImp10").Value
+
+        Next
+    End Sub
+
+    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
+
+    End Sub
+
+    Private Sub txtPorcTareaDif_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPorcTareaDif.KeyDown
+        Try
+            If e.KeyCode = Keys.Enter Then
+                If txtPorcTareaDif.Text = "" Then
+                    txtPorcTareaDif.Text = 0
+                End If
+                For Each reg4 As DataGridViewRow In dgvRegistro04.Rows
+                    If reg4.Cells("cod_condicion").Value = 5 Then
+                        reg4.Cells("contrTareaDif").Value = FormatNumber(txtPorcTareaDif.Text, 2)
+                        'reg4.Cells("BImp10").Value = FormatNumber(reg4.Cells("BImp10").Value - reg4.Cells("ImporteADetraer").Value, 2)
+                    End If
+                Next
+                MsgBox("Se aplico el porcentaje a detraer en los empleados con tareas diferenciales")
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub txtImporteDetraer_KeyDown(sender As Object, e As KeyEventArgs) Handles txtImporteDetraer.KeyDown
+        Try
+
+            If e.KeyCode = Keys.Enter Then
+                If txtImporteDetraer.Text = "" Then
+                    txtImporteDetraer.Text = 0
+                End If
+                For Each reg4 As DataGridViewRow In dgvRegistro04.Rows
+
+                    reg4.Cells("ImporteADetraer").Value = FormatNumber(txtImporteDetraer.Text)
+                    reg4.Cells("BImp10").Value = FormatNumber(reg4.Cells("BImp10").Value - reg4.Cells("ImporteADetraer").Value, 2)
+
+                Next
+                MsgBox("Se aplico el importe a detraer en todos los empleados y se resto de la BImp10")
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+        Try
+
+            MsgBox("Atencion, se procedera a recalcular BImp4, BImp8, aportes y contribuciones adicionales de OS y FSR solo en aquellos empleados que el modo de contratacion sea <<<A tiempo parcial: Indeterminado/permanente>>>  ")
+            For Each reg4 As DataGridViewRow In dgvRegistro04.Rows
+
+                If reg4.Cells("modalidad_contratacion").Value = 1 Then
+
+                    reg4.Cells("baseCalcDiferencialAporteOSyFSR").Value = reg4.Cells("remBruta").Value
+                    reg4.Cells("baseCalcDiferencialContribOSyFSR").Value = reg4.Cells("remBruta").Value
+                    reg4.Cells("BImp4").Value = FormatNumber(reg4.Cells("remBruta").Value * 2, 2)
+                    reg4.Cells("BImp8").Value = FormatNumber(reg4.Cells("remBruta").Value * 2, 2)
+                End If
+            Next
+            MsgBox("Se recalcularon BImp4, BImp8, aportes y contribuciones adicionales de OS y FSR ")
+            '  End If
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

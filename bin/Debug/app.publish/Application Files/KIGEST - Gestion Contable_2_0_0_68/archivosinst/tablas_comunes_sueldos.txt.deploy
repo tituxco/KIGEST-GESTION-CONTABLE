@@ -69,3 +69,56 @@ CREATE TABLE `cm_sdo_unidades_calculo` (
   `nombre` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `cm_sdo_conceptosSueldoAFIP` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo` int(11) DEFAULT NULL,
+  `codigo` varchar(255) DEFAULT NULL,
+  `descripcion` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cm_sdo_infoExtraLSD` (
+  `id` int(11) NOT NULL,
+  `codigoAfip` int(11) NOT NULL,
+  `codInt` int(11) NOT NULL,
+  `aporteSIPA` int(2) NOT NULL,
+  `aporteINSSJyP` int(2) NOT NULL,
+  `aporteOS` int(2) NOT NULL,
+  `aporteFSR` int(2) NOT NULL,
+  `aporteRENATEA` int(2) NOT NULL,
+  `aporteAAFF` int(2) NOT NULL,
+  `aporteFNE` int(2) NOT NULL,
+  `aporteDIF` int(2) NOT NULL,
+  `aporteREGEsp` int(2) NOT NULL,
+  `contribSIPA` int(2) NOT NULL,
+  `contribINSSJyP` int(2) NOT NULL,
+  `contribOS` int(2) NOT NULL,
+  `contribFSR` int(2) NOT NULL,
+  `contribRENATEA` int(2) NOT NULL,
+  `contribAAFF` int(2) NOT NULL,
+  `contribFNE` int(2) NOT NULL,
+  `contribDIF` int(2) NOT NULL,
+  `contribREGEsp` int(2) NOT NULL,
+  `BImp1` int(2) NOT NULL,
+  `BImp2` int(2) NOT NULL,
+  `BImp3` int(2) NOT NULL,
+  `BImp4` int(2) NOT NULL,
+  `BImp5` int(2) NOT NULL,
+  `BImp6` int(2) NOT NULL,
+  `BImp7` int(2) NOT NULL,
+  `BImp8` int(2) NOT NULL,
+  `BImp9` int(2) NOT NULL,
+  `BImp10` int(2) NOT NULL,
+  `MaternidadAnses` int(2) NOT NULL,
+  `BaseART` int(2) NOT NULL,
+  `BaseAporteSegSoc` int(2) NOT NULL,
+  `BaseContribSegSoc` int(2) NOT NULL,
+  `BaseAporteOSyFSR` int(2) NOT NULL,
+  `BaseContribOSyFSR` int(2) NOT NULL,
+  `ContribLeyRT` int(2) NOT NULL,
+  `MarcaRepeticion` int(2) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+

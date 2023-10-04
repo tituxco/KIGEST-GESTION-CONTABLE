@@ -1,5 +1,5 @@
 ﻿Public Class frmabmempresa
-    Private BindingSourceemp As Windows.Forms.BindingSource = New BindingSource
+    Private BindingSourceemp As BindingSource = New BindingSource
     Private Sub frmabmempresa_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         frmprincipal.cmdempresas.Enabled = True
     End Sub

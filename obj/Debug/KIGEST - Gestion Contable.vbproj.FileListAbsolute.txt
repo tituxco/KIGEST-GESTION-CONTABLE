@@ -210,3 +210,207 @@ D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.xml
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.pdb
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.NuevoConceptoSueldo.resources
 D:\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.exportacionLSD.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbprojFakesResolveAssemblyReference.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.AssemblyReference.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.ResolveComReference.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmabmempresa.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmaddempresas.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.agregaritemcompras.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmaspirantes.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.exportacionLSD.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.ImprimirIvaCompra.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.ImprimirLibroSueldo.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.imprimirrecibo.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.ImprimirRecibos.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmInicializar.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmInicializar2.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.iva.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.mantenimiento.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.Resources.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.NuevoConceptoSueldo.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.frmprincipal.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.recibos.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.rubricaivacompra.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.rubricaivaventas.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST___Gestion_Contable.rubricasuel.resources
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.GenerateResource.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.CoreCompileInputs.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\ReciboEncabezado.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroIvaVentaDetalles.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroIvaCompraDetalles.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroSuelEncabeza.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\RubricaIvaCompra.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\RubricaIvaVentas.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\LibroSuelDetalles.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\ReciboDetalle.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Reportes\RubricaSueldos.rdlc
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes.txt
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes_iva.txt
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_comunes_sueldos.txt
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\archivosinst\tablas_iva.txt
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.exe.config
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.exe.manifest
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.application
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.exe
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.pdb
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\KIGEST - Gestion Contable.xml
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\EnvDTE.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\stdole.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.TrustInfo.xml
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.exe.manifest
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.application
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.vbproj.CopyComplete
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.exe
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.xml
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\KIGEST - Gestion Contable.pdb
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\fakes.args
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\AutomaticUpdater.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\EnvDTE.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.MSXML.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.ReportViewer.Common.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.ReportViewer.Design.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.ReportViewer.WinForms.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.SqlServer.Types.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\MySql.Data.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\stdole.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\System.Design.Fakes.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\System.Design.Fakes.fakesconfig
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\System.Design.Fakes.pdb
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\System.Design.Fakes.xml
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\b\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.ah
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.ch
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.cs
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.csproj
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.fakes
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.fakesconfig
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\f.snk
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\.NETFramework,Version=v4.6.AssemblyAttributes.cs
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\f.csproj.AssemblyReference.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\f.csproj.CopyComplete
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\f.csproj.CoreCompileInputs.cache
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\f.csproj.FileListAbsolute.txt
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\System.Design.Fakes.dll
+C:\Users\rquat\OneDrive\Desarrollos\KIGEST-GESTION-CONTABLE\obj\Debug\Fakes\sd\o\System.Design.Fakes.pdb

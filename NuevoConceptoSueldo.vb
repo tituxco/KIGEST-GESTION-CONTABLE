@@ -34,12 +34,12 @@
 
             Reconectar()
             conexionPrinc.ChangeDatabase(database)
-            Dim consultaConcepto As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT * FROM tortul_petean.cm_sdo_conceptos_sueldo where idconceptos_sueldo=" & IDconceptoSueldoMod, conexionPrinc)
+            Dim consultaConcepto As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT * FROM cm_sdo_conceptos_sueldo where idconceptos_sueldo=" & IDconceptoSueldoMod, conexionPrinc)
             Dim tablaConc As New DataTable
             consultaConcepto.Fill(tablaConc)
 
             Reconectar()
-            Dim consultaInfoExtraConc As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT * FROM tortul_petean.cm_sdo_infoExtraLSD where id=" & IDconceptoSueldoMod, conexionPrinc)
+            Dim consultaInfoExtraConc As New MySql.Data.MySqlClient.MySqlDataAdapter("SELECT * FROM cm_sdo_infoExtraLSD where id=" & IDconceptoSueldoMod, conexionPrinc)
             Dim tablaInfoExtraConc As New DataTable
             consultaInfoExtraConc.Fill(tablaInfoExtraConc)
             'MsgBox(tablaConc.Rows(0).Item("tipo"))

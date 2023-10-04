@@ -210,7 +210,7 @@
                 End Select
             End While
             leer.Close()
-            If encontrado = 11 Then
+            If encontrado = 12 Then
                 'MsgBox("Las tablas de sueldo estan correctas")
                 'moduloSUELDO_Act = True
                 Return True

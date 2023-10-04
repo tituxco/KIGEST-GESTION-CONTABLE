@@ -51,7 +51,7 @@ Partial Class frmprincipal
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Font = New System.Drawing.Font("Sansation", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton1, Me.ToolStripSplitButton1, Me.lblstatusServer, Me.lblstatusBDprinc, Me.lblStatusEmp, Me.ToolStripProgressBar1, Me.ToolStripStatusLabel1, Me.lblstatusgral})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 696)
         Me.StatusStrip1.Name = "StatusStrip1"
@@ -94,25 +94,25 @@ Partial Class frmprincipal
         '
         'lblstatusServer
         '
-        Me.lblstatusServer.Font = New System.Drawing.Font("Sansation", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstatusServer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblstatusServer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblstatusServer.Name = "lblstatusServer"
-        Me.lblstatusServer.Size = New System.Drawing.Size(114, 19)
+        Me.lblstatusServer.Size = New System.Drawing.Size(132, 19)
         Me.lblstatusServer.Text = "Estado del Servidor"
         Me.lblstatusServer.ToolTipText = "Estado de la conexion principal con el servidor"
         '
         'lblstatusBDprinc
         '
-        Me.lblstatusBDprinc.Font = New System.Drawing.Font("Sansation", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstatusBDprinc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblstatusBDprinc.ForeColor = System.Drawing.Color.Green
         Me.lblstatusBDprinc.Name = "lblstatusBDprinc"
-        Me.lblstatusBDprinc.Size = New System.Drawing.Size(139, 19)
+        Me.lblstatusBDprinc.Size = New System.Drawing.Size(162, 19)
         Me.lblstatusBDprinc.Text = "Base de datos principal:"
         Me.lblstatusBDprinc.ToolTipText = "Nombre de la base de datos principal del sistema"
         '
         'lblStatusEmp
         '
-        Me.lblStatusEmp.Font = New System.Drawing.Font("Sansation", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatusEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStatusEmp.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lblStatusEmp.Name = "lblStatusEmp"
         Me.lblStatusEmp.Size = New System.Drawing.Size(0, 19)
@@ -127,9 +127,9 @@ Partial Class frmprincipal
         '
         Me.ToolStripStatusLabel1.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left
         Me.ToolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter
-        Me.ToolStripStatusLabel1.Font = New System.Drawing.Font("Sansation", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(309, 19)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(352, 19)
         Me.ToolStripStatusLabel1.Text = "KIBIT Informática - 03482-427888 - info@kibit.com.ar"
         '
         'lblstatusgral
@@ -140,7 +140,7 @@ Partial Class frmprincipal
         'tmrcomprobarConexion
         '
         Me.tmrcomprobarConexion.Enabled = True
-        Me.tmrcomprobarConexion.Interval = 1000
+        Me.tmrcomprobarConexion.Interval = 60000
         '
         'pntitulo
         '

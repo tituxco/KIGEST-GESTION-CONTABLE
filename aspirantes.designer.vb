@@ -82,6 +82,7 @@ Partial Class frmaspirantes
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.txtfechaAportes = New System.Windows.Forms.TextBox()
         Me.txtbancoaportes = New System.Windows.Forms.TextBox()
         Me.txtperiodoaportes = New System.Windows.Forms.TextBox()
         Me.txtlugarpago = New System.Windows.Forms.TextBox()
@@ -141,7 +142,12 @@ Partial Class frmaspirantes
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
-        Me.txtfechaAportes = New System.Windows.Forms.TextBox()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label49 = New System.Windows.Forms.Label()
         CType(Me.dtpersonal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnnavegacion.SuspendLayout()
         Me.pntitulo.SuspendLayout()
@@ -871,6 +877,14 @@ Partial Class frmaspirantes
         Me.TabPage2.Text = "Datos laborales"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'txtfechaAportes
+        '
+        Me.txtfechaAportes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtfechaAportes.Location = New System.Drawing.Point(155, 243)
+        Me.txtfechaAportes.Name = "txtfechaAportes"
+        Me.txtfechaAportes.Size = New System.Drawing.Size(122, 20)
+        Me.txtfechaAportes.TabIndex = 37
+        '
         'txtbancoaportes
         '
         Me.txtbancoaportes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -1091,6 +1105,12 @@ Partial Class frmaspirantes
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.TextBox3)
+        Me.TabPage3.Controls.Add(Me.Label49)
+        Me.TabPage3.Controls.Add(Me.TextBox2)
+        Me.TabPage3.Controls.Add(Me.Label48)
+        Me.TabPage3.Controls.Add(Me.TextBox1)
+        Me.TabPage3.Controls.Add(Me.Label47)
         Me.TabPage3.Controls.Add(Me.cmbLSDFormaPago)
         Me.TabPage3.Controls.Add(Me.Label46)
         Me.TabPage3.Controls.Add(Me.txtcuentahaberes)
@@ -1507,13 +1527,65 @@ Partial Class frmaspirantes
         '
         Me.PrintDialog1.UseEXDialog = True
         '
-        'txtfechaAportes
+        'Label47
         '
-        Me.txtfechaAportes.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtfechaAportes.Location = New System.Drawing.Point(155, 243)
-        Me.txtfechaAportes.Name = "txtfechaAportes"
-        Me.txtfechaAportes.Size = New System.Drawing.Size(122, 20)
-        Me.txtfechaAportes.TabIndex = 37
+        Me.Label47.AutoSize = True
+        Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label47.Location = New System.Drawing.Point(495, 343)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(107, 13)
+        Me.Label47.TabIndex = 50
+        Me.Label47.Text = "Pago Adicional: $"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox1.Location = New System.Drawing.Point(590, 340)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(73, 20)
+        Me.TextBox1.TabIndex = 51
+        Me.TextBox1.Text = "0"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox2.Location = New System.Drawing.Point(578, 229)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(73, 20)
+        Me.TextBox2.TabIndex = 53
+        Me.TextBox2.Text = "0"
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label48.Location = New System.Drawing.Point(495, 232)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(77, 13)
+        Me.Label48.TabIndex = 52
+        Me.Label48.Text = "% Tarea Dif:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox3.Location = New System.Drawing.Point(601, 141)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(72, 20)
+        Me.TextBox3.TabIndex = 55
+        Me.TextBox3.Text = "0"
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label49.Location = New System.Drawing.Point(494, 144)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(101, 13)
+        Me.Label49.TabIndex = 54
+        Me.Label49.Text = "Imp. a detraer: $"
         '
         'frmaspirantes
         '
@@ -1668,4 +1740,10 @@ Partial Class frmaspirantes
     Friend WithEvents Label30 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents txtfechaAportes As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label47 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label48 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label49 As Label
 End Class

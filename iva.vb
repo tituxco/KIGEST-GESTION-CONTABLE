@@ -368,7 +368,7 @@ Public Class iva
         txtfacCombNoGrav.Clear()
         txtLitrosComb.Clear()
     End Sub
-    Private Function comprobarComprobanteCompra(ByRef comprobante As String, ByRef contribuyente As String) As Boolean
+    Private Function comprobarComprobanteCompra(comprobante As String, contribuyente As String) As Boolean
         Try
             Dim consulta As New MySql.Data.MySqlClient.MySqlDataAdapter("select id from iv_items_compras where nufac like '" & comprobante & "' and " _
             & "replace(cuit,'-','') like '" & Replace(contribuyente, "-", "") & "'", conexionEmp)
@@ -1707,7 +1707,7 @@ Public Class iva
             Dim nombrealicutas = carpetadestino.SelectedPath & "\" & Replace(cmbperiodocarg.Text, "/", "") & "_VENTASalicuotas_" & EmpDB.ToString & ".txt"
             Dim strStreamW As Stream = Nothing
             Dim strStreamWriter As StreamWriter = Nothing
-            Windows.Forms.Cursor.Current = Cursors.WaitCursor
+            Cursor.Current = Cursors.WaitCursor
 
             If File.Exists(nombrecomprobantes) Then
                 strStreamW = File.Open(nombrecomprobantes, FileMode.Open)
@@ -1918,7 +1918,7 @@ Public Class iva
             Dim nombrealicutas = carpetadestino.SelectedPath & "\" & Replace(cmbperiodocarg.Text, "/", "") & "_COMPRASalicuotas_" & EmpDB.ToString & ".txt"
             Dim strStreamW As Stream = Nothing
             Dim strStreamWriter As StreamWriter = Nothing
-            Windows.Forms.Cursor.Current = Cursors.WaitCursor
+            Cursor.Current = Cursors.WaitCursor
 
             If File.Exists(nombrecomprobantes) Then
                 strStreamW = File.Open(nombrecomprobantes, FileMode.Open)

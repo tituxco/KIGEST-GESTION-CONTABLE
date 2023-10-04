@@ -5,7 +5,7 @@ Public Class frmaspirantes
     Dim agregarPers As Boolean
 
     Dim pag As Integer
-    Private BindingSource1 As Windows.Forms.BindingSource = New BindingSource
+    Private BindingSource1 As BindingSource = New BindingSource
     Dim idsub As String
 
     Dim Printenca As Boolean = True
@@ -308,7 +308,7 @@ Public Class frmaspirantes
         End Try
 
     End Sub
-    Private Sub deshabilitarControles(ByVal thisform As System.Windows.Forms.Form)
+    Private Sub deshabilitarControles(ByVal thisform As Form)
         For Each Cont As Control In TabPage1.Controls
             If TypeOf Cont Is TextBox Then
                 Dim tex As TextBox
@@ -804,7 +804,7 @@ Public Class frmaspirantes
             .RestoreDirectory = True
         End With
         'Evalua si el usuario hace click en el boton abrir
-        If openfiler.ShowDialog = Windows.Forms.DialogResult.OK Then
+        If openfiler.ShowDialog = DialogResult.OK Then
             'Obteniendo la ruta completa del archivo xml
             filename = openfiler.FileName
             Me.pctfoto.Image = Image.FromFile(filename)

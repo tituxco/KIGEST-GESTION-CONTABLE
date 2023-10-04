@@ -4,7 +4,7 @@ Imports System.IO.Compression.GZipStream
 
 Public Class mantenimiento
     Public centroSel As Integer
-    Private BindingSourcenomencla As Windows.Forms.BindingSource = New BindingSource
+    Private BindingSourcenomencla As BindingSource = New BindingSource
     Private Sub mantenimiento_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         frmprincipal.cmdmantenimiento.Enabled = True
     End Sub
@@ -317,7 +317,7 @@ Public Class mantenimiento
             .RootFolder = Environment.SpecialFolder.MyComputer
             .Description = "Seleccione una carpeta para el resguardo"
             .ShowNewFolderButton = True
-            If .ShowDialog = Windows.Forms.DialogResult.OK Then
+            If .ShowDialog = DialogResult.OK Then
                 lbldestino.Text = .SelectedPath
             End If
         End With
